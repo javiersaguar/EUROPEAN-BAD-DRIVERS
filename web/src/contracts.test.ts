@@ -11,6 +11,7 @@ import {
 } from './data'
 import { normalize, composite } from './index'
 import { csvText } from './components'
+import { group } from './pages/evidence'
 const data = JSON.parse(
   readFileSync(new URL('../public/data/observatory.json', import.meta.url), 'utf8'),
 ) as Dataset
@@ -53,6 +54,65 @@ describe('published analytical contract', () => {
   })
 })
 describe('normalization and URL state', () => {
+  it('roundtrips extended filters and preserves missing components when grouping', () => {
+    const f = {
+      ...defaults,
+      page: 'persons' as const,
+      historyYear: 2017,
+      sex: 'UNK',
+      age: '65+',
+      zone: 'Interurbana',
+      personRole: 'drivers_involved',
+      user: 'Motocicleta',
+      euRole: 'DRIV',
+      claim: 'Lunas',
+      claimBasis: 'settled',
+      germanLocation: 'Autopista',
+      vehicle: 'Turismo',
+    }
+    expect(readFilters(serializeFilters(f))).toEqual(f)
+    expect(
+      readFilters('?sex=bad&age=bad&historyYear=2030&personRole=bad&claim=bad&zone=bad'),
+    ).toEqual(defaults)
+    expect(
+      group(
+        [
+          { sex: 'M', count: 2 },
+          { sex: 'M', count: null },
+          { sex: 'F', count: 0 },
+        ],
+        'sex',
+        'count',
+      ),
+    ).toEqual([
+      { sex: 'M', count: null },
+      { sex: 'F', count: 0 },
+    ])
+  })
+  it('publishes dense EU cells and leaves absent urban bicycle counts unfilled', () => {
+    expect(data.tables.europe_sex_users).toHaveLength(8100)
+    expect(
+      data.tables.europe_sex_users
+        .filter((r) => r.sex === 'UNK')
+        .every((r) => r.population === null && r.fatalities_per_million === null),
+    ).toBe(true)
+    const bicycle = data.tables.dgt_demographics.filter(
+      (r) =>
+        r.year === 2024 &&
+        r.role === 'all_victims' &&
+        r.zone === 'Urbana' &&
+        r.category === 'Bicicleta',
+    )
+    expect(bicycle).toHaveLength(18)
+    expect(bicycle.every((r) => r.fatalities === null && r.casualties === null)).toBe(true)
+    const own = data.tables.ncid_ultimate.find(
+      (r) => r.year === 2024 && r.category === 'Daños propios por accidente',
+    )!
+    expect(Number(own.cost_per_policy_eur)).toBeCloseTo(
+      (Number(own.frequency_per_1000_all_policies) / 1000) * Number(own.mean_cost_eur),
+      8,
+    )
+  })
   it('uses average ties and neutral constants', () => {
     expect(normalize([1, 1, 3], 'percentile')).toEqual([25, 25, 100])
     expect(normalize([5, 5], 'minmax')).toEqual([50, 50])

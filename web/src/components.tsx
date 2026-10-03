@@ -164,6 +164,18 @@ const tooltipStyle = {
   background: '#fffef8',
   fontSize: 12,
 }
+const axisLabel = (value: unknown) => {
+  const text = String(value)
+    .replace('Salida de la vía por la izquierda', 'Salida izq.')
+    .replace('Salida de la vía por la derecha', 'Salida dcha.')
+    .replace(' con colisión', ' · colisión')
+    .replace(' con despeñamiento', ' · caída')
+    .replace(' con vuelco', ' · vuelco')
+    .replace(', otro tipo', ' · otra')
+    .replace('Colisión contra obstáculo o elemento de la vía', 'Contra obstáculo')
+    .replace('Múltiple o en caravana', 'Múltiple / caravana')
+  return text.length > 23 ? `${text.slice(0, 22)}…` : text
+}
 export function Bars({
   rows,
   valueKey,
@@ -179,7 +191,7 @@ export function Bars({
 }) {
   return (
     <div className="chart" role="img" aria-label={title}>
-      <ResponsiveContainer width="100%" height={horizontal ? Math.max(260, rows.length * 28) : 260}>
+      <ResponsiveContainer width="100%" height={horizontal ? Math.max(260, rows.length * 34) : 260}>
         <BarChart
           data={rows}
           layout={horizontal ? 'vertical' : 'horizontal'}
@@ -193,7 +205,8 @@ export function Bars({
               <YAxis
                 dataKey={nameKey}
                 type="category"
-                width={105}
+                width={145}
+                tickFormatter={axisLabel}
                 fontSize={11}
                 tickLine={false}
                 axisLine={false}
@@ -215,6 +228,52 @@ export function Bars({
           />
         </BarChart>
       </ResponsiveContainer>
+    </div>
+  )
+}
+export function GroupedBars({
+  rows,
+  series,
+  xKey,
+  title,
+}: {
+  rows: Row[]
+  series: { key: string; name: string }[]
+  xKey: string
+  title: string
+}) {
+  return (
+    <div className="chart" role="img" aria-label={title}>
+      <ResponsiveContainer width="100%" height={270}>
+        <BarChart
+          data={rows}
+          margin={{ top: 12, right: 18, left: 0, bottom: 5 }}
+          accessibilityLayer
+        >
+          <CartesianGrid stroke="#e5e9df" vertical={false} />
+          <XAxis dataKey={xKey} fontSize={11} tickLine={false} />
+          <YAxis fontSize={11} tickFormatter={(v) => fmt(v, 1)} />
+          <Tooltip formatter={(v) => fmt(Number(v), 2)} contentStyle={tooltipStyle} />
+          {series.map((s, i) => (
+            <Bar
+              key={s.key}
+              dataKey={s.key}
+              name={s.name}
+              fill={chartColors[i % 3]}
+              radius={[3, 3, 0, 0]}
+              isAnimationActive={false}
+            />
+          ))}
+        </BarChart>
+      </ResponsiveContainer>
+      <div className="legend">
+        {series.map((s, i) => (
+          <span key={s.key}>
+            <i style={{ background: chartColors[i % 3] }} />
+            {s.name}
+          </span>
+        ))}
+      </div>
     </div>
   )
 }

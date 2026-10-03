@@ -78,22 +78,22 @@ export function Overview({ data, f, update }: PageProps) {
         </Panel>
       </div>
       <div className="insights">
-        <button onClick={() => update({ page: 'insurance' })}>
+        <button onClick={() => update({ page: 'material' })}>
           <span className="eyebrow">01 · Daños materiales</span>
           <h2>Los golpes de chapa tienen su propio panel.</h2>
-          <p>Frecuencia relativa en municipios y coberturas del seguro de 2024.</p>
+          <p>Irlanda y Alemania: series 2010–2024, categorías de daños y costes.</p>
           <ArrowRight size={19} />
         </button>
-        <button onClick={() => update({ page: 'trends' })}>
-          <span className="eyebrow">02 · Perspectiva temporal</span>
-          <h2>Quince años para entender la mortalidad.</h2>
-          <p>Serie 2010–2024 en los 27 países de la UE actual.</p>
+        <button onClick={() => update({ page: 'persons' })}>
+          <span className="eyebrow">02 · Personas y categorías</span>
+          <h2>Sexo, edad y usuarios: recuentos con contexto.</h2>
+          <p>España y UE27, con mortalidad poblacional y ajuste por edad.</p>
           <ArrowRight size={19} />
         </button>
-        <button onClick={() => update({ page: 'laboratory' })}>
-          <span className="eyebrow">03 · Método transparente</span>
-          <h2>Un ranking depende de cómo se construye.</h2>
-          <p>Compara pesos, normalizaciones y estabilidad de posiciones.</p>
+        <button onClick={() => update({ page: 'circumstances' })}>
+          <span className="eyebrow">03 · Tipos de accidente</span>
+          <h2>Volumen y gravedad responden a preguntas distintas.</h2>
+          <p>21 categorías de accidente y antigüedad de vehículos implicados.</p>
           <ArrowRight size={19} />
         </button>
       </div>

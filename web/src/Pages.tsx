@@ -9,3 +9,7 @@ export { Laboratory } from './pages/Laboratory'
 export { Models } from './pages/Models'
 export { Sources } from './pages/Sources'
 export type { PageProps } from './pages/shared'
+
+export { Material } from './pages/Material'
+export { Persons } from './pages/Persons'
+export { Circumstances } from './pages/Circumstances'

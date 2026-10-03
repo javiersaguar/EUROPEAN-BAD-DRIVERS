@@ -20,6 +20,18 @@ export function Insurance({ data, f, update }: PageProps) {
     meta = metadata(data, f, scope)
   return (
     <>
+      <div className="scope-banner">
+        <div>
+          <strong>Nuevas series completas de daños materiales</strong>
+          <p>
+            Explora quince años de reclamaciones irlandesas y accidentes alemanes sin víctimas, con
+            categorías, frecuencia asegurada y costes ajustados por inflación.
+          </p>
+          <button className="button" onClick={() => update({ page: 'material' })}>
+            Abrir daños materiales de Europa <ArrowUpRight size={14} />
+          </button>
+        </div>
+      </div>
       <div className="filter-row">
         <label>
           Cobertura

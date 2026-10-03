@@ -1222,3 +1222,57 @@ details > img.shap {
     transform: none;
   }
 }
+
+.evidence-reading {
+  margin: 20px 0 16px;
+  padding: 15px 17px;
+  border-left: 3px solid var(--accent);
+  background: #edf1e7;
+  border-radius: 0 7px 7px 0;
+}
+.evidence-reading p {
+  margin-top: 7px;
+  font-size: 13px;
+}
+.evidence-reading .note {
+  display: block;
+  margin-top: 7px;
+}
+.evidence-table {
+  margin-top: 14px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+.evidence-table summary {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+.evidence-table .table-scroll {
+  margin-top: 12px;
+}
+.section-heading {
+  margin: 38px 0 20px;
+  max-width: 880px;
+}
+.section-heading h2 {
+  margin: 8px 0;
+  font-size: 24px;
+}
+.section-heading p {
+  color: var(--muted);
+  font-size: 14px;
+}
+.equal-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 20px;
+  align-items: start;
+}
+.scope-banner .button {
+  margin-top: 12px;
+}
+@media (max-width: 1050px) {
+  .equal-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

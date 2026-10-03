@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
+import { readFileSync } from 'node:fs'
 const pages = {
   overview: 'Panorama',
   territories: 'Territorios',
@@ -11,6 +12,9 @@ const pages = {
   laboratory: 'Laboratorio',
   models: 'Modelos',
   sources: 'Fuentes',
+  material: 'Daños materiales · Europa',
+  persons: 'Personas y sexo',
+  circumstances: 'Tipos de accidente',
 }
 for (const [key, name] of Object.entries(pages))
   test(`${name}: data, reflow and WCAG AA`, async ({ page }) => {
@@ -93,4 +97,72 @@ test('mobile navigation has focus and closes with escape', async ({ page, isMobi
   await expect(page.getByRole('button', { name: 'Cerrar menú' })).toBeFocused()
   await page.getByRole('button', { name: 'Cerrar menú' }).press('Escape')
   await expect(page.getByRole('button', { name: 'Abrir navegación' })).toBeFocused()
+})
+
+test('settled claims restore correctly and export their own basis without exposure', async ({
+  page,
+}) => {
+  await page.goto('./?page=material')
+  await page.getByLabel('Base de reclamaciones').selectOption('settled')
+  await page.getByLabel('Tipo de reclamación').selectOption('Daños materiales a terceros')
+  await page.getByLabel('Año histórico').selectOption('2019')
+  await page.reload()
+  await expect(page.getByLabel('Tipo de reclamación')).toHaveValue('Daños materiales a terceros')
+  await expect(
+    page.getByRole('heading', { name: 'Frecuencia con exposición compatible' }),
+  ).toHaveCount(0)
+  await page.locator('.export').first().locator('summary').click()
+  const pending = page.waitForEvent('download')
+  await page.getByRole('button', { name: /^CSV ·/ }).click()
+  const result = await pending
+  const text = readFileSync((await result.path())!, 'utf8')
+  expect(text).toContain('settlement_year')
+  expect(text).toContain('Daños materiales a terceros')
+  expect(text).not.toContain('earned_policies_all')
+  expect(text).toContain('centralbank.ie')
+})
+
+test('absent bicycle cells stay absent in charts and their CSV export', async ({ page }) => {
+  await page.goto('./?page=persons&year=2024&user=Bicicleta&zone=Urbana')
+  await expect(page.locator('.stats').first()).toContainText('Sin dato')
+  await expect(
+    page.getByText('1 celda sin dato en esta selección.', { exact: false }),
+  ).toBeVisible()
+  await page.getByLabel('Sexo registrado', { exact: true }).selectOption('F')
+  await page.reload()
+  await expect(page.getByLabel('Sexo registrado', { exact: true })).toHaveValue('F')
+  await page.locator('.export').first().locator('summary').click()
+  const pending = page.waitForEvent('download')
+  await page.getByRole('button', { name: /^CSV ·/ }).click()
+  const text = readFileSync((await (await pending).path())!, 'utf8')
+  expect(text).toContain('Mujeres')
+  expect(text).toContain('"F","","Mujeres"')
+  expect(text).toContain('dgt.es')
+})
+
+test('unknown sex has counts without an invented population rate', async ({ page }) => {
+  await page.goto('./?page=persons&sex=UNK&euRole=DRIV&historyYear=2023')
+  await expect(page.getByLabel('Año europeo por sexo')).toHaveValue('2023')
+  await expect(page.locator('.stat').filter({ hasText: 'Tasa poblacional europea' })).toContainText(
+    'Sin dato',
+  )
+  await expect(
+    page.locator('.stat').filter({ hasText: 'Celdas con tasa disponible' }),
+  ).toContainText('0 / 27')
+  await expect(
+    page.getByRole('heading', { name: 'Recuentos europeos, incluido sexo desconocido' }),
+  ).toBeVisible()
+})
+
+test('conditional severity and vehicle-age filters have usable table alternatives', async ({
+  page,
+}) => {
+  await page.goto('./?page=circumstances&zone=Interurbana&vehicle=Turismo&year=2023')
+  await expect(page.getByLabel('Vehículos en el análisis de antigüedad')).toHaveValue('Turismo')
+  await page.locator('.evidence-table').nth(1).locator('summary').click()
+  await expect(page.getByRole('columnheader', { name: 'Wilson inferior' })).toBeVisible()
+  await expect(page.getByRole('columnheader', { name: 'Denominador', exact: true })).toBeVisible()
+  await page.getByLabel('Zona del accidente').selectOption('Urbana')
+  await page.reload()
+  await expect(page.getByLabel('Zona del accidente')).toHaveValue('Urbana')
 })

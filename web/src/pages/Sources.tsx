@@ -6,8 +6,8 @@ import { type PageProps } from './shared'
 export function Sources({ data, f }: PageProps) {
   const groups = [
     { label: 'España', keys: ['dgt', 'ine', 'gisco'] },
-    { label: 'Europa', keys: ['eurostat', 'erso'] },
-    { label: 'Seguro y movilidad', keys: ['unespa', 'transport', 'insurance'] },
+    { label: 'Europa', keys: ['eurostat', 'erso', 'destatis'] },
+    { label: 'Seguro y movilidad', keys: ['unespa', 'transport', 'insurance', 'ncid'] },
   ]
   return (
     <>
@@ -31,11 +31,12 @@ export function Sources({ data, f }: PageProps) {
       <div className="scope-banner">
         <Info size={20} />
         <div>
-          <strong>Tres ámbitos, tres lecturas</strong>
+          <strong>Cobertura por fuente, unidades por análisis</strong>
           <p>
             DGT: siniestros con víctimas en España. Eurostat: mortalidad vial europea. UNESPA:
-            siniestros por coberturas del seguro. La procedencia y las unidades aparecen antes de
-            cada gráfico.
+            siniestros por coberturas del seguro. NCID: reclamaciones en Irlanda. Destatis:
+            accidentes policiales en Alemania. La procedencia y las unidades aparecen antes de cada
+            gráfico.
           </p>
         </div>
       </div>
@@ -94,7 +95,14 @@ export function Sources({ data, f }: PageProps) {
           <summary>Auditorías de cobertura y reconciliación</summary>
           <pre>
             {JSON.stringify(
-              { spain: data.data_quality, insurance: data.insurance_quality },
+              {
+                spain: data.data_quality,
+                insurance: data.insurance_quality,
+                ncid: data.ncid_quality,
+                material: data.material_quality,
+                persons: data.demographics_quality,
+                analysis: data.extended_analysis,
+              },
               null,
               2,
             )}
@@ -118,6 +126,37 @@ export function Sources({ data, f }: PageProps) {
         <Note>
           Cartografía derivada de GISCO · © EuroGeographics. El repositorio documenta los contratos,
           las transformaciones y las limitaciones de cada publicación.
+        </Note>
+      </Panel>
+      <Panel
+        title="Descargar las tablas completas"
+        subtitle="Publicaciones agregadas en CSV · incluye bandas originales de edad de la DGT"
+      >
+        <p>
+          Las exportaciones de cada gráfico respetan sus filtros. Aquí puedes descargar los
+          conjuntos completos para reproducir el análisis, incluidas observaciones ausentes,
+          categorías desconocidas y banderas de fuente.
+        </p>
+        <details>
+          <summary>Tablas, descargas y hashes de integridad</summary>
+          <div className="source-cards">
+            {Object.entries(data.table_hashes).map(([name, hash]) => (
+              <article key={name}>
+                <a href={`${import.meta.env.BASE_URL}data/${name}.csv`} download>
+                  {name === 'dgt_persons_detail'
+                    ? 'DGT: bandas originales, incluidos Totales'
+                    : name}{' '}
+                  · CSV
+                </a>
+                <p className="hash">SHA-256: {hash}</p>
+              </article>
+            ))}
+          </div>
+        </details>
+        <Note>
+          Las tablas pueden contener Totales anidados: consulta el diccionario y no sumes los
+          Totales con sus componentes. Los datos no contienen identificadores de accidentes o
+          personas.
         </Note>
       </Panel>
     </>

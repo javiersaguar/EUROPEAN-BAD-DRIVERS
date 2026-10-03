@@ -1,6 +1,9 @@
 import { useEffect, useState, useRef, type ComponentType } from 'react'
 import {
   Radar,
+  Users,
+  Shield,
+  Route,
   LayoutDashboard,
   Map,
   MapPin,
@@ -29,6 +32,9 @@ import {
   Laboratory,
   Models,
   Sources,
+  Material,
+  Persons,
+  Circumstances,
   type PageProps,
 } from './Pages'
 const navigation = [
@@ -61,6 +67,24 @@ const navigation = [
     name: 'Golpes de chapa',
     icon: Car,
     description: 'Daños materiales y coberturas del seguro.',
+  },
+  {
+    page: 'material',
+    name: 'Daños materiales · Europa',
+    icon: Shield,
+    description: 'Reclamaciones en Irlanda y accidentes policiales en Alemania.',
+  },
+  {
+    page: 'persons',
+    name: 'Personas y sexo',
+    icon: Users,
+    description: 'Edad, sexo registrado, tipo de usuario y gravedad.',
+  },
+  {
+    page: 'circumstances',
+    name: 'Tipos de accidente',
+    icon: Route,
+    description: 'Colisiones, gravedad y antigüedad de vehículos en España.',
   },
   {
     page: 'trends',
@@ -104,6 +128,9 @@ const views: Record<Page, ComponentType<PageProps>> = {
   laboratory: Laboratory,
   models: Models,
   sources: Sources,
+  material: Material,
+  persons: Persons,
+  circumstances: Circumstances,
 }
 export default function App() {
   const [data, setData] = useState<Dataset | null>(null),
@@ -127,7 +154,13 @@ export default function App() {
         return r.json()
       })
       .then((value: Dataset) => {
-        if (value.schema_version !== 1 || value.tables.spain_metrics.length !== 156)
+        if (
+          value.schema_version !== 1 ||
+          value.tables.spain_metrics?.length !== 156 ||
+          value.tables.europe_sex_users?.length !== 8100 ||
+          value.tables.ncid_ultimate?.length !== 150 ||
+          value.tables.dgt_demographics?.length !== 3780
+        )
           throw new Error('La publicación no cumple el contrato de datos.')
         setData(value)
       })
@@ -249,9 +282,11 @@ export default function App() {
         </button>
         <nav>
           <span className="nav-label">Explorar</span>
-          {navigation.map((n, i) => (
+          {navigation.map((n) => (
             <div key={n.page}>
-              {i === 7 && <span className="nav-label method-label">Método y evidencia</span>}
+              {n.page === 'laboratory' && (
+                <span className="nav-label method-label">Método y evidencia</span>
+              )}
               <a
                 href={`?${serializeFilters({ ...f, page: n.page })}`}
                 className={f.page === n.page ? 'active' : ''}
@@ -272,7 +307,7 @@ export default function App() {
         <div className="sidebar-footer">
           <span className="status-dot" />
           <span>
-            Publicación verificada<strong>2022–2024 · España / UE</strong>
+            Publicación verificada<strong>2010–2024 · España / Europa</strong>
           </span>
           <a
             href="https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS"
@@ -299,7 +334,7 @@ export default function App() {
             Observatorio <span>/</span> {current.name}
           </span>
           <div>
-            <span className="release">v{data?.release ?? '0.2.0'}</span>
+            <span className="release">v{data?.release ?? '0.3.0'}</span>
             <span className="status-dot" />
             <span className="topbar-status">Datos verificados</span>
           </div>
@@ -312,7 +347,7 @@ export default function App() {
               <p>{current.description}</p>
             </div>
             <div className="page-actions">
-              {!['insurance', 'trends', 'models', 'sources'].includes(f.page) && (
+              {!['insurance', 'material', 'trends', 'models', 'sources'].includes(f.page) && (
                 <label>
                   Año
                   <select
@@ -355,7 +390,7 @@ export default function App() {
           <footer className="page-footer">
             <span>Observatorio europeo de siniestralidad vial</span>
             <span>
-              Javier Saguar · v{data?.release ?? '0.2.0'} ·{' '}
+              Javier Saguar · v{data?.release ?? '0.3.0'} ·{' '}
               <a
                 href={`?${serializeFilters({ ...f, page: 'sources' })}`}
                 onClick={(e) => {
