@@ -4,7 +4,7 @@
 
 EBDI turns that question into a reproducible road-safety research project. It combines real DGT crash records, INE population, DGT vehicle/permit stocks and Eurostat mortality data, then tests how territorial rankings change with outcomes, denominators and explicit methodological choices. The Spanish dashboard is an interactive companion to the English research documentation.
 
-The provocative name is a research hook. An experimental composite describes **observed territorial burden**, not the driving ability of residents. Ordinary property-damage insurance claims are outside the injury-crash dataset; the feasibility audit documents why they cannot be mixed into this release.
+The provocative name is a research hook. An experimental composite describes **observed territorial burden**, not the driving ability of residents. A separate **Golpes de chapa** explorer adds real UNESPA material-damage insurance data for 2024, with its own coverage and selection limits.
 
 [![Research checks](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/ci.yml/badge.svg)](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/ci.yml)
 
@@ -35,9 +35,11 @@ uv sync --locked
 uv run ebdi dashboard
 ```
 
-Published aggregate CSVs make the dashboard usable immediately. The Spain map becomes available after downloading and processing the source geography. The seven views cover overview, selectable territorial measures/denominators, configurable index weights, temporal comparisons, EU mortality, conditional-severity models, and visible methodology/source coverage. CSV downloads include counts and denominators.
+Published aggregate CSVs make the dashboard usable immediately. The Spain map becomes available after downloading and processing the source geography. The eight views cover overview, **material-damage insurance**, selectable territorial measures/denominators, configurable index weights, temporal comparisons, EU mortality, conditional-severity models, and visible methodology/source coverage. CSV downloads retain the units and coverage of each source. The insurance explorer contains 40 published cities per coverage, national shares/costs and explicitly labelled all-coverage provincial volumes. See [insurance definitions and limits](docs/insurance.md). The developer toolbar is hidden.
 
 <img src="outputs/figures/dashboard_overview.png" alt="Spanish dashboard with headline totals and methodology explanation" width="420">
+
+<img src="outputs/figures/dashboard_insurance.png" alt="Material-damage insurance section with audited UNESPA 2024 coverage data and no developer toolbar" width="420">
 
 ## Reproduce the research in stages
 
@@ -46,6 +48,7 @@ Python **3.12** is tested; the lock supports 3.12–3.13. No API keys are needed
 ```sh
 uv run ebdi download                 # cached, hash-verified official files
 uv run ebdi process                  # validated facts, Parquet, DuckDB, geometry
+uv run ebdi insurance                # UNESPA coverage and selected municipal PDF tables
 uv run python scripts/build_reference.py
 uv run ebdi analysis                 # EDA, rates, index, sensitivity, original figures
 uv run ebdi model                    # temporal model selection and final evaluation
@@ -54,7 +57,7 @@ uv run python scripts/build_notebooks.py
 uv run pytest -q
 ```
 
-`uv run ebdi all` runs the four core data/model commands. `make install` and `make all` also support the full workflow, including SHAP, executed notebooks and checks. Installation and fresh source downloads need network access; cached analysis runs locally. See [reproduction](docs/reproduction.md) for selective targets, optional Docker, cache revisions and maintenance. Source endpoints can change: audited hash mismatches require review and are never silently accepted.
+`uv run ebdi all` runs the five core data/model commands. `make install` and `make all` also support the full workflow, including SHAP, executed notebooks and checks. Installation and fresh source downloads need network access; cached analysis runs locally. See [reproduction](docs/reproduction.md) for selective targets, optional Docker, cache revisions and maintenance. Source endpoints can change: audited hash mismatches require review and are never silently accepted.
 
 ## Sources and coverage
 
@@ -65,7 +68,8 @@ uv run pytest -q
 | DGT fleet and resident permit census | Alternative denominators | Audited 2022 and 2024 stocks; 2023 stays missing |
 | Eurostat `tran_sf_roadus`, `demo_pjan`; ERSO cross-check | EU-27 deaths per million residents | Shared 30-day outcome, 2022–2024; flags retained |
 | GISCO NUTS 2024 | Local provincial choropleth | Island polygons explicitly aggregated; cartographic attribution required |
-| Insurance Europe / UNESPA / Transport Ministry | Feasibility audit and extension gates | Historical insurance workbook, incomplete current claims panel and unmatched road-network VKT; excluded from modern metrics |
+| UNESPA 2024 automobile report | Separate material-damage explorer | National coverage shares/costs, 40 selected cities per coverage and 50 all-coverage provincial totals; no complete municipal claims/exposure panel |
+| Insurance Europe / Transport Ministry | Feasibility audit and extension gates | Historical insurance workbook and unmatched road-network VKT; excluded from modern metrics |
 
 The [feasibility audit](docs/data_feasibility.md) preceded implementation. [Sources](docs/sources.md) records exact URLs, retrieval dates, hashes, variables, reuse terms and comparability. [Country-variable metadata](outputs/tables/country_comparability.csv) explicitly records what is included or excluded for each country/year.
 
@@ -73,7 +77,7 @@ The [feasibility audit](docs/data_feasibility.md) preceded implementation. [Sour
 
 ```mermaid
 flowchart TD
-    A[Official XLSX / CSV / JSON-stat / GeoJSON] --> B[Immutable raw revisions + SHA-256 manifest]
+    A[Official XLSX / CSV / JSON-stat / GeoJSON / PDF] --> B[Immutable raw revisions + SHA-256 manifest]
     B --> C[Schema, category, totals and geographic validation]
     C --> D[Province-year harmonization + observed exposure stocks]
     D --> E[Parquet facts + DuckDB]
@@ -82,6 +86,8 @@ flowchart TD
     E --> H[Temporal conditional-severity experiment]
     G --> I[Published CSVs, figures, notebooks and Streamlit]
     H --> I
+    B --> J[Separate UNESPA coverage and selected municipal tables]
+    J --> I
 ```
 
 Reusable logic lives in `src/ebdi`; notebooks are executed explorations rather than the pipeline implementation. Large raw files, processed facts and fitted model binaries stay local. Public results contain aggregated analysis, not participant identifiers. A full [data dictionary](docs/data_dictionary.md) lists the 73 observed fields, types, missingness and code definitions.
@@ -106,6 +112,6 @@ All candidates' metrics, confusion matrices, calibration bin sizes, holdout perm
 
 Tests cover formulas, zero/missing denominators, geographic joins, temporal mappings, category/schema drift, weights, leakage, cache integrity, aggregate conservation and dashboard behavior. GitHub Actions checks Windows/Linux and executes the four notebooks without downloading national raw files on every push.
 
-The central limits are injury-only reporting, imperfect exposure proxies, missing 2023 stock denominators, overlapping components, a short temporal window, and differing registration systems. Modern insurance claims, full-network vehicle-kilometres, demographic involvement risk and municipality rankings require additional audited sources. See [limitations](docs/limitations.md) and the honest [publication draft](docs/publication_note.md).
+The central limits are injury-only reporting, imperfect exposure proxies, missing 2023 stock denominators, overlapping components, a short temporal window, and differing registration systems. Complete municipal claims/exposure panels, full-network vehicle-kilometres and demographic involvement risk require additional audited sources. The separate [insurance explorer](docs/insurance.md) preserves the selection and definition limits of UNESPA's published 2024 tables. See [limitations](docs/limitations.md) and the honest [publication draft](docs/publication_note.md).
 
-**Author: Javier Saguar.** Delivery follows six [stages](docs/stages.md). Commits use Javier's author identity, without co-author trailers. Original code is [MIT licensed](LICENSE); underlying datasets retain their own reuse terms. Credit DGT, INE, Eurostat/CARE, European Commission/ERSO and © EuroGeographics for applicable cartography. Derived figures identify analysis choices and source coverage.
+**Author: Javier Saguar.** Delivery follows six [stages](docs/stages.md). Commits use Javier's author identity, without co-author trailers. Original code is [MIT licensed](LICENSE); underlying datasets retain their own reuse terms. Credit DGT, INE, Eurostat/CARE, European Commission/ERSO, UNESPA and © EuroGeographics for applicable cartography. Derived figures identify analysis choices and source coverage.

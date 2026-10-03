@@ -348,10 +348,31 @@ Source terms should be checked before reuse. DGT 2024's government catalog lists
 
 [Reuse terms](https://ec.europa.eu/eurostat/about-us/policies/copyright).
 
-## Audited sources excluded from ingestion
+## unespa_motor_2024
 
-[UNESPA automobile claims announcement 2024](https://www.unespa.es/notasdeprensa/siniestros-automovil-datos-2024/): HTML announcement, annual update, municipal/provincial discussion of claims. Direct automated access returned HTTP 403. No complete claims count × insured vehicle-year table was downloaded; no numerical panel or reuse licence is inferred from a press release.
+[UNESPA · Automobile insurance claims 2024, PDF tables 1, 2, 8 and 9](https://www.unespa.es/notasdeprensa/siniestros-automovil-datos-2024/) · [exact download/API](https://www.unespa.es/main-files/uploads/2026/02/NdP-Siniestros-del-seguro-de-auto-2024-FINAL.pdf)
+
+| Property | Audited value |
+|---|---|
+| format | pdf |
+| years | [2024] |
+| geographic_level | national, province and selected municipality |
+| observation_unit | coverage or selected municipality-coverage, year 2024 |
+| key_variables | ['coverage', 'claims_share_pct', 'payments_share_pct', 'mean_cost_eur', 'municipality', 'relative_difference_pct', 'all_coverage_claims'] |
+| denominator | Published national coverage shares and relative municipal differences; insured vehicle-years unavailable |
+| known_limitations | Only 20 highest and 20 lowest cities per coverage above 50,000 inhabitants. Relative differences, not absolute probabilities. Material claims need not be injury-free. Provincial totals cover all categories; counts and exposures by municipal coverage unavailable. |
+| update_frequency | annual |
+| schema_version | PDF published 2026-02-10, 11 pages, audited 2026-10-03 |
+| comparability | Separate insurance explorer; never merged with DGT or the composite index |
+| enabled | True |
+| sample_retrieved_at | 2026-10-03T16:46:40.020620+00:00 |
+| sample_sha256 | 20211e0e670fc7397e0455320d27166036c357a331b6bc8fddd8fd95d32aa429 |
+| reuse | Publisher terms apply; factual aggregates attributed to UNESPA; no raw PDF redistributed or relicensed under MIT |
+
+[Reuse terms](https://www.unespa.es/aviso-legal/).
+
+## Audited sources excluded from ingestion
 
 [Transport Ministry 2024 infrastructure report](https://publicaciones.transportes.gob.es/downloadcustom/sample/4057): PDF, provincial vehicle-kilometres by road ownership, annual, estimated values. Network coverage does not match all-road crash numerators. No full-network VKT denominator was built.
 
-Both are documented research leads, not sources merged into the analytical facts. See [feasibility](data_feasibility.md) and [limitations](limitations.md).
+The infrastructure report remains a research lead, not a source merged into the analytical facts. UNESPA 2024 is ingested separately; see [insurance](insurance.md). See [feasibility](data_feasibility.md) and [limitations](limitations.md).

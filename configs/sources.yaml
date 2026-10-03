@@ -476,3 +476,26 @@ sources:
   - geometry
   known_limitations: Map only; generalized boundary vintage; island NUTS3 areas aggregated
     to Spanish provinces; no exposure measure.
+- id: unespa_motor_2024
+  organization: UNESPA
+  dataset: insurance
+  dataset_title: Automobile insurance claims 2024, PDF tables 1, 2, 8 and 9
+  url: https://www.unespa.es/main-files/uploads/2026/02/NdP-Siniestros-del-seguro-de-auto-2024-FINAL.pdf
+  page_url: https://www.unespa.es/notasdeprensa/siniestros-automovil-datos-2024/
+  filename: unespa_motor_2024.pdf
+  transport: urllib
+  format: pdf
+  years: [2024]
+  geographic_level: national, province and selected municipality
+  observation_unit: coverage or selected municipality-coverage, year 2024
+  denominator: Published national coverage shares and relative municipal differences; insured vehicle-years unavailable
+  key_variables: [coverage, claims_share_pct, payments_share_pct, mean_cost_eur, municipality, relative_difference_pct, all_coverage_claims]
+  update_frequency: annual
+  schema_version: PDF published 2026-02-10, 11 pages, audited 2026-10-03
+  reuse: Publisher terms apply; factual aggregates attributed to UNESPA; no raw PDF redistributed or relicensed under MIT
+  license_url: https://www.unespa.es/aviso-legal/
+  comparability: Separate insurance explorer; never merged with DGT or the composite index
+  known_limitations: Only 20 highest and 20 lowest cities per coverage above 50,000 inhabitants. Relative differences, not absolute probabilities. Material claims need not be injury-free. Provincial totals cover all categories; counts and exposures by municipal coverage unavailable.
+  enabled: true
+  sample_sha256: 20211e0e670fc7397e0455320d27166036c357a331b6bc8fddd8fd95d32aa429
+  sample_retrieved_at: '2026-10-03T16:46:40.020620+00:00'

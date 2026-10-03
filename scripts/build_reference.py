@@ -44,7 +44,7 @@ def main() -> None:
         )
         sections.append(f"\n\n[Reuse terms]({source['license_url']}).\n\n")
     sections.append(
-        "## Audited sources excluded from ingestion\n\n[UNESPA automobile claims announcement 2024](https://www.unespa.es/notasdeprensa/siniestros-automovil-datos-2024/): HTML announcement, annual update, municipal/provincial discussion of claims. Direct automated access returned HTTP 403. No complete claims count × insured vehicle-year table was downloaded; no numerical panel or reuse licence is inferred from a press release.\n\n[Transport Ministry 2024 infrastructure report](https://publicaciones.transportes.gob.es/downloadcustom/sample/4057): PDF, provincial vehicle-kilometres by road ownership, annual, estimated values. Network coverage does not match all-road crash numerators. No full-network VKT denominator was built.\n\nBoth are documented research leads, not sources merged into the analytical facts. See [feasibility](data_feasibility.md) and [limitations](limitations.md).\n"
+        "## Audited sources excluded from ingestion\n\n[Transport Ministry 2024 infrastructure report](https://publicaciones.transportes.gob.es/downloadcustom/sample/4057): PDF, provincial vehicle-kilometres by road ownership, annual, estimated values. Network coverage does not match all-road crash numerators. No full-network VKT denominator was built.\n\nThe infrastructure report remains a research lead, not a source merged into the analytical facts. UNESPA 2024 is ingested separately; see [insurance](insurance.md). See [feasibility](data_feasibility.md) and [limitations](limitations.md).\n"
     )
     (ROOT / "docs/sources.md").write_text("".join(sections), encoding="utf-8")
     dictionary = """# Data dictionary
@@ -63,6 +63,10 @@ def main() -> None:
 | `country_comparability.csv` | Country-year-variable | Inclusion, source, definition, status and limitations |
 | `crash_breakdowns.csv` | Year-dimension-code | Counts, shares and severe-outcome fractions; no travel exposure |
 | `sensitivity.csv` | Latest-year province | Weight-scenario ranges and conditional event-bootstrap limits |
+| `insurance_coverage.csv` | National coverage, 2024 | Shares of claims/payments (%) and mean cost (€); 11 rows |
+| `insurance_municipal.csv` | Selected municipality-coverage, 2024 | Relative differences (%), published selection, source order/page/table; 80 rows |
+| `insurance_provinces.csv` | Province, 2024 | All-coverage claims and payments (€); 50 rows |
+| `insurance_quality.json` | UNESPA release | Source hash, reconciliation gaps and unavailable quantities |
 
 `province_code` is a two-character string (01–52), not a number without leading zeros. `year` is integer. `geo` is the publisher's country code (EL for Greece). Numeric missing values remain null/NaN; exports use empty cells. Source status strings are not replaced with estimates.
 
@@ -91,6 +95,10 @@ def main() -> None:
 | `conditional_severe_fraction` | Severe group crashes / recorded group crashes |
 | `fatalities_status`, `population_status` | Unmodified Eurostat flags (e.g. p provisional, e estimated, b break, d differing definition) |
 | `fatalities_per_million_population` | European fatalities / residents ×1,000,000 |
+
+## Insurance definitions
+
+`relative_difference_pct` is the published difference relative to the national reference, not an absolute probability. `selection` identifies higher/lower published extremes, and `source_order` is their source row order. Labels are retained as printed. Municipal claim counts and insured vehicle-years are unavailable; they are never imputed. Provincial counts cover all insurance categories. See [insurance](insurance.md) for exact scope and reconciliation differences.
 
 ## Original DGT schema
 

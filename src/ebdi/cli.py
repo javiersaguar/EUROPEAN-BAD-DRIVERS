@@ -10,7 +10,16 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="European Bad Drivers Index research pipeline")
     parser.add_argument(
         "command",
-        choices=["download", "process", "analysis", "model", "explain", "all", "dashboard"],
+        choices=[
+            "download",
+            "process",
+            "insurance",
+            "analysis",
+            "model",
+            "explain",
+            "all",
+            "dashboard",
+        ],
     )
     parser.add_argument("--root", type=Path)
     parser.add_argument(
@@ -28,6 +37,10 @@ def main() -> None:
         from ebdi.cleaning.pipeline import process
 
         print(process(root))
+    if args.command in {"insurance", "all"}:
+        from ebdi.ingestion.insurance import process_insurance
+
+        print(process_insurance(root))
     if args.command in {"analysis", "all"}:
         from ebdi.visualization.reports import analysis
 

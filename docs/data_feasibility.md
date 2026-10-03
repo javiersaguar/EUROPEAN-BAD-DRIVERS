@@ -50,8 +50,12 @@ not proof that every variable or reporting process is complete.
   combining this release with current Spanish injury crashes or constructing a modern European claims ranking.
   Historical count/exposure pairs can be explored separately, with flags and source table names.
 - UNESPA's 2024 [automobile report announcement](https://www.unespa.es/notasdeprensa/siniestros-automovil-datos-2024/)
-  describes claim categories and territorial differences. Direct automated access returned HTTP 403
-  during the audit. A press release is not an exhaustive machine-readable territory/exposure panel.
+  initially returned HTTP 403 and its PDF link was missed. A follow-up audit retrieved the
+  [official PDF](https://www.unespa.es/main-files/uploads/2026/02/NdP-Siniestros-del-seguro-de-auto-2024-FINAL.pdf)
+  with standard urllib, verifying its hash and tables. It supplies 11 national coverage rows, 50
+  all-coverage provincial rows and 40 selected cities per coverage (material/bodily liability).
+  These are now available in **Golpes de chapa**. They do not supply an exhaustive municipal
+  claims/insured-exposure panel or a total of injury-free collisions. See [insurance](insurance.md).
 - Spanish Transport Ministry's [2024 infrastructure report](https://publicaciones.transportes.gob.es/downloadcustom/sample/4057)
   has provincial vehicle-km by road ownership, including estimates. It excludes full urban travel exposure.
   All-road injury crashes cannot be divided by state-network kilometres; a matched network definition is required.

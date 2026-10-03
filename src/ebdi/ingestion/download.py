@@ -5,6 +5,7 @@ import json
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
+from urllib.request import urlopen
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -63,13 +64,23 @@ def download(root: Path, refresh: bool = False) -> list[dict[str, Any]]:
             raw_path(root, sid)
             print(f"Cached: {sid}", flush=True)
             continue
-        response = session.get(source["url"], timeout=(15, 120))
-        response.raise_for_status()
-        payload = response.content
+        # UNESPA's public PDF accepts urllib's standard request but rejects the
+        # custom research client with HTTP 403. No browser/session credentials.
+        if source.get("transport") == "urllib":
+            with urlopen(source["url"], timeout=120) as response_stream:
+                payload = response_stream.read()
+                http_status = response_stream.status
+                content_type = response_stream.headers.get("Content-Type")
+        else:
+            response = session.get(source["url"], timeout=(15, 120))
+            response.raise_for_status()
+            payload = response.content
+            http_status = response.status_code
+            content_type = response.headers.get("Content-Type")
+        if source["format"] == "pdf" and not payload.startswith(b"%PDF-"):
+            raise ValueError(f"{sid}: expected PDF, received {content_type}")
         if source["format"] == "xlsx" and not payload.startswith(b"PK"):
-            raise ValueError(
-                f"{sid}: expected XLSX, received {response.headers.get('Content-Type')}"
-            )
+            raise ValueError(f"{sid}: expected XLSX, received {content_type}")
         digest = hashlib.sha256(payload).hexdigest()
         if digest != source["sample_sha256"] and not refresh:
             raise ValueError(
@@ -87,8 +98,8 @@ def download(root: Path, refresh: bool = False) -> list[dict[str, Any]]:
             "sha256": digest,
             "bytes": len(payload),
             "retrieved_at": datetime.now(UTC).isoformat(),
-            "http_status": response.status_code,
-            "content_type": response.headers.get("Content-Type"),
+            "http_status": http_status,
+            "content_type": content_type,
         }
         # Persist each successful download, so interrupted runs resume without re-fetching.
         write_json(raw / "manifest.json", list(records.values()))

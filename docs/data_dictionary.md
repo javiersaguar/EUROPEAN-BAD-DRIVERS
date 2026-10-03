@@ -14,6 +14,10 @@
 | `country_comparability.csv` | Country-year-variable | Inclusion, source, definition, status and limitations |
 | `crash_breakdowns.csv` | Year-dimension-code | Counts, shares and severe-outcome fractions; no travel exposure |
 | `sensitivity.csv` | Latest-year province | Weight-scenario ranges and conditional event-bootstrap limits |
+| `insurance_coverage.csv` | National coverage, 2024 | Shares of claims/payments (%) and mean cost (€); 11 rows |
+| `insurance_municipal.csv` | Selected municipality-coverage, 2024 | Relative differences (%), published selection, source order/page/table; 80 rows |
+| `insurance_provinces.csv` | Province, 2024 | All-coverage claims and payments (€); 50 rows |
+| `insurance_quality.json` | UNESPA release | Source hash, reconciliation gaps and unavailable quantities |
 
 `province_code` is a two-character string (01–52), not a number without leading zeros. `year` is integer. `geo` is the publisher's country code (EL for Greece). Numeric missing values remain null/NaN; exports use empty cells. Source status strings are not replaced with estimates.
 
@@ -42,6 +46,10 @@
 | `conditional_severe_fraction` | Severe group crashes / recorded group crashes |
 | `fatalities_status`, `population_status` | Unmodified Eurostat flags (e.g. p provisional, e estimated, b break, d differing definition) |
 | `fatalities_per_million_population` | European fatalities / residents ×1,000,000 |
+
+## Insurance definitions
+
+`relative_difference_pct` is the published difference relative to the national reference, not an absolute probability. `selection` identifies higher/lower published extremes, and `source_order` is their source row order. Labels are retained as printed. Municipal claim counts and insured vehicle-years are unavailable; they are never imputed. Provincial counts cover all insurance categories. See [insurance](insurance.md) for exact scope and reconciliation differences.
 
 ## Original DGT schema
 

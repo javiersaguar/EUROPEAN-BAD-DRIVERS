@@ -1,5 +1,7 @@
 # Verification of the delivered release
 
+Follow-up: the material-damage insurance explorer was reproduced from UNESPA's hashed PDF, with 11 national coverages, 80 selected municipality-coverage rows and 50 all-coverage provincial rows. The expanded suite passes 61 tests locally, including the PDF-to-published-tables roundtrip, standard public-PDF transport and insurance dashboard filters. Ruff lint/format and mypy pass on 17 source modules. Browser inspection confirms the new Golpes de chapa section and the absence of the Deploy button using Streamlit's minimal toolbar configuration. The earlier six-stage verification below remains the record of the initial release.
+
 Verified locally on Windows, Python 3.12, on 3 October 2026.
 
 | Check | Evidence |

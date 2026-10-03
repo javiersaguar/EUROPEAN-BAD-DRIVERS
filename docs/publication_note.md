@@ -24,4 +24,6 @@ Lo interesante no es proclamar quién conduce peor. Es mostrar qué mide realmen
 - `outputs/figures/injury_vs_fatality.png`: different outcomes, different territorial burdens.
 - `outputs/figures/dashboard_overview.png`: dashboard with definitions and actual totals.
 
+The dashboard also offers UNESPA 2024 material-damage insurance observations in a separate Golpes de chapa section. The 40 published cities per coverage are extremes, with relative differences rather than absolute probabilities; they are not included in the modern composite. See [insurance](insurance.md).
+
 Use the underlying counts/denominators and limitations when sharing charts. Weight scenario ranges are not confidence intervals. Do not state that insurance claims or vehicle-kilometres were combined into the modern index, or that the model identifies causal effects or individual driving risk.

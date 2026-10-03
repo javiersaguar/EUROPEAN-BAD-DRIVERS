@@ -1,4 +1,5 @@
 import hashlib
+import io
 from pathlib import Path
 
 import pytest
@@ -64,17 +65,40 @@ def test_changed_publisher_hash_requires_audit_and_http_errors_are_not_cached(
     assert not (tmp_path / "data/raw/manifest.json").exists()
 
 
-def test_html_is_not_an_excel_workbook(tmp_path, monkeypatch):
+@pytest.mark.parametrize("file_format, signature", [("xlsx", "XLSX"), ("pdf", "PDF")])
+def test_html_is_not_a_source_document(tmp_path, monkeypatch, file_format, signature):
     setup_source(tmp_path, b"html")
     path = tmp_path / "configs/sources.yaml"
     source = yaml.safe_load(path.read_text())
-    source["sources"][0]["format"] = "xlsx"
+    source["sources"][0]["format"] = file_format
     path.write_text(yaml.safe_dump(source))
     monkeypatch.setattr(requests.Session, "get", lambda *args, **kwargs: response(b"html"))
-    with pytest.raises(ValueError, match="XLSX"):
+    with pytest.raises(ValueError, match=signature):
         download(tmp_path)
 
 
 def test_manifest_not_present_is_explicit(tmp_path):
     with pytest.raises(FileNotFoundError, match="download"):
         raw_path(tmp_path, "sample")
+
+
+def test_standard_urllib_pdf_transport_records_verified_provenance(tmp_path, monkeypatch):
+    payload = b"%PDF-1.7 audited publisher bytes"
+    setup_source(tmp_path, payload)
+    path = tmp_path / "configs/sources.yaml"
+    source = yaml.safe_load(path.read_text())
+    source["sources"][0].update(format="pdf", transport="urllib", filename="sample.pdf")
+    path.write_text(yaml.safe_dump(source))
+
+    class PublicPDF(io.BytesIO):
+        status = 200
+        headers = {"Content-Type": "application/pdf"}
+
+    monkeypatch.setattr(
+        "ebdi.ingestion.download.urlopen", lambda *args, **kwargs: PublicPDF(payload)
+    )
+    records = download(tmp_path)
+    assert raw_path(tmp_path, "sample").read_bytes() == payload
+    assert records[0]["content_type"] == "application/pdf"
+    assert records[0]["http_status"] == 200
+    assert records[0]["sha256"] == hashlib.sha256(payload).hexdigest()

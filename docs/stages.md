@@ -7,6 +7,7 @@
    uncertainty and sensitivity/stability reports.
 4. **Dashboard and Europe:** interactive Spain exploration, laboratory, trends and a comparable
    European fatality-only extension. Historical insurance is retained for the feasibility audit only.
+   A follow-up adds audited UNESPA 2024 material-damage tables as a separate insurance explorer; see [insurance](insurance.md).
 5. **Conditional-severity ML:** temporal evaluation against a dummy baseline, logistic regression
    and histogram gradient boosting; calibration and association explanations. No personal-risk calculator.
 6. **Publication:** executed notebooks, original figures, reproduction commands, automated checks and docs.

@@ -12,6 +12,7 @@ The published aggregate CSVs allow the dashboard to run immediately. The local c
 ```sh
 uv run ebdi download
 uv run ebdi process
+uv run ebdi insurance
 uv run ebdi analysis
 uv run ebdi model
 uv run --extra explain ebdi explain
@@ -22,7 +23,7 @@ uv run --extra explain ruff format --check src dashboard tests scripts
 uv run --extra explain mypy
 ```
 
-`uv run ebdi all` runs download, process, analysis and model. `make all` also generates SHAP and executes the four notebooks. Individual Makefile targets support the same stages. Full reproduction downloads three national crash workbooks plus official stocks, population, European fatalities and cartography; training and bootstrap take several minutes and require more memory than the aggregate dashboard. Network access is needed only for installation/source downloads. Raw files, Parquet, DuckDB and fitted models stay local; aggregate tables and original figures are versioned.
+`uv run ebdi all` runs download, process, insurance, analysis and model. `make all` also generates SHAP and executes the four notebooks. Individual Makefile targets support the same stages. Full reproduction downloads three national crash workbooks plus official stocks, population, European fatalities, UNESPA's PDF and cartography; training and bootstrap take several minutes and require more memory than the aggregate dashboard. Network access is needed only for installation/source downloads. Raw files, Parquet, DuckDB and fitted models stay local; aggregate tables and original figures are versioned.
 
 ## Immutable cache and source updates
 
@@ -36,7 +37,7 @@ Live publisher endpoints can revise old years, JSON metadata or boundary files. 
 
 ## Tests and CI
 
-Unit tests cover rates, zero/missing denominators, schema/category/year validation, join cardinality, geography, weights, normalization and outcome leakage. Integration tests check the published national totals, EU coverage, sensitivity and crash breakdown conservation. Streamlit AppTest exercises all seven sections, missing-stock years and zero-weight validation. CI runs these checks plus notebook execution, Ruff and mypy on Windows and Linux, without downloading raw data or retraining on every push. A separate developer reproduction verifies the full pipeline with the real audited files.
+Unit tests cover rates, zero/missing denominators, schema/category/year validation, join cardinality, geography, weights, normalization and outcome leakage. Integration tests check the published national totals, EU coverage, sensitivity, crash breakdown conservation and insurance coverage/selection limits. Streamlit AppTest exercises all eight sections, insurance filters, missing-stock years and zero-weight validation. CI runs these checks plus notebook execution, Ruff and mypy on Windows and Linux, without downloading raw data or retraining on every push. The local hashed-PDF roundtrip test is skipped when the raw PDF is absent; published insurance checks still run. A separate developer reproduction verifies the full pipeline with the real audited files.
 
 ## Optional container
 

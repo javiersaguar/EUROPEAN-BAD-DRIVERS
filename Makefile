@@ -1,4 +1,4 @@
-.PHONY: install download process test lint analysis model explain notebooks dashboard all
+.PHONY: install download process insurance test lint analysis model explain notebooks dashboard all
 .NOTPARALLEL: all
 
 install:
@@ -14,6 +14,8 @@ lint:
 	uv run ruff check src dashboard tests scripts
 	uv run ruff format --check src dashboard tests scripts
 	uv run mypy
+insurance:
+	uv run ebdi insurance
 analysis:
 	uv run ebdi analysis
 model:
@@ -24,4 +26,4 @@ notebooks:
 	uv run python scripts/build_notebooks.py
 dashboard:
 	uv run ebdi dashboard
-all: download process analysis model explain notebooks test lint
+all: download process insurance analysis model explain notebooks test lint

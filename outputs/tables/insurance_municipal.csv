@@ -1,0 +1,81 @@
+year,coverage,municipality,province_source,selection,source_order,relative_difference_pct,source_page,source_table
+2024,rc_material,Melilla,Melilla,higher,1,40.99,10,8
+2024,rc_material,Algeciras,Cádiz,higher,2,36.54,10,8
+2024,rc_material,Jerez de la Frontera,Cádiz,higher,3,35.11,10,8
+2024,rc_material,Parla,Madrid,higher,4,33.34,10,8
+2024,rc_material,Collado Villalba,Madrid,higher,5,27.37,10,8
+2024,rc_material,Málaga,Málaga,higher,6,25.34,10,8
+2024,rc_material,Marbella,Málaga,higher,7,25.34,10,8
+2024,rc_material,Torremolinos,Málaga,higher,8,25.24,10,8
+2024,rc_material,Dos Hermanas,Sevilla,higher,9,22.93,10,8
+2024,rc_material,Sevilla,Sevilla,higher,10,22.25,10,8
+2024,rc_material,Arona,S. C. de Tenerife,higher,11,22.12,10,8
+2024,rc_material,Pozuelo de Alarcón,Madrid,higher,12,21.73,10,8
+2024,rc_material,Móstoles,Madrid,higher,13,21.69,10,8
+2024,rc_material,Ceuta,Ceuta,higher,14,21.66,10,8
+2024,rc_material,Benalmádena,Málaga,higher,15,21.52,10,8
+2024,rc_material,Alcalá de Guadaira,Sevilla,higher,16,21.15,10,8
+2024,rc_material,Badajoz,Badajoz,higher,17,21.03,10,8
+2024,rc_material,Aranjuez,Madrid,higher,18,20.87,10,8
+2024,rc_material,Torrejón de Ardoz,Madrid,higher,19,20.67,10,8
+2024,rc_material,Las Rozas,Madrid,higher,20,20.58,10,8
+2024,rc_corporal,Chiclana de la Fron.,Cádiz,higher,1,154.68,10,8
+2024,rc_corporal,Jerez de la Frontera,Cádiz,higher,2,135.9,10,8
+2024,rc_corporal,Melilla,Melilla,higher,3,119.08,10,8
+2024,rc_corporal,Dos Hermanas,Sevilla,higher,4,118.6,10,8
+2024,rc_corporal,La Línea de la Conc.,Cádiz,higher,5,114.98,10,8
+2024,rc_corporal,Málaga,Málaga,higher,6,107.85,10,8
+2024,rc_corporal,Algeciras,Cádiz,higher,7,106.93,10,8
+2024,rc_corporal,Telde,Las Palmas,higher,8,104.16,10,8
+2024,rc_corporal,Cartagena,Murcia,higher,9,97.69,10,8
+2024,rc_corporal,Utrera,Sevilla,higher,10,95.06,10,8
+2024,rc_corporal,Roquetas de Mar,Almería,higher,11,94.28,10,8
+2024,rc_corporal,Alcalá de Guadaira,Sevilla,higher,12,90.55,10,8
+2024,rc_corporal,Vélez-Málaga,Málaga,higher,13,90.18,10,8
+2024,rc_corporal,Las Palmas de G. C.,Las Palmas,higher,14,86.23,10,8
+2024,rc_corporal,Sanlúcar de Barrameda,Cádiz,higher,15,85.67,10,8
+2024,rc_corporal,Torremolinos,Málaga,higher,16,82.63,10,8
+2024,rc_corporal,Sevilla,Sevilla,higher,17,79.59,10,8
+2024,rc_corporal,San Fernando,Cádiz,higher,18,79.11,10,8
+2024,rc_corporal,El Puerto de Santa María,Cádiz,higher,19,78.93,10,8
+2024,rc_corporal,Molina de Segura,Murcia,higher,20,77.59,10,8
+2024,rc_material,Orihuela,Alicante,lower,1,-26.93,11,9
+2024,rc_material,El Prat de Llobregat,Barcelona,lower,2,-24.54,11,9
+2024,rc_material,Barcelona,Barcelona,lower,3,-20.27,11,9
+2024,rc_material,Zaragoza,Zaragoza,lower,4,-17.94,11,9
+2024,rc_material,Huesca,Huesca,lower,5,-17.83,11,9
+2024,rc_material,Baracaldo,Vizcaya,lower,6,-17.68,11,9
+2024,rc_material,Gerona,Gerona,lower,7,-17.33,11,9
+2024,rc_material,Vilanova i la Geltrú,Barcelona,lower,8,-16.61,11,9
+2024,rc_material,Mollet del Vallès,Barcelona,lower,9,-16.18,11,9
+2024,rc_material,Lorca,Murcia,lower,10,-15.98,11,9
+2024,rc_material,Sant Cugat del Vallès,Barcelona,lower,11,-15.8,11,9
+2024,rc_material,Sta. Coloma de G.,Barcelona,lower,12,-15.6,11,9
+2024,rc_material,Viladecans,Barcelona,lower,13,-15.43,11,9
+2024,rc_material,Cerdanyola del V.,Barcelona,lower,14,-14.98,11,9
+2024,rc_material,L’Hospitalet de Llob.,Barcelona,lower,15,-14.88,11,9
+2024,rc_material,Cornellà de Llob.,Barcelona,lower,16,-14.87,11,9
+2024,rc_material,Vitoria,Álava,lower,17,-13.52,11,9
+2024,rc_material,Irún,Guipúzcoa,lower,18,-13.44,11,9
+2024,rc_material,Bilbao,Vizcaya,lower,19,-13.41,11,9
+2024,rc_material,Salamanca,Salamanca,lower,20,-12.09,11,9
+2024,rc_corporal,Huesca,Huesca,lower,1,-37.74,11,9
+2024,rc_corporal,San Sebastián,Guipúzcoa,lower,2,-37.66,11,9
+2024,rc_corporal,Sant Cugat del V.,Barcelona,lower,3,-37.09,11,9
+2024,rc_corporal,Zamora,Zamora,lower,4,-33.73,11,9
+2024,rc_corporal,Tres Cantos,Madrid,lower,5,-33.6,11,9
+2024,rc_corporal,Barcelona,Barcelona,lower,6,-32.37,11,9
+2024,rc_corporal,Irún,Guipúzcoa,lower,7,-31.05,11,9
+2024,rc_corporal,Alcoy,Alicante,lower,8,-30.8,11,9
+2024,rc_corporal,Calvià,Baleares,lower,9,-30.26,11,9
+2024,rc_corporal,Majadahonda,Madrid,lower,10,-29.9,11,9
+2024,rc_corporal,Guecho,Vizcaya,lower,11,-29.81,11,9
+2024,rc_corporal,Talavera de la R.,Toledo,lower,12,-29.29,11,9
+2024,rc_corporal,Zaragoza,Zaragoza,lower,13,-29.08,11,9
+2024,rc_corporal,Burgos,Burgos,lower,14,-28.72,11,9
+2024,rc_corporal,Poz. de Alarcón,Madrid,lower,15,-28.6,11,9
+2024,rc_corporal,Colmenar Viejo,Madrid,lower,16,-27.68,11,9
+2024,rc_corporal,Toledo,Toledo,lower,17,-27.25,11,9
+2024,rc_corporal,Segovia,Segovia,lower,18,-26.98,11,9
+2024,rc_corporal,Las Rozas,Madrid,lower,19,-26.5,11,9
+2024,rc_corporal,Orense,Orense,lower,20,-25.76,11,9

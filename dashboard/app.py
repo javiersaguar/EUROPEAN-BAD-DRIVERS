@@ -13,6 +13,7 @@ from ebdi.utils.io import read_yaml
 from ebdi.visualization.charts import choropleth, label, ranking, style
 
 ROOT = Path(__file__).resolve().parents[1]
+st.set_option("client.toolbarMode", "minimal")
 st.set_page_config(page_title="EBDI · Observatorio vial", page_icon="🚦", layout="wide")
 st.markdown(
     """<style>
@@ -53,12 +54,26 @@ with st.sidebar:
     st.caption("Datos oficiales · decisiones transparentes")
     section = st.radio(
         "Explorar",
-        ["Panorama", "Territorios", "Laboratorio", "Tendencias", "Europa", "Modelos", "Fuentes"],
+        [
+            "Panorama",
+            "Golpes de chapa",
+            "Territorios",
+            "Laboratorio",
+            "Tendencias",
+            "Europa",
+            "Modelos",
+            "Fuentes",
+        ],
         key="section",
     )
-    year = st.selectbox("Año", sorted(panel.year.unique(), reverse=True), key="year")
+    if section == "Golpes de chapa":
+        year = 2024
+        st.caption("Seguros · datos de 2024\n\nUNESPA · publicación: febrero de 2026")
+    else:
+        year = st.selectbox("Año", sorted(panel.year.unique(), reverse=True), key="year")
     st.divider()
-    st.caption("España · 52 provincias\n\nDGT + INE · 2022–2024")
+    if section != "Golpes de chapa":
+        st.caption("España · 52 provincias\n\nDGT + INE · 2022–2024")
     st.caption("Autor: Javier Saguar")
     st.link_button(
         "Repositorio y metodología", "https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS"
@@ -69,13 +84,23 @@ st.markdown(
     '<div class="eyebrow">European Bad Drivers Index / Laboratorio de datos</div>',
     unsafe_allow_html=True,
 )
-st.title("¿Dónde cambia la siniestralidad?")
+st.title("Golpes de chapa" if section == "Golpes de chapa" else "¿Dónde cambia la siniestralidad?")
+scope_note = (
+    "Daños materiales registrados por el seguro · UNESPA, 2024. Los partes de responsabilidad civil material permiten explorar los golpes de chapa; un mismo accidente puede generar también daños corporales."
+    if section == "Golpes de chapa"
+    else "Medimos siniestralidad registrada y carga territorial. La población, el parque y los permisos son aproximaciones a la exposición; este índice no mide la capacidad de conducir de las personas."
+)
 st.markdown(
-    '<div class="note">Medimos siniestralidad registrada y carga territorial. La población, el parque y los permisos son aproximaciones a la exposición; este índice no mide la capacidad de conducir de las personas.</div>',
+    f'<div class="note">{scope_note}</div>',
     unsafe_allow_html=True,
 )
 
 if section == "Panorama":
+    st.button(
+        "Ver datos de golpes de chapa →",
+        on_click=lambda: st.session_state.update(section="Golpes de chapa"),
+        key="open_insurance",
+    )
     st.subheader(f"España, {year} · tres cifras, tres preguntas")
     cols = st.columns(3)
     cols[0].metric("Siniestros con víctimas", f"{int(current.injury_crashes.sum()):,}")
@@ -134,6 +159,138 @@ if section == "Panorama":
             st.caption(
                 "Recuentos y gravedad entre siniestros registrados. Sin viajes o kilómetros por grupo, no miden la probabilidad de sufrir un accidente."
             )
+
+elif section == "Golpes de chapa":
+    insurance_path = ROOT / "outputs/tables/insurance_coverage.csv"
+    if not insurance_path.exists():
+        st.info(
+            "Faltan las tablas de seguros. Ejecuta `uv run ebdi download` y `uv run ebdi insurance`."
+        )
+        st.stop()
+    coverages = load_table("insurance_coverage")
+    municipal = load_table("insurance_municipal")
+    quality = json.loads(
+        (ROOT / "outputs/tables/insurance_quality.json").read_text(encoding="utf-8")
+    )
+    material = coverages.loc[coverages.coverage.eq("Resp. civil material")].iloc[0]
+    cols = st.columns(3)
+    cols[0].metric(
+        "Partes de RC material / total", f"{material.claims_share_pct:.2f}".replace(".", ",") + " %"
+    )
+    cols[1].metric(
+        "Coste medio de RC material", f"{int(material.mean_cost_eur):,}".replace(",", ".") + " €"
+    )
+    cols[2].metric("Ciudades publicadas · RC material", "40")
+    st.caption(
+        "España, 2024 · cuota de partes por cobertura y coste por parte; no son probabilidades de accidente."
+    )
+    st.subheader("Daños materiales por ciudad")
+    st.write(
+        "Ciudades de más de 50.000 habitantes: el informe publica las 20 diferencias más altas y las 20 más bajas frente a la referencia nacional."
+    )
+    c1, c2 = st.columns(2)
+    coverage_code = c1.selectbox(
+        "Cobertura aseguradora",
+        ["rc_material", "rc_corporal"],
+        format_func={
+            "rc_material": "Daños materiales · golpes de chapa",
+            "rc_corporal": "Daños corporales · comparación",
+        }.get,
+        key="insurance_coverage",
+    )
+    selection = c2.selectbox(
+        "Ciudades publicadas",
+        ["higher", "lower", "both"],
+        format_func={
+            "higher": "20 por encima de la referencia",
+            "lower": "20 por debajo de la referencia",
+            "both": "Las 40 ciudades publicadas",
+        }.get,
+        key="insurance_selection",
+    )
+    selected = municipal.loc[municipal.coverage.eq(coverage_code)].copy()
+    if selection != "both":
+        selected = selected.loc[selected.selection.eq(selection)]
+    selected = selected.sort_values("relative_difference_pct")
+    selected["Diferencia"] = selected.selection.map({"higher": "Por encima", "lower": "Por debajo"})
+    fig = px.bar(
+        selected,
+        x="relative_difference_pct",
+        y="municipality",
+        orientation="h",
+        color="Diferencia",
+        color_discrete_map={"Por encima": "#cd693e", "Por debajo": "#163b4c"},
+        hover_data=["province_source", "year"],
+        text="relative_difference_pct",
+        labels={
+            "relative_difference_pct": "Diferencia relativa frente a la referencia nacional (%)",
+            "municipality": "Ciudad",
+            "province_source": "Provincia",
+        },
+    )
+    fig.update_traces(texttemplate="%{x:+.2f}%", textposition="outside", cliponaxis=False)
+    fig.update_layout(height=max(580, len(selected) * 25 + 100), showlegend=False, yaxis_title=None)
+    fig.add_vline(x=0, line_color="#55717d", line_width=1)
+    fig.update_xaxes(
+        range=[
+            min(0, selected.relative_difference_pct.min()) * 1.25,
+            max(0, selected.relative_difference_pct.max()) * 1.25,
+        ]
+    )
+    st.plotly_chart(style(fig), width="stretch", key="insurance_cities")
+    st.caption(
+        "Ejemplo: +40,99 % expresa una diferencia relativa frente a la referencia, no un 40,99 % de probabilidad de accidente. No se publican recuentos ni vehículos-año asegurados por ciudad; las ciudades ausentes no se imputan."
+    )
+    st.dataframe(
+        selected[
+            ["municipality", "province_source", "relative_difference_pct", "source_page"]
+        ].rename(
+            columns={
+                "municipality": "Ciudad",
+                "province_source": "Provincia",
+                "relative_difference_pct": "Diferencia relativa (%)",
+                "source_page": "Página del informe",
+            }
+        ),
+        hide_index=True,
+        width="stretch",
+    )
+    export(selected.drop(columns="Diferencia"), f"seguros_2024_{coverage_code}_{selection}")
+    with st.expander("Daños propios, lunas y otras coberturas · España"):
+        st.dataframe(
+            coverages[
+                ["coverage", "claims_share_pct", "payments_share_pct", "mean_cost_eur"]
+            ].rename(
+                columns={
+                    "coverage": "Cobertura",
+                    "claims_share_pct": "Partes / total (%)",
+                    "payments_share_pct": "Pagos / total (%)",
+                    "mean_cost_eur": "Coste medio (€)",
+                }
+            ),
+            hide_index=True,
+            width="stretch",
+        )
+        st.caption(
+            "Porcentajes redondeados por el editor. Daños propios incluye más casos que colisiones; lunas también puede incluir roturas sin accidente. No se convierten las cuotas en recuentos exactos."
+        )
+        export(coverages, "seguros_2024_coberturas")
+    with st.expander("Volumen provincial · todas las coberturas del seguro"):
+        provinces = load_table("insurance_provinces")
+        st.write(
+            "Estos recuentos incluyen asistencia en carretera, robos y otras coberturas: no son un total de golpes de chapa ni de accidentes únicos."
+        )
+        st.dataframe(provinces, hide_index=True, width="stretch")
+        st.caption(
+            "50 provincias publicadas; Ceuta y Melilla no aparecen en esta tabla. La suma provincial es inferior al total nacional en 17.707 partes y 24.573.178 €. Conservamos la diferencia del informe sin repartirla entre territorios."
+        )
+        export(provinces, "seguros_2024_todas_coberturas_provincias")
+    st.markdown(
+        f"Fuente: [UNESPA · informe oficial de siniestros de automóvil 2024]({quality['source_url']}), tablas 1, 2, 8 y 9. Elaboración del editor con MicroESA y FIVA."
+    )
+    st.caption(
+        "La fuente no identifica un total exhaustivo de accidentes sin lesiones. Estos datos aseguradores se muestran con sus propias definiciones y no entran en el índice de DGT."
+    )
 
 elif section == "Territorios":
     st.subheader("Un territorio, varios denominadores")
@@ -328,7 +485,7 @@ elif section == "Europa":
     export(euro, f"europa_{year}")
     with st.expander("Por qué no añadimos un ranking europeo de golpes de chapa"):
         st.write(
-            "El archivo histórico de Insurance Europe termina en 2016 y sus tablas de frecuencia admiten varios denominadores. Las unidades y notas de cada país necesitan validación. UNESPA no aporta aquí un panel provincial completo de siniestros y vehículos-año asegurados. Estas observaciones no se mezclan con los siniestros de DGT de 2022–2024."
+            "El archivo histórico de Insurance Europe termina en 2016 y sus tablas de frecuencia admiten varios denominadores. La sección Golpes de chapa sí ofrece datos UNESPA de 2024 para ciudades españolas seleccionadas, pero faltan recuentos y vehículos-año por cobertura para un panel comparable entre países."
         )
 
 elif section == "Modelos":
@@ -409,6 +566,7 @@ elif section == "Fuentes":
         ("Auditoría de viabilidad", "data_feasibility.md"),
         ("Calidad", "data_quality.md"),
         ("Limitaciones", "limitations.md"),
+        ("Daños materiales y seguros", "insurance.md"),
         ("Diccionario de datos", "data_dictionary.md"),
     ]:
         path = ROOT / "docs" / filename
@@ -421,5 +579,5 @@ elif section == "Fuentes":
 
 st.divider()
 st.caption(
-    "EBDI · Datos: DGT, INE, Eurostat / CARE · Valores experimentales, no juicios sobre personas ni territorios."
+    "EBDI · Datos: DGT, INE, Eurostat / CARE, UNESPA · Valores experimentales, no juicios sobre personas ni territorios."
 )

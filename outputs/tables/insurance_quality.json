@@ -1,0 +1,30 @@
+{
+  "year": 2024,
+  "published_date": "2026-02-10",
+  "source_url": "https://www.unespa.es/main-files/uploads/2026/02/NdP-Siniestros-del-seguro-de-auto-2024-FINAL.pdf",
+  "sha256": "20211e0e670fc7397e0455320d27166036c357a331b6bc8fddd8fd95d32aa429",
+  "national_all_coverage_claims": 11071215,
+  "national_all_coverage_payments_eur": 10189325399,
+  "national_mean_cost_eur": 920,
+  "coverage_rows": 11,
+  "municipal_rows": 80,
+  "material_damage_municipal_rows": 40,
+  "province_rows": 50,
+  "provincial_claims_sum": 11053508,
+  "provincial_claims_difference_from_national": -17707,
+  "provincial_payments_difference_from_national": -24573178,
+  "municipal_claim_counts_available": false,
+  "insured_vehicle_years_available": false,
+  "absolute_municipal_probability_available": false,
+  "complete_municipal_panel": false,
+  "injury_free_event_count_available": false,
+  "limitations": [
+    "Municipalities above 50,000 inhabitants: only 20 highest and 20 lowest for each coverage, not a full ranking.",
+    "Published relative differences, not absolute accident probabilities; labels retained as printed.",
+    "Material and bodily claims may overlap for the same accident; no injury-free event total is supplied.",
+    "National coverage percentages are rounded; no exact coverage counts are inferred.",
+    "Provincial totals cover all insurance categories, including assistance; Ceuta/Melilla are absent from table 2.",
+    "Provincial/national reconciliation differences are retained, not redistributed or corrected.",
+    "Insurance observations are not merged with DGT counts or the composite index."
+  ]
+}
