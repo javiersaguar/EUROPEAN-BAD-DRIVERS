@@ -1,0 +1,60 @@
+nuts_id,nuts_name,province_code
+ES111,A Coruña,15
+ES112,Lugo,27
+ES113,Ourense,32
+ES114,Pontevedra,36
+ES120,Asturias,33
+ES130,Cantabria,39
+ES211,Araba/Álava,01
+ES212,Gipuzkoa,20
+ES213,Bizkaia,48
+ES220,Navarra,31
+ES230,La Rioja,26
+ES241,Huesca,22
+ES242,Teruel,44
+ES243,Zaragoza,50
+ES300,Madrid,28
+ES411,Ávila,05
+ES412,Burgos,09
+ES413,León,24
+ES414,Palencia,34
+ES415,Salamanca,37
+ES416,Segovia,40
+ES417,Soria,42
+ES418,Valladolid,47
+ES419,Zamora,49
+ES421,Albacete,02
+ES422,Ciudad Real,13
+ES423,Cuenca,16
+ES424,Guadalajara,19
+ES425,Toledo,45
+ES431,Badajoz,06
+ES432,Cáceres,10
+ES511,Barcelona,08
+ES512,Girona,17
+ES513,Lleida,25
+ES514,Tarragona,43
+ES521,Alicante/Alacant,03
+ES522,Castellón/Castelló,12
+ES523,Valencia/València,46
+ES531,Eivissa y Formentera,07
+ES532,Mallorca,07
+ES533,Menorca,07
+ES611,Almería,04
+ES612,Cádiz,11
+ES613,Córdoba,14
+ES614,Granada,18
+ES615,Huelva,21
+ES616,Jaén,23
+ES617,Málaga,29
+ES618,Sevilla,41
+ES620,Murcia,30
+ES630,Ceuta,51
+ES640,Melilla,52
+ES703,El Hierro,38
+ES704,Fuerteventura,35
+ES705,Gran Canaria,35
+ES706,La Gomera,38
+ES707,La Palma,38
+ES708,Lanzarote,35
+ES709,Tenerife,38

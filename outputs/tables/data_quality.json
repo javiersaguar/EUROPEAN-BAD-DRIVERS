@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "accidents": [
+    {
+      "year": 2022,
+      "rows": 97916,
+      "fields": 73,
+      "checks": "passed",
+      "fatalities_30d": 1746,
+      "hospitalized_30d": 8502,
+      "unknown_municipality": 11513,
+      "unknown_collision": 0,
+      "missing_by_column": {
+        "ISLA": 92709,
+        "KM": 46972,
+        "NUDO_INFO": 60207,
+        "CARRETERA_CRUCE": 95248,
+        "CONDICION_NIEBLA": 90136,
+        "CONDICION_VIENTO": 97653
+      },
+      "driver_age_check": "not applicable: driver ages are absent; no values manufactured",
+      "date_check": "only year/month/weekday/hour available; exact calendar date absent"
+    },
+    {
+      "year": 2023,
+      "rows": 101306,
+      "fields": 73,
+      "checks": "passed",
+      "fatalities_30d": 1806,
+      "hospitalized_30d": 9265,
+      "unknown_municipality": 12201,
+      "unknown_collision": 0,
+      "missing_by_column": {
+        "ISLA": 96438,
+        "KM": 62914,
+        "NUDO": 33,
+        "NUDO_INFO": 48685,
+        "CARRETERA_CRUCE": 98546,
+        "CONDICION_NIEBLA": 93663,
+        "CONDICION_VIENTO": 100968
+      },
+      "driver_age_check": "not applicable: driver ages are absent; no values manufactured",
+      "date_check": "only year/month/weekday/hour available; exact calendar date absent"
+    },
+    {
+      "year": 2024,
+      "rows": 101996,
+      "fields": 73,
+      "checks": "passed",
+      "fatalities_30d": 1785,
+      "hospitalized_30d": 9561,
+      "unknown_municipality": 12232,
+      "unknown_collision": 35,
+      "missing_by_column": {
+        "ISLA": 97552,
+        "KM": 63182,
+        "TIPO_ACCIDENTE": 35,
+        "NUDO": 33,
+        "NUDO_INFO": 49034,
+        "CARRETERA_CRUCE": 99318,
+        "CONDICION_NIEBLA": 94514,
+        "CONDICION_VIENTO": 101685
+      },
+      "driver_age_check": "not applicable: driver ages are absent; no values manufactured",
+      "date_check": "only year/month/weekday/hour available; exact calendar date absent"
+    }
+  ],
+  "join_rows": 156,
+  "province_count": 52,
+  "missing_exposures": {
+    "population": 0,
+    "registered_vehicles": 52,
+    "licensed_drivers": 52
+  },
+  "europe_rows": 81,
+  "denominators_are_travel_proxies": true
+}

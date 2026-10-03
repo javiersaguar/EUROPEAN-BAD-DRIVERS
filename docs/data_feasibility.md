@@ -31,6 +31,8 @@ not proof that every variable or reporting process is complete.
 
 ## Available with limitations
 
+- Collision type is missing in 35 records in 2024. These remain unknown: collision-specific
+  numerators count recorded matching types only; missing types are reported separately.
 - Municipality codes exist, but 11,513 / 12,201 / 12,232 records respectively have code zero.
   Province is the defensible initial analysis level. An unknown municipality must not become a real municipality.
 - Month, weekday and hour exist; a complete calendar day/date does not. Do not fabricate exact dates.
@@ -100,4 +102,3 @@ identifies CC BY 4.0 for the 2024 DGT crash dataset; credit DGT and identify tra
 Other source releases have their own terms. INE requires attribution and responsibility for derived calculations;
 Insurance Europe retains copyright. GISCO has separate download provisions and map attribution.
 Raw source workbooks, the historical insurance tables and geometry are downloaded locally and are not committed.
-
