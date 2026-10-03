@@ -9,6 +9,10 @@ EBDI turns that question into a reproducible road-safety research project. It co
 The provocative name is a research hook. An experimental composite describes **observed territorial burden**, not the driving ability of residents. A separate **Golpes de chapa** explorer adds real UNESPA material-damage insurance data for 2024, with its own coverage and selection limits.
 
 [![Research checks](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/ci.yml/badge.svg)](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/ci.yml)
+[![Observatory checks](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/web.yml/badge.svg)](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/web.yml)
+[![Source and availability monitoring](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/monitor.yml/badge.svg)](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/monitor.yml)
+
+![Published React observatory, version 0.2.0](outputs/figures/observatory_desktop.png)
 
 ## What the actual analysis found
 

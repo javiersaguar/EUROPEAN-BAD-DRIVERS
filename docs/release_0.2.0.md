@@ -36,4 +36,4 @@ The public product is **Observatorio europeo de siniestralidad vial**. The repos
 
 ## Checks
 
-Local Python checks: 68 tests; Ruff; mypy on 24 modules; four executed notebooks. Frontend: six analytical/state/export unit tests, TypeScript production build and ESLint. Browser, container and published-site evidence is recorded after CI and publication in [verification](verification_0.2.0.md).
+Local Python checks: 68 tests; Ruff; mypy on 24 modules; four executed notebooks. Frontend: six analytical/state/export unit tests, TypeScript production build and ESLint. CI passed on Linux and Windows; 31 browser tests passed, including actual exports and whole-page axe checks, and the read-only non-root container passed its smoke checks. The first source/availability monitoring run succeeded for all 20 active sources. Public HTTPS availability and executed workflow links are recorded in [verification](verification_0.2.0.md).
