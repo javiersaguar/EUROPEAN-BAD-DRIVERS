@@ -235,3 +235,25 @@ These labels are transcribed from the DGT code dictionary, credited to DGT. Unkn
 ## Model artifacts
 
 Model metrics include n, positive n, prevalence, ROC-AUC, average precision (PR-AUC), log loss, Brier score, threshold, precision/recall and TN/FP/FN/TP. Calibration bins contain mean prediction, observed severe fraction and sample count. Permutation importance is increase in holdout log loss, with repetition SD. SHAP CSVs contain mean absolute raw-log-odds attribution grouped by original feature; the JSON records seed, sample and additivity error. See the model card for units, selection and valid use.
+
+
+## Extended material-damage and demographic contracts (0.3.0)
+
+| Artifact | Grain / nested parents | Meaning and units |
+|---|---|---|
+| `ncid_ultimate.csv` | Accident year × claim category; Total/damage/injury parents and injury size bands overlap | Actuarial final estimates including nil claims; matched UltData portfolio policy-years, mean cost, all-policy frequency /1,000, HICP-2024 costs. `earned_policies_covered` and comprehensive frequency exist only for own accidental damage. No count intervals |
+| `ncid_settled.csv` | Final settlement year × damage type; damage Total is a parent | Observed final liquidations and costs, 2015–2024. No policy exposure or frequency attached. Market coverage % is provided only for 2024 and refers to earned-premium market share |
+| `ncid_changes.csv` | Year × category | Descriptive relative changes (%) against the fixed 2019 observation, separate frequency and nominal/constant cost |
+| `material_history.csv` | German national year, 2010–2024 | Police-recorded injury vs property-only crashes; share (%) among recorded crashes |
+| `material_states.csv` | State × road location, 2024 | 16 states + Germany, four locations; 68 dense keys, one missing Berlin rural key. Serious, intoxicant-other and remaining property classes are disjoint |
+| `dgt_demographics.csv` | Year × zone × population role × age band × sex × user category | 3,780 cells; M/F/UNK, six disjoint age bands including unknown. User Total is a parent, never additive to its categories. Roles: all victims, driver victims, involved drivers. Role-inapplicable and source-absent measures are missing |
+| `dgt_persons_detail.csv` | Source year/sheet/row × original age × recorded sex × original user type | 30,904 source aggregate rows including age/sex/user Totals; downloadable without loading redundant original totals into the browser. Source blanks and audited gaps retained |
+| `europe_sex_users.csv` | EU27 country × year × sex × person role | 8,100 dense keys, 2010–2024; T/M/F/UNK × TOTAL/DRIV/PAS/PED/UNK. Nested Totals; source flags and absent observations retained. Mortality per million population of the same sex/year, Garwood Poisson 95% limits where compatible; unknown sex has no exposure |
+| `spain_age_population.csv` | Year × sex × known age band | 30 population cells, fixed pooled Spanish M+F 2024 standard weights; population flags retained. All single ages reconcile with published population totals |
+| `spain_age_sex_rates.csv` | Year × sex × known age band | 30 observed mortality rates per million age/sex residents and Poisson limits |
+| `spain_sex_rates.csv` | Year × sex, M/F | Six national crude rates and Poisson limits, adjusted point rates per million under common five-age weights; unknown-age death counts disclosed |
+| `collision_analysis.csv` | Year × zone × collision category; Total is a parent | 198 cells, 21 disjoint source accident types + parent. Accident counts, fatal accident fraction (%), conditional Wilson 95% model limits, contributions and n<100 flag. Counts are accidents, not people |
+| `vehicle_age_analysis.csv` | Year × zone × vehicle type × vehicle age; Totals are parents | Involved motor vehicles and shares (%) including unknown age in denominators. No age-specific fleet/exposure risk estimate |
+| `demographics_quality.json`, `material_quality.json`, `ncid_quality.json`, `extended_analysis.json` | Dataset-level audit | Reconciliations, known source gaps, unavailable quantities and interpretation |
+
+See [extended analysis](extended_analysis.md) for scope, exact original discrepancies and formulas. Unknown sex/age and absent cells are distinct. Grouping across any missing component must retain an unavailable aggregate rather than sum only the available cells. Do not combine person populations, nested totals, insurance cohorts or incompatible countries' reporting scopes.

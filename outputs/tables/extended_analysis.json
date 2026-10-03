@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "claims_2024": {
+    "damage_ultimate_estimate": 193329.185365,
+    "damage_frequency_per_1000_portfolio": 85.69093092596462,
+    "damage_mean_cost_eur": 2236.243033817876
+  },
+  "germany_2024": {
+    "property_only_crashes": 2221996,
+    "share_recorded_crashes_pct": 88.4307180690708
+  },
+  "spain_2024": {
+    "male_female_crude_rate_ratio": 4.0987495159494225,
+    "male_female_standardized_rate_ratio": 4.236168953266627
+  },
+  "checks": [
+    "21 accident types partition each year/zone",
+    "urban + interurban accident counts reconcile",
+    "vehicle ages reconcile; 2024 vehicle-type Total includes 87 counts in an unlabelled workbook column",
+    "single-age populations reconcile; fixed common 2024 weights",
+    "claim costs decomposed into frequency × mean cost without mixing settlement cohorts"
+  ],
+  "vehicle_type_source_note": "2024 table 8.3 has an unlabelled numeric column: 24 interurban + 63 urban counts, all unknown age. Published Total exceeds labelled vehicle-type components by 87. Counts retained in Total; no invented type or forced redistribution.",
+  "interpretation": "Descriptive associations, no fault attribution, causal effect or personal-risk prediction. Wilson/Poisson intervals are conditional model intervals, not uncertainty about enumerated administrative totals. Ultimate estimates have no count intervals. Age adjustment controls only the five recorded age bands; no distance, driving exposure or socioeconomic controls."
+}

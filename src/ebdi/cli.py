@@ -26,6 +26,10 @@ def main() -> None:
             "site",
             "monitor",
             "claims-import",
+            "demographics",
+            "material",
+            "ncid",
+            "extended-analysis",
         ],
     )
     parser.add_argument("--root", type=Path)
@@ -78,6 +82,22 @@ def main() -> None:
         from ebdi.modeling.policy import evaluate_policy
 
         evaluate_policy(root)
+    if args.command in {"demographics", "all"}:
+        from ebdi.ingestion.demographics import process_demographics
+
+        print(process_demographics(root))
+    if args.command in {"material", "all"}:
+        from ebdi.ingestion.material import process_material
+
+        print(process_material(root))
+    if args.command in {"ncid", "all"}:
+        from ebdi.ingestion.ncid import process_ncid
+
+        print(process_ncid(root))
+    if args.command in {"extended-analysis", "all"}:
+        from ebdi.visualization.extended import extended_analysis
+
+        print(extended_analysis(root))
     if args.command in {"site", "all"}:
         from ebdi.visualization.site import export_site
 

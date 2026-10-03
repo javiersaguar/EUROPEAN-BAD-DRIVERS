@@ -1,0 +1,66 @@
+{
+  "status": "passed_with_source_note",
+  "source_notes": [
+    {
+      "year": 2024,
+      "sheet": "TABLA 4.1.1.I",
+      "measure": "fatalities",
+      "published_components_minus_total": 5,
+      "note": "Original 2024 interurban driver-victim components exceed the published Total. Both retained; exact cell differences audited in configs/dgt_known_gaps.json. Do not normalize vehicle components to the Total."
+    },
+    {
+      "year": 2024,
+      "sheet": "TABLA 4.1.1.I",
+      "measure": "hospitalized",
+      "published_components_minus_total": 5,
+      "note": "Original 2024 interurban driver-victim components exceed the published Total. Both retained; exact cell differences audited in configs/dgt_known_gaps.json. Do not normalize vehicle components to the Total."
+    },
+    {
+      "year": 2024,
+      "sheet": "TABLA 4.1.1.I",
+      "measure": "non_hospitalized",
+      "published_components_minus_total": 13,
+      "note": "Original 2024 interurban driver-victim components exceed the published Total. Both retained; exact cell differences audited in configs/dgt_known_gaps.json. Do not normalize vehicle components to the Total."
+    },
+    {
+      "year": 2024,
+      "sheet": "TABLA 4.2.I",
+      "missing_cells": 1,
+      "note": "Original blank cells retained as missing. 2024 urban all-victim bicycle cells are absent; one interurban age 70–74 total motorcyclist-involvement cell is absent. No reconstruction from other tables."
+    },
+    {
+      "year": 2024,
+      "sheet": "TABLA 4.1.U",
+      "missing_cells": 240,
+      "note": "Original blank cells retained as missing. 2024 urban all-victim bicycle cells are absent; one interurban age 70–74 total motorcyclist-involvement cell is absent. No reconstruction from other tables."
+    }
+  ],
+  "rows": 3780,
+  "detail_rows": 30904,
+  "years": [
+    2022,
+    2023,
+    2024
+  ],
+  "sex_categories": [
+    "M",
+    "F",
+    "UNK",
+    "T"
+  ],
+  "age_and_sex_and_user_partitions": "Complete sex/age partitions exact. Explicit original gaps and missing cells retained; checks involving missing cells are unavailable.",
+  "geography": "Spain national by urban/interurban zone; no person-sex province data",
+  "roles": [
+    "all_victims",
+    "drivers_victims",
+    "drivers_involved"
+  ],
+  "note": "Involved drivers are not responsible drivers; a crash can involve multiple sexes. Sex categories are administrative, not gender identity. No non-crash or travel-exposure controls.",
+  "europe": {
+    "rows": 8100,
+    "observed_death_cells": 7846,
+    "included_rate_cells": 5861,
+    "note": "Population of the recorded sex; crude mortality burden, not individual driving risk. Unknown sex has no population denominator. National metadata and revision flags retained; categories are nested in TOTAL."
+  },
+  "standardized_rows": 6
+}

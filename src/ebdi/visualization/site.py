@@ -31,6 +31,18 @@ TABLES = [
     "model_policy",
     "model_validation_thresholds",
     "rce_exposure",
+    "ncid_ultimate",
+    "ncid_settled",
+    "ncid_changes",
+    "material_history",
+    "material_states",
+    "dgt_demographics",
+    "collision_analysis",
+    "vehicle_age_analysis",
+    "spain_sex_rates",
+    "spain_age_sex_rates",
+    "spain_age_population",
+    "europe_sex_users",
 ]
 
 
@@ -39,8 +51,8 @@ def export_site(root: Path) -> dict:
     output.mkdir(parents=True, exist_ok=True)
     payload: dict = {
         "schema_version": 1,
-        "release": "0.2.0",
-        "audit_date": "2026-10-03",
+        "release": "0.3.0",
+        "audit_date": "2026-10-04",
         "author": "Javier Saguar",
         "tables": {},
         "table_hashes": {},
@@ -64,11 +76,30 @@ def export_site(root: Path) -> dict:
         )
         payload["table_hashes"][name] = hashlib.sha256(path.read_bytes()).hexdigest()
         shutil.copyfile(path, output / f"{name}.csv")
-    for name in ["data_quality", "insurance_quality", "model_policy", "model_card", "rce_quality"]:
+    for name in [
+        "data_quality",
+        "insurance_quality",
+        "model_policy",
+        "model_card",
+        "rce_quality",
+        "ncid_quality",
+        "material_quality",
+        "demographics_quality",
+        "extended_analysis",
+    ]:
         payload[name] = json.loads(
             (root / "outputs/tables" / f"{name}.json").read_text(encoding="utf-8")
         )
-    write_json(output / "observatory.json", payload)
+    # Full published age bands remain downloadable without loading redundant totals into the app.
+    detail = root / "outputs/tables/dgt_persons_detail.csv"
+    canonical = detail.read_bytes().replace(b"\r\n", b"\n")
+    detail.write_bytes(canonical)
+    payload["table_hashes"]["dgt_persons_detail"] = hashlib.sha256(canonical).hexdigest()
+    shutil.copyfile(detail, output / "dgt_persons_detail.csv")
+    # Compact transport avoids shipping indentation for dense demographic cells.
+    (output / "observatory.json").write_text(
+        json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
+    )
     geometry = root / "data/processed/spain_provinces.geojson"
     if geometry.exists():
         content = json.loads(geometry.read_text(encoding="utf-8"))

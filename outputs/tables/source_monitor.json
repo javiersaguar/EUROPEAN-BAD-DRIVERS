@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T18:03:48.907854+00:00",
+  "checked_at": "2026-10-03T22:37:49.030828+00:00",
   "active_sources_changed": false,
   "sources": [
     {
@@ -120,6 +120,72 @@
       "id": "transport_rce_2022",
       "audited_sha256": "3bdb0d71ead2877b6bdd952fee7ee3a6b8491bff99ec3cad5fde52e01bc0dd85",
       "retrieved_sha256": "3bdb0d71ead2877b6bdd952fee7ee3a6b8491bff99ec3cad5fde52e01bc0dd85",
+      "status": "unchanged"
+    },
+    {
+      "id": "ncid_motor_2024",
+      "audited_sha256": "7636369a3134533fb32cc8db8adbf3e15b3663ea0dba4e472da5decd2a173994",
+      "retrieved_sha256": "7636369a3134533fb32cc8db8adbf3e15b3663ea0dba4e472da5decd2a173994",
+      "status": "unchanged"
+    },
+    {
+      "id": "ncid_methodology",
+      "audited_sha256": "95419df24d81abf3ee5e6420171141d783f74a970d742d2ab5ba381744f89767",
+      "retrieved_sha256": "95419df24d81abf3ee5e6420171141d783f74a970d742d2ab5ba381744f89767",
+      "status": "unchanged"
+    },
+    {
+      "id": "eurostat_sex_users",
+      "audited_sha256": "b3d232687db561316f3a22033d222f2d48bd40c132e6d6305fbeb71a57f0e347",
+      "retrieved_sha256": "b3d232687db561316f3a22033d222f2d48bd40c132e6d6305fbeb71a57f0e347",
+      "status": "unchanged"
+    },
+    {
+      "id": "eurostat_sex_population",
+      "audited_sha256": "24a8fdf51b492d61aafca02dee0864eb2f8ef68f3b7fbe9900d6c3fe446b8c81",
+      "retrieved_sha256": "24a8fdf51b492d61aafca02dee0864eb2f8ef68f3b7fbe9900d6c3fe446b8c81",
+      "status": "unchanged"
+    },
+    {
+      "id": "eurostat_ie_hicp",
+      "audited_sha256": "dbf219d0f7169089f05e0a97672a99945beac84f82e500710f81c9b014d03e1d",
+      "retrieved_sha256": "dbf219d0f7169089f05e0a97672a99945beac84f82e500710f81c9b014d03e1d",
+      "status": "unchanged"
+    },
+    {
+      "id": "eurostat_es_age_population",
+      "audited_sha256": "5b7dfb104793c8d7bbb66328f8228375e94b5cbbd0a8d84024496978b0d73986",
+      "retrieved_sha256": "5b7dfb104793c8d7bbb66328f8228375e94b5cbbd0a8d84024496978b0d73986",
+      "status": "unchanged"
+    },
+    {
+      "id": "dgt_demographics_2024",
+      "audited_sha256": "8fccd78aa030e093ed057b8c0e3f55d4e9b545f70c6dd3f53aa0df815f24ff05",
+      "retrieved_sha256": "8fccd78aa030e093ed057b8c0e3f55d4e9b545f70c6dd3f53aa0df815f24ff05",
+      "status": "unchanged"
+    },
+    {
+      "id": "dgt_demographics_2023",
+      "audited_sha256": "6f0f6257b649ab762f025c922b01aff08df54f83eb601d15919005000797bf73",
+      "retrieved_sha256": "6f0f6257b649ab762f025c922b01aff08df54f83eb601d15919005000797bf73",
+      "status": "unchanged"
+    },
+    {
+      "id": "dgt_demographics_2022",
+      "audited_sha256": "dda0da1b866a16ef3df1f2839d45ed694582dd506a5345582752603b6d7dd223",
+      "retrieved_sha256": "dda0da1b866a16ef3df1f2839d45ed694582dd506a5345582752603b6d7dd223",
+      "status": "unchanged"
+    },
+    {
+      "id": "destatis_damage_history",
+      "audited_sha256": "4fda91bf992a773ff6cea56f98477e37b547ddddd84f4102260770ebf22e93ae",
+      "retrieved_sha256": "4fda91bf992a773ff6cea56f98477e37b547ddddd84f4102260770ebf22e93ae",
+      "status": "unchanged"
+    },
+    {
+      "id": "destatis_damage_2024",
+      "audited_sha256": "9156b04df619035c89b4b966cc28f851ac42d50f8c84255d22ee8c917cd459b2",
+      "retrieved_sha256": "9156b04df619035c89b4b966cc28f851ac42d50f8c84255d22ee8c917cd459b2",
       "status": "unchanged"
     }
   ],

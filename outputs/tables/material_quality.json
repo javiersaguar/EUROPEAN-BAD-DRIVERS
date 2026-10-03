@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "history_rows": 15,
+  "state_location_rows": 68,
+  "property_only_2024": 2221996,
+  "missing_source_keys": [
+    [
+      "Berlin",
+      "Interurbana sin autopistas"
+    ]
+  ],
+  "scope": "German police-recorded road crashes; 16 states, 2024; national history 2010–2024",
+  "note": "Share among police-recorded crashes is not personal probability or insurance claim frequency. Unreported minor damage is absent. No Spain extrapolation. Berlin rural location absent in source is preserved as missing. Serious property, intoxicant property and other property-only classes partition property-only accidents.",
+  "legend": "Source '-' retained as zero; '.' unavailable; no missing cell is filled with zero"
+}

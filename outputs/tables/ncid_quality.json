@@ -1,0 +1,47 @@
+{
+  "status": "passed_with_source_note",
+  "accident_year_rows": 150,
+  "settlement_rows": 50,
+  "matched_exposure_sheet": "UltData (not PremData)",
+  "table14_minus_table11_damage_claims_2024": 0,
+  "injury_size_band_minus_total": {
+    "ultimate_claims": {
+      "2010": -3.99999953515362e-06,
+      "2011": 1.8189894035458565e-12,
+      "2012": -2.999999196617864e-06,
+      "2013": -2.9999901016708463e-06,
+      "2014": 0.0020480000093812123,
+      "2015": 0.0026770000004034955,
+      "2016": -1.004030000000057,
+      "2017": -0.0034320000013394747,
+      "2018": -0.005924000000959495,
+      "2019": -0.014393999999811058,
+      "2020": -0.008171999999831314,
+      "2021": -1.010136999999304,
+      "2022": 0.9442650000000867,
+      "2023": -3.1431959999990795,
+      "2024": 1.8585309999998572
+    },
+    "ultimate_cost_eur": {
+      "2010": -3.2186508178710938e-06,
+      "2011": -2.199411392211914e-05,
+      "2012": -1.2993812561035156e-05,
+      "2013": -0.010010063648223877,
+      "2014": -2.9802322387695312e-06,
+      "2015": 1.9999979138374329,
+      "2016": -1.009992003440857,
+      "2017": -1.00900399684906,
+      "2018": -0.0030060410499572754,
+      "2019": -0.016006112098693848,
+      "2020": -0.9940059781074524,
+      "2021": 0.018994033336639404,
+      "2022": -0.9780129790306091,
+      "2023": 0.024985015392303467,
+      "2024": 1.9900050163269043
+    }
+  },
+  "note": "Annex Table12 summary and Table14 settled-damage counts differ by 18 in 2024; counts are preserved. Estimated injury size bands do not exactly partition the published total; they are never summed into the portfolio. No exposure is attached to settlement-year counts; ultimate estimates receive no Poisson intervals.",
+  "deflator": "Ireland annual all-items HICP, costs in 2024 euros; not dedicated repair inflation",
+  "coverage_note": "94% and 88% refer to 2024 earned-premium market coverage, not population sampling probabilities",
+  "table14_minus_table12_summary_2024": 18
+}

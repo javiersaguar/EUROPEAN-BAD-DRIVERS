@@ -1,4 +1,4 @@
-"""Execute four small research notebooks against real published results."""
+"""Execute five research notebooks against real published results."""
 
 import sys
 from pathlib import Path
@@ -137,6 +137,76 @@ if (TABLES / "model_shap.json").exists():
     assert not shap["causal_interpretation"]
     print(shap)
     print(pd.read_csv(TABLES / "model_shap_importance.csv").head(8).to_string(index=False))""",
+            ),
+        ],
+    ),
+    (
+        "05_material_and_persons",
+        "Daños materiales, categorías y sexo: ámbitos y denominadores compatibles",
+        [
+            (
+                "Irlanda: ocurrencia, exposición y liquidación son bases distintas",
+                """claims = pd.read_csv(TABLES / "ncid_ultimate.csv")
+settled = pd.read_csv(TABLES / "ncid_settled.csv")
+quality = json.loads((TABLES / "ncid_quality.json").read_text())
+assert quality["matched_exposure_sheet"] == "UltData (not PremData)"
+assert quality["table14_minus_table12_summary_2024"] == 18
+assert not any("frequency" in column for column in settled)
+latest = claims[(claims.year == 2024) & claims.category.isin(["Daños materiales", "Lesiones", "Total"])]
+print(latest[["category", "ultimate_claims", "earned_policies_all", "frequency_per_1000_all_policies", "mean_cost_eur", "cost_per_policy_eur"]].to_string(index=False))
+print("Ultimate estimates include nil-compensation claims; no Poisson intervals. Market coverage is by premium, not persons.")
+from IPython.display import SVG, display
+display(SVG(filename=str(ROOT / "outputs/figures/ncid_frequency.svg")))""",
+            ),
+            (
+                "Inflación general frente a costes nominales; no atribución causal",
+                """changes = pd.read_csv(TABLES / "ncid_changes.csv")
+print(changes[(changes.year == 2024) & changes.category.eq("Daños materiales")].to_string(index=False))
+display(SVG(filename=str(ROOT / "outputs/figures/ncid_costs.svg")))
+print("Fixed 2019 descriptive baseline; all-items Irish HICP, not a parts/labour price index.")""",
+            ),
+            (
+                "Alemania: solo daños policiales y cobertura del registro",
+                """history = pd.read_csv(TABLES / "material_history.csv")
+states = pd.read_csv(TABLES / "material_states.csv")
+assert history.total_crashes.eq(history.injury_crashes + history.property_only_crashes).all()
+print(history[history.year.isin([2010, 2019, 2020, 2024])].to_string(index=False))
+print(states[(states.state == "Berlin") & (states.location == "Interurbana sin autopistas")].to_string(index=False))
+display(SVG(filename=str(ROOT / "outputs/figures/germany_property_share.svg")))
+print("Missing Berlin rural cell retained. Reporting coverage differs from insurance claims; no Spain extrapolation.")""",
+            ),
+            (
+                "España: sexo, edad, roles y ajuste con población común",
+                """persons = pd.read_csv(TABLES / "dgt_demographics.csv")
+rates = pd.read_csv(TABLES / "spain_sex_rates.csv")
+weights = pd.read_csv(TABLES / "spain_age_population.csv")
+print(rates.to_string(index=False))
+print(weights[(weights.year == 2024) & weights.sex.eq("M")][["age_band", "standard_weight_2024"]].to_string(index=False))
+quality = json.loads((TABLES / "demographics_quality.json").read_text())
+print(json.dumps(quality["source_notes"], ensure_ascii=False, indent=2))
+assert persons[(persons.year == 2024) & persons.zone.eq("Urbana") & persons.role.eq("all_victims") & persons.category.eq("Bicicleta")].fatalities.isna().all()
+display(SVG(filename=str(ROOT / "outputs/figures/spain_sex_mortality.svg")))
+print("Standardization controls only five age bands. Unknown age excluded from adjusted point estimates; included in crude mortality. No fault or individual driving-risk inference.")""",
+            ),
+            (
+                "Tipos de accidente y vehículos: volumen, gravedad y falta de exposición",
+                """collision = pd.read_csv(TABLES / "collision_analysis.csv")
+vehicles = pd.read_csv(TABLES / "vehicle_age_analysis.csv")
+latest = collision[(collision.year == 2024) & collision.zone.eq("Total") & ~collision.is_total]
+print(latest.nlargest(10, "crashes")[["category", "crashes", "fatal_crash_pct", "lower", "upper", "small_sample"]].to_string(index=False))
+print(vehicles[(vehicles.year == 2024) & vehicles.zone.eq("Total") & vehicles.category.eq("Total")][["age", "vehicles", "share_all_pct"]].to_string(index=False))
+print(json.loads((TABLES / "extended_analysis.json").read_text())["vehicle_type_source_note"])
+display(SVG(filename=str(ROOT / "outputs/figures/spain_collision_categories.svg")))
+print("Conditional Wilson intervals use accident counts, not person deaths. Vehicle age counts lack age-specific fleet or distance denominators.")""",
+            ),
+            (
+                "Europa: panel denso, categorías anidadas y banderas originales",
+                """europe = pd.read_csv(TABLES / "europe_sex_users.csv")
+assert len(europe) == 27 * 15 * 4 * 5
+assert europe[europe.sex.eq("UNK")].population.isna().all()
+print(europe[(europe.year == 2024) & europe.geo.eq("ES") & europe.pers_cat.eq("TOTAL")].to_string(index=False))
+print("Observed death cells:", europe.fatalities.notna().sum(), "Compatible rate cells:", europe.included.sum())
+print("Unknown sex remains visible without an invented denominator. Never add TOTAL to its component roles or sexes. Country rates are crude, not age-standardized.")""",
             ),
         ],
     ),

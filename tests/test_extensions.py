@@ -145,7 +145,7 @@ def test_source_monitor_quarantines_revisions_without_activating_them(tmp_path, 
 
 def test_publication_exports_only_aggregates_with_verifiable_lineage():
     payload = json.loads((ROOT / "web/public/data/observatory.json").read_text(encoding="utf-8"))
-    assert payload["schema_version"] == 1 and payload["release"] == "0.2.0"
+    assert payload["schema_version"] == 1 and payload["release"] == "0.3.0"
     for name, rows in payload["tables"].items():
         assert rows
         assert "ID_ACCIDENTE" not in rows[0]

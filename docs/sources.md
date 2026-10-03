@@ -1,6 +1,6 @@
 # Source register
 
-Audited 3 October 2026. Exact URLs, hashes, retrieval times and schema metadata are versioned in `configs/sources.yaml`. Runtime provenance is in the local `data/raw/manifest.json`. Source code is MIT; datasets retain their own conditions. The pipeline transforms original data into aggregated analysis and credits publishers; no raw workbooks are redistributed.
+Audited 4 October 2026. Exact URLs, hashes, retrieval times and schema metadata are versioned in `configs/sources.yaml`. Runtime provenance is in the local `data/raw/manifest.json`. Source code is MIT; datasets retain their own conditions. The pipeline transforms original data into aggregated analysis and credits publishers; no raw workbooks are redistributed.
 
 Source terms should be checked before reuse. DGT 2024's government catalog lists CC BY 4.0; INE and Eurostat require source attribution; GISCO additionally requires © EuroGeographics map credit. Insurance Europe retains copyright.
 ## dgt_accidents_2022
@@ -485,6 +485,259 @@ Source terms should be checked before reuse. DGT 2024's government catalog lists
 | reuse | Publisher terms apply; attributed factual aggregates; raw PDF not redistributed |
 
 [Reuse terms](https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-administrativa/aviso-legal).
+
+## ncid_motor_2024
+
+[Central Bank of Ireland · Irish private motor insurance: ultimate claims, matched exposure and settlements, report 7](https://www.centralbank.ie/statistics/data-and-analysis/national-claims-information-database/ncid-private-motor-insurance) · [exact download/API](https://www.centralbank.ie/docs/default-source/statistics/data-and-analysis/national-claims-information-database/annex-private-motor-insurance-report-7.xlsx?sfvrsn=9a066f1a_12)
+
+| Property | Audited value |
+|---|---|
+| format | xlsx |
+| years | [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024] |
+| geographic_level | national / country |
+| observation_unit | country-year-quarter / claim type |
+| key_variables | ['Background', 'PremData', 'UltData', 'Figure13', 'Figure14_19', 'Figure20', 'Figure23', 'Figure24', 'Table9', 'Table10', 'Table 11', 'Table12_13', 'Table14_15', 'Figure26', 'Figure27', 'Table16', 'Table17', 'Figure28', 'Figure29', 'Misc1', 'Misc2', 'Misc3', 'Misc4', 'Figure30', 'Table22', 'Table23', 'Figure32_33', 'Figure34', 'Table25_26', 'Table27_28', 'Misc5', 'Figure35', 'Figure36', 'Figure37'] |
+| denominator | Earned policy-years; matching 94% premium-market cohort in UltData |
+| known_limitations | Ultimate claims are insurer estimates incl. nils; settlement years differ from accident years. Coverage-specific exposure is not inferred from unmatched PremData. |
+| update_frequency | annual |
+| schema_version | audited 2026-10-03 |
+| comparability | Separate descriptive panels; not merged into the territorial composite or severity training |
+| enabled | True |
+| sample_retrieved_at | 2026-10-03T21:58:07.172757+00:00 |
+| sample_sha256 | 7636369a3134533fb32cc8db8adbf3e15b3663ea0dba4e472da5decd2a173994 |
+| reuse | Publisher reuse terms; factual aggregates attributed; original workbooks not redistributed |
+
+[Reuse terms](https://www.centralbank.ie/re-use-of-public-sector-information).
+
+## ncid_methodology
+
+[Central Bank of Ireland · NCID report 7 definitions and market coverage](https://www.centralbank.ie/statistics/data-and-analysis/national-claims-information-database/ncid-private-motor-insurance) · [exact download/API](https://www.centralbank.ie/docs/default-source/statistics/data-and-analysis/national-claims-information-database/private-motor-insurance-report-7-national-claims-information-database.pdf?sfvrsn=33056f1a_7)
+
+| Property | Audited value |
+|---|---|
+| format | pdf |
+| years | [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024] |
+| geographic_level | national / country |
+| observation_unit | methodology |
+| key_variables | [] |
+| denominator | not applicable |
+| known_limitations | 2024 market shares measured by premiums: ultimate 94%, settlements 88%; national only. |
+| update_frequency | annual |
+| schema_version | audited 2026-10-03 |
+| comparability | Separate descriptive panels; not merged into the territorial composite or severity training |
+| enabled | True |
+| sample_retrieved_at | 2026-10-03T21:58:07.174757+00:00 |
+| sample_sha256 | 95419df24d81abf3ee5e6420171141d783f74a970d742d2ab5ba381744f89767 |
+| reuse | Publisher reuse terms; factual aggregates attributed; original workbooks not redistributed |
+
+[Reuse terms](https://www.centralbank.ie/re-use-of-public-sector-information).
+
+## eurostat_sex_users
+
+[Eurostat · Road deaths by recorded sex and person category, 2010–2024](https://ec.europa.eu/eurostat/cache/metadata/en/tran_sf_road_esms.htm) · [exact download/API](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tran_sf_roadus?lang=EN&age=TOTAL&unit=NR&sinceTimePeriod=2010&untilTimePeriod=2024)
+
+| Property | Audited value |
+|---|---|
+| format | json |
+| years | [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024] |
+| geographic_level | national / country |
+| observation_unit | country-year-sex-person category |
+| key_variables | ['freq', 'sex', 'age', 'unit', 'pers_cat'] |
+| denominator | Sex-specific population; no distance or driver exposure |
+| known_limitations | 30-day deaths; category totals overlap with TOTAL; flags and missing cells retained; sex is recorded administrative sex. |
+| update_frequency | annual |
+| schema_version | audited 2026-10-03 |
+| comparability | Separate descriptive panels; not merged into the territorial composite or severity training |
+| enabled | True |
+| sample_retrieved_at | 2026-10-03T21:58:07.172757+00:00 |
+| sample_sha256 | b3d232687db561316f3a22033d222f2d48bd40c132e6d6305fbeb71a57f0e347 |
+| reuse | Publisher reuse terms; factual aggregates attributed; original workbooks not redistributed |
+
+[Reuse terms](https://ec.europa.eu/eurostat/about-us/policies/copyright).
+
+## eurostat_sex_population
+
+[Eurostat · Population by sex on 1 January, 2010–2024](https://ec.europa.eu/eurostat/databrowser/view/demo_pjan/default/table) · [exact download/API](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjan?lang=EN&age=TOTAL&unit=NR&sinceTimePeriod=2010&untilTimePeriod=2024)
+
+| Property | Audited value |
+|---|---|
+| format | json |
+| years | [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024] |
+| geographic_level | national / country |
+| observation_unit | country-year-sex |
+| key_variables | ['freq', 'unit', 'age', 'sex'] |
+| denominator | resident population |
+| known_limitations | Population is a burden denominator, not kilometres travelled or policy exposure. |
+| update_frequency | annual |
+| schema_version | audited 2026-10-03 |
+| comparability | Separate descriptive panels; not merged into the territorial composite or severity training |
+| enabled | True |
+| sample_retrieved_at | 2026-10-03T21:58:07.172757+00:00 |
+| sample_sha256 | 24a8fdf51b492d61aafca02dee0864eb2f8ef68f3b7fbe9900d6c3fe446b8c81 |
+| reuse | Publisher reuse terms; factual aggregates attributed; original workbooks not redistributed |
+
+[Reuse terms](https://ec.europa.eu/eurostat/about-us/policies/copyright).
+
+## eurostat_ie_hicp
+
+[Eurostat · Ireland annual all-items HICP, 2010–2024](https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table) · [exact download/API](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_aind?lang=EN&unit=INX_A_AVG&coicop=CP00&geo=IE&sinceTimePeriod=2010&untilTimePeriod=2024)
+
+| Property | Audited value |
+|---|---|
+| format | json |
+| years | [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024] |
+| geographic_level | national / country |
+| observation_unit | country-year |
+| key_variables | ['freq', 'unit', 'coicop'] |
+| denominator | annual all-items consumer price index |
+| known_limitations | Deflates nominal insurance costs to 2024 euros; broad consumer basket, not a dedicated repair-cost index. |
+| update_frequency | annual |
+| schema_version | audited 2026-10-03 |
+| comparability | Separate descriptive panels; not merged into the territorial composite or severity training |
+| enabled | True |
+| sample_retrieved_at | 2026-10-03T21:58:07.175758+00:00 |
+| sample_sha256 | dbf219d0f7169089f05e0a97672a99945beac84f82e500710f81c9b014d03e1d |
+| reuse | Publisher reuse terms; factual aggregates attributed; original workbooks not redistributed |
+
+[Reuse terms](https://ec.europa.eu/eurostat/about-us/policies/copyright).
+
+## eurostat_es_age_population
+
+[Eurostat · Spanish population by single-year age and sex, 2022–2024](https://ec.europa.eu/eurostat/databrowser/view/demo_pjan/default/table) · [exact download/API](https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjan?lang=EN&unit=NR&geo=ES&sinceTimePeriod=2022&untilTimePeriod=2024)
+
+| Property | Audited value |
+|---|---|
+| format | json |
+| years | [2022, 2023, 2024] |
+| geographic_level | national / country |
+| observation_unit | country-year-age-sex |
+| key_variables | ['freq', 'unit', 'age', 'sex'] |
+| denominator | resident population |
+| known_limitations | Fixed pooled Spanish 2024 population supports descriptive direct age standardization; unknown ages/sex remain excluded and disclosed. |
+| update_frequency | annual |
+| schema_version | audited 2026-10-03 |
+| comparability | Separate descriptive panels; not merged into the territorial composite or severity training |
+| enabled | True |
+| sample_retrieved_at | 2026-10-03T21:58:08.200627+00:00 |
+| sample_sha256 | 5b7dfb104793c8d7bbb66328f8228375e94b5cbbd0a8d84024496978b0d73986 |
+| reuse | Publisher reuse terms; factual aggregates attributed; original workbooks not redistributed |
+
+[Reuse terms](https://ec.europa.eu/eurostat/about-us/policies/copyright).
+
+## dgt_demographics_2024
+
+[DGT · Injury-crash statistical tables: sex, age, road users, vehicle age and crash types, 2024](https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Accidentes-con-victimas-Tablas-estadisticas-2024/) · [exact download/API](https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/publicaciones/Tablas_estadisticas_Accidentes_30_dias/Accidentes-con-victimas-Tablas-estadisticas-2024.xlsx)
+
+| Property | Audited value |
+|---|---|
+| format | xlsx |
+| years | [2024] |
+| geographic_level | national / country |
+| observation_unit | national-zone-age-sex-road user |
+| key_variables | ['Índice', 'TABLA 1.1', 'TABLA 1.1.C.A.', 'TABLA 1.3', 'TABLA 1.6', 'TABLA 2.2.I', 'TABLA 2.2.U', 'TABLA 2.3', 'TABLA 3.1', 'TABLA 3.2', 'TABLA 3.3', 'TABLA 3.4.I', 'TABLA 3.4.U', 'TABLA 3.5', 'TABLA 3.7', 'TABLA 4.1.I', 'TABLA 4.1.U', 'TABLA 4.1.1.I', 'TABLA 4.1.1.U', 'TABLA 4.2.I', 'TABLA 4.2.U', 'TABLA 4.4.I', 'TABLA 4.4.U', 'TABLA 5.1', 'TABLA 5.2', 'TABLA 5.3', 'TABLA 6.1.I', 'TABLA 6.1.U', 'TABLA 7.1', 'TABLA 7.2.I', 'TABLA 7.2.U', 'TABLA 7.3.I', 'TABLA 7.3.U', 'TABLA 7.4.I y U', 'TABLA 8.1.I', 'TABLA 8.1.U', 'TABLA 8.1.1', 'TABLA 8.2.I', 'TABLA 8.2.U', 'TABLA 8.3'] |
+| denominator | Victims or involved drivers; not crash counts |
+| known_limitations | Sex recorded for persons, not entire crashes; involved drivers are not at-fault drivers; aggregate tables have overlapping totals. Fatality follow-up 30 days. |
+| update_frequency | annual |
+| schema_version | audited 2026-10-03 |
+| comparability | Separate descriptive panels; not merged into the territorial composite or severity training |
+| enabled | True |
+| sample_retrieved_at | 2026-10-03T21:58:07.175758+00:00 |
+| sample_sha256 | 8fccd78aa030e093ed057b8c0e3f55d4e9b545f70c6dd3f53aa0df815f24ff05 |
+| reuse | Publisher reuse terms; factual aggregates attributed; original workbooks not redistributed |
+
+[Reuse terms](https://www.dgt.es/contenido/aviso-legal/).
+
+## dgt_demographics_2023
+
+[DGT · Injury-crash statistical tables: sex, age, road users, vehicle age and crash types, 2023](https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Accidentes-con-victimas-Tablas-estadisticas-2023/) · [exact download/API](https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/publicaciones/Anuario-Estadistico-de-Accidentes/Accidentes-con-victimas-Tablas-estadisticas-2023.xlsx)
+
+| Property | Audited value |
+|---|---|
+| format | xlsx |
+| years | [2023] |
+| geographic_level | national / country |
+| observation_unit | national-zone-age-sex-road user |
+| key_variables | ['Índice', 'TABLA 1.1', 'TABLA 1.1.C.A.', 'TABLA 1.3', 'TABLA 1.6', 'TABLA 2.2.I', 'TABLA 2.2.U', 'TABLA 2.3', 'TABLA 3.1', 'TABLA 3.2', 'TABLA 3.3', 'TABLA 3.4.I', 'TABLA 3.4.U', 'TABLA 3.5', 'TABLA 3.7', 'TABLA 4.1.I', 'TABLA 4.1.U', 'TABLA 4.1.1.I', 'TABLA 4.1.1.U', 'TABLA 4.2.I', 'TABLA 4.2.U', 'TABLA 4.4.I', 'TABLA 4.4.U', 'TABLA 5.1', 'TABLA 5.2', 'TABLA 5.3', 'TABLA 6.1.I', 'TABLA 6.1.U', 'TABLA 7.1', 'TABLA 7.2.I', 'TABLA 7.2.U', 'TABLA 7.3.I', 'TABLA 7.3.U', 'TABLA 7.4.I y U', 'TABLA 8.1.I', 'TABLA 8.1.U', 'TABLA 8.1.1', 'TABLA 8.2.I', 'TABLA 8.2.U', 'TABLA 8.3'] |
+| denominator | Victims or involved drivers; not crash counts |
+| known_limitations | Sex recorded for persons, not entire crashes; involved drivers are not at-fault drivers; aggregate tables have overlapping totals. Fatality follow-up 30 days. |
+| update_frequency | annual |
+| schema_version | audited 2026-10-03 |
+| comparability | Separate descriptive panels; not merged into the territorial composite or severity training |
+| enabled | True |
+| sample_retrieved_at | 2026-10-03T21:58:07.176758+00:00 |
+| sample_sha256 | 6f0f6257b649ab762f025c922b01aff08df54f83eb601d15919005000797bf73 |
+| reuse | Publisher reuse terms; factual aggregates attributed; original workbooks not redistributed |
+
+[Reuse terms](https://www.dgt.es/contenido/aviso-legal/).
+
+## dgt_demographics_2022
+
+[DGT · Injury-crash statistical tables: sex, age, road users, vehicle age and crash types, 2022](https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Accidentes-con-victimas-Tablas-estadisticas-2022/) · [exact download/API](https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/publicaciones/Tablas_estadisticas_Accidentes_30_dias/Accidentes_con_victimas_Tablas_estadisticas_2022.xlsx)
+
+| Property | Audited value |
+|---|---|
+| format | xlsx |
+| years | [2022] |
+| geographic_level | national / country |
+| observation_unit | national-zone-age-sex-road user |
+| key_variables | ['Índice', 'TABLA 1.1', 'TABLA 1.1.C.A.', 'TABLA 1.3', 'TABLA 1.6', 'TABLA 2.2', 'TABLA 2.3', 'TABLA 3.1', 'TABLA 3.2', 'TABLA 3.3', 'TABLA 3.4.I', 'TABLA 3.4.U', 'TABLA 3.5', 'TABLA 3.7', 'TABLA 4.1.I', 'TABLA 4.1.U', 'TABLA 4.1.1.I', 'TABLA 4.1.1.U', 'TABLA 4.2.I', 'TABLA 4.2.U', 'TABLA 4.4.I', 'TABLA 4.4.U', 'TABLA 5.1', 'TABLA 5.2', 'TABLA 5.3', 'TABLA 6.1.I', 'TABLA 6.1.U', 'TABLA 7.1', 'TABLA 7.2.I', 'TABLA 7.2.U', 'TABLA 7.3.I', 'TABLA 7.3.U', 'TABLA 7.4.I y U', 'TABLA 8.1.I', 'TABLA 8.1.U', 'TABLA 8.1.1', 'TABLA 8.2.I', 'TABLA 8.2.U', 'TABLA 8.3'] |
+| denominator | Victims or involved drivers; not crash counts |
+| known_limitations | Sex recorded for persons, not entire crashes; involved drivers are not at-fault drivers; aggregate tables have overlapping totals. Fatality follow-up 30 days. |
+| update_frequency | annual |
+| schema_version | audited 2026-10-03 |
+| comparability | Separate descriptive panels; not merged into the territorial composite or severity training |
+| enabled | True |
+| sample_retrieved_at | 2026-10-03T21:58:07.922347+00:00 |
+| sample_sha256 | dda0da1b866a16ef3df1f2839d45ed694582dd506a5345582752603b6d7dd223 |
+| reuse | Publisher reuse terms; factual aggregates attributed; original workbooks not redistributed |
+
+[Reuse terms](https://www.dgt.es/contenido/aviso-legal/).
+
+## destatis_damage_history
+
+[Destatis · Police-recorded German road accidents: historical damage categories](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Verkehrsunfaelle/Publikationen/_publikationen-verkehrsunfaelle.html) · [exact download/API](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Verkehrsunfaelle/Publikationen/Downloads-Verkehrsunfaelle/statistischer-bericht-verkehrsunfaelle-zeitreihen-5462403.xlsx?__blob=publicationFile&v=17)
+
+| Property | Audited value |
+|---|---|
+| format | xlsx |
+| years | [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024] |
+| geographic_level | national / state |
+| observation_unit | country-year |
+| key_variables | ['Titel ', 'Informationen_Barrierefreiheit', 'Inhaltsübersicht ', 'GENESIS-Online', 'Impressum ', 'Informationen_zur_Statistik', '46241-b01', '46241-01', '46241-02', '46241-03', '46241-04', '46241-05', '46241-06', '46241-07', '46241-08', '46241-09', '46241-10', '46241-11', '46241-12', '46241-13', '46241-14', '46241-15', '46241-16', '46241-17', '46241-18', '46241-19', '46241-20', '46241-21', '46241-22', '46241-23', '46241-24', '46241-25', '46241-26', '46241-27', '46241-28', '46241-29', '46241-30', '46241-31', 'Erläuterung_zu_CSV-Tabellen', 'csv-46241-b01', 'csv-46241-01', 'csv-46241-02', 'csv-46241-03', 'csv-46241-04', 'csv-46241-05', 'csv-46241-06', 'csv-46241-07', 'csv-46241-08', 'csv-46241-09', 'csv-46241-10', 'csv-46241-11', 'csv-46241-12', 'csv-46241-13', 'csv-46241-14', 'csv-46241-15', 'csv-46241-16', 'csv-46241-17', 'csv-46241-18', 'csv-46241-19', 'csv-46241-20', 'csv-46241-21', 'csv-46241-22', 'csv-46241-23', 'csv-46241-24', 'csv-46241-25', 'csv-46241-26', 'csv-46241-27', 'csv-46241-28', 'csv-46241-29', 'csv-46241-30', 'csv-46241-31'] |
+| denominator | all police-recorded crashes |
+| known_limitations | National time series revision contains 1991–2025; analysis selects 2010–2024. Minor damage not reported to police is missing; severe-property definition has historical changes. |
+| update_frequency | annual |
+| schema_version | audited 2026-10-03 |
+| comparability | Separate descriptive panels; not merged into the territorial composite or severity training |
+| enabled | True |
+| sample_retrieved_at | 2026-10-03T21:58:08.111628+00:00 |
+| sample_sha256 | 4fda91bf992a773ff6cea56f98477e37b547ddddd84f4102260770ebf22e93ae |
+| reuse | Publisher reuse terms; factual aggregates attributed; original workbooks not redistributed |
+
+[Reuse terms](https://www.destatis.de/EN/Service/Terms-Conditions/_node.html).
+
+## destatis_damage_2024
+
+[Destatis · German police accidents by damage class, state and location, 2024](https://www.destatis.de/EN/Themes/Society-Environment/Traffic-Accidents/Tables/accidents-registered-police.html) · [exact download/API](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Verkehrsunfaelle/Publikationen/Downloads-Verkehrsunfaelle/statistischer-bericht-verkehrsunfaelle-jahr-2080700247005.xlsx?__blob=publicationFile&v=3)
+
+| Property | Audited value |
+|---|---|
+| format | xlsx |
+| years | [2024] |
+| geographic_level | national / state |
+| observation_unit | state-location-year / crash |
+| key_variables | ['Titel ', 'Informationen_Barrierefreiheit', 'Inhaltsübersicht ', 'GENESIS-Online', 'Impressum ', 'Informationen_zur_Statistik', '46241-b01', '46241-01', '46241-02', '46241-03', '46241-04', '46241-05', '46241-06', '46241-07', '46241-08', '46241-09', '46241-10', '46241-11', '46241-12', '46241-13', '46241-14', '46241-15', '46241-16', '46241-17', '46241-18', '46241-19', '46241-20', '46241-21', 'Erläuterung_zu_CSV-Tabellen', 'csv-46241-b01', 'csv-46241-01', 'csv-46241-02', 'csv-46241-03', 'csv-46241-04', 'csv-46241-05', 'csv-46241-06', 'csv-46241-07', 'csv-46241-08', 'csv-46241-09', 'csv-46241-10', 'csv-46241-11', 'csv-46241-12', 'csv-46241-13', 'csv-46241-14', 'csv-46241-15', 'csv-46241-16', 'csv-46241-17', 'csv-46241-18', 'csv-46241-19', 'csv-46241-20', 'csv-46241-21'] |
+| denominator | all police-recorded crashes |
+| known_limitations | 16 states; serious property-only, intoxicant property-only and other property-only are distinct classifications. No insured exposure or repair costs. |
+| update_frequency | annual |
+| schema_version | audited 2026-10-03 |
+| comparability | Separate descriptive panels; not merged into the territorial composite or severity training |
+| enabled | True |
+| sample_retrieved_at | 2026-10-03T21:58:08.122137+00:00 |
+| sample_sha256 | 9156b04df619035c89b4b966cc28f851ac42d50f8c84255d22ee8c917cd459b2 |
+| reuse | Publisher reuse terms; factual aggregates attributed; original workbooks not redistributed |
+
+[Reuse terms](https://www.destatis.de/EN/Service/Terms-Conditions/_node.html).
 
 ## Audited sources excluded from ingestion
 

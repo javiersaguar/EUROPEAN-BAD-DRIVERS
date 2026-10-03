@@ -40,4 +40,13 @@ web:
 	cd web && npm ci --ignore-scripts && npm run dev -- --port 8501
 monitor:
 	uv run ebdi monitor
-all: download process insurance analysis model explain history exposure alternative policy site notebooks test lint
+all: download process insurance analysis model explain history exposure alternative policy demographics material ncid extended-analysis site notebooks test lint
+
+demographics:
+	uv run ebdi demographics
+material:
+	uv run ebdi material
+ncid:
+	uv run ebdi ncid
+extended-analysis:
+	uv run ebdi extended-analysis

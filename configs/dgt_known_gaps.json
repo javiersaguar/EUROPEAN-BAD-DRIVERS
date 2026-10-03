@@ -1,0 +1,362 @@
+[
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "hospitalized",
+    "age": "De 15 a 17 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "hospitalized",
+    "age": "De 15 a 17 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 25 a 29 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 25 a 29 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 30 a 34 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 30 a 34 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 35 a 39 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 35 a 39 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 40 a 44 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "hospitalized",
+    "age": "De 40 a 44 años",
+    "sex": "Mujer",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "hospitalized",
+    "age": "De 40 a 44 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 40 a 44 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "hospitalized",
+    "age": "De 45 a 49 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 45 a 49 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "hospitalized",
+    "age": "De 45 a 49 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 45 a 49 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 55 a 59 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 55 a 59 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "fatalities",
+    "age": "De 60 a 64 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 60 a 64 años",
+    "sex": "Hombre",
+    "gap": 2.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "fatalities",
+    "age": "De 60 a 64 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 60 a 64 años",
+    "sex": "Total",
+    "gap": 2.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "fatalities",
+    "age": "De 65 a 69 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "hospitalized",
+    "age": "De 65 a 69 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 65 a 69 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "fatalities",
+    "age": "De 65 a 69 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "hospitalized",
+    "age": "De 65 a 69 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 65 a 69 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "fatalities",
+    "age": "De 70 a 74 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "hospitalized",
+    "age": "De 70 a 74 años",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 70 a 74 años",
+    "sex": "Hombre",
+    "gap": 3.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "fatalities",
+    "age": "De 70 a 74 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "hospitalized",
+    "age": "De 70 a 74 años",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "De 70 a 74 años",
+    "sex": "Total",
+    "gap": 3.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "fatalities",
+    "age": "Más de 74 años",
+    "sex": "Hombre",
+    "gap": 2.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "fatalities",
+    "age": "Más de 74 años",
+    "sex": "Total",
+    "gap": 2.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "Se desconoce",
+    "sex": "Hombre",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "Se desconoce",
+    "sex": "Total",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "fatalities",
+    "age": "Total",
+    "sex": "Hombre",
+    "gap": 5.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "hospitalized",
+    "age": "Total",
+    "sex": "Hombre",
+    "gap": 4.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "Total",
+    "sex": "Hombre",
+    "gap": 13.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "hospitalized",
+    "age": "Total",
+    "sex": "Mujer",
+    "gap": 1.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "fatalities",
+    "age": "Total",
+    "sex": "Total",
+    "gap": 5.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "hospitalized",
+    "age": "Total",
+    "sex": "Total",
+    "gap": 5.0
+  },
+  {
+    "year": 2024,
+    "sheet": "TABLA 4.1.1.I",
+    "measure": "non_hospitalized",
+    "age": "Total",
+    "sex": "Total",
+    "gap": 13.0
+  }
+]
