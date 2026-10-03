@@ -1,0 +1,374 @@
+audit_date: '2026-10-03'
+years:
+- 2022
+- 2023
+- 2024
+sources:
+- id: dgt_accidents_2022
+  organization: DGT
+  dataset: accidents
+  url: https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/24h/TABLA_ACCIDENTES_22.xlsx
+  page_url: https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Ficheros-microdatos-de-accidentes-con-victimas-2022/
+  filename: dgt_accidents_2022.xlsx
+  format: xlsx
+  years:
+  - 2022
+  geographic_level: province
+  observation_unit: injury crash
+  denominator: none (numerator)
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://www.dgt.es/contenido/aviso-legal/
+  comparability: Counts at crash location; exposure stock at residence; not individual
+    risk
+  enabled: true
+  sample_sha256: 89f1b926c7df70588d1506ab89c373c1a64c373bb042e01406830759a0ede600
+  sample_retrieved_at: '2026-10-03T14:05:45.587679+00:00'
+- id: dgt_dictionary
+  organization: DGT
+  dataset: dictionary
+  url: https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/publicaciones/Ficheros_microdatos_de_accidentalidad_con_victimas/Diccionario-Tabla-Accidente.xlsx
+  page_url: https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Ficheros-microdatos-de-accidentes-con-victimas-2022/
+  filename: dgt_dictionary.xlsx
+  format: xlsx
+  years:
+  - 2024
+  geographic_level: province
+  observation_unit: code lookup
+  denominator: not applicable
+  update_frequency: irregular
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://www.dgt.es/contenido/aviso-legal/
+  comparability: Counts at crash location; exposure stock at residence; not individual
+    risk
+  enabled: true
+  sample_sha256: 1df06643eff95dd7f3211fca7fad2c95f2d926930d12ca97a345c764995d0ae9
+  sample_retrieved_at: '2026-10-03T14:05:42.665749+00:00'
+- id: dgt_vehicles_2022
+  organization: DGT
+  dataset: vehicles
+  url: https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/publicaciones/parque-de-vehiculos/Parque-de-vehiculos-Tablas-estadisticas-2022.xlsx
+  page_url: https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Parque-de-vehiculos-Tablas-estadisticas-2022/
+  filename: dgt_vehicles_2022.xlsx
+  format: xlsx
+  years:
+  - 2022
+  geographic_level: province
+  observation_unit: province-year
+  denominator: year-end registered vehicle stock excluding mopeds
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://www.dgt.es/contenido/aviso-legal/
+  comparability: Counts at crash location; exposure stock at residence; not individual
+    risk
+  enabled: true
+  sample_sha256: 051ae4c25c968bbcdd1d18363616ff83986ff7c93b0773ac5005d40d491e92ec
+  sample_retrieved_at: '2026-10-03T14:05:42.482615+00:00'
+- id: dgt_drivers_2022
+  organization: DGT
+  dataset: drivers
+  url: https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/publicaciones/Censo_conductores/Censo-de-conductores_Tablas-estadisticas-2022.xlsx
+  page_url: https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Censo-de-conductores-Tablas-estadisticas-2022/
+  filename: dgt_drivers_2022.xlsx
+  format: xlsx
+  years:
+  - 2022
+  geographic_level: province
+  observation_unit: province-year
+  denominator: year-end resident licence holders
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://www.dgt.es/contenido/aviso-legal/
+  comparability: Counts at crash location; exposure stock at residence; not individual
+    risk
+  enabled: true
+  sample_sha256: 465d8f878a4708571a940c11fb9823bf668b53548c57d88211ce24d464c94725
+  sample_retrieved_at: '2026-10-03T14:05:47.554894+00:00'
+- id: dgt_accidents_2023
+  organization: DGT
+  dataset: accidents
+  url: https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/24h/TABLA_ACCIDENTES_23.XLSX
+  page_url: https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Ficheros-microdatos-de-accidentes-con-victimas-2023/
+  filename: dgt_accidents_2023.xlsx
+  format: xlsx
+  years:
+  - 2023
+  geographic_level: province
+  observation_unit: injury crash
+  denominator: none (numerator)
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://www.dgt.es/contenido/aviso-legal/
+  comparability: Counts at crash location; exposure stock at residence; not individual
+    risk
+  enabled: true
+  sample_sha256: d46c80382cb1d6655111735decfade72fe85b97abc315a9584e2c291f81f1e8b
+  sample_retrieved_at: '2026-10-03T14:05:45.339797+00:00'
+- id: dgt_accidents_2024
+  organization: DGT
+  dataset: accidents
+  url: https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/publicaciones/Ficheros_microdatos_de_accidentalidad_con_victimas/TABLA_ACCIDENTES_24.XLSX
+  page_url: https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Ficheros-de-microdatos-de-accidentes-con-victimas-2024/
+  filename: dgt_accidents_2024.xlsx
+  format: xlsx
+  years:
+  - 2024
+  geographic_level: province
+  observation_unit: injury crash
+  denominator: none (numerator)
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://www.dgt.es/contenido/aviso-legal/
+  comparability: Counts at crash location; exposure stock at residence; not individual
+    risk
+  enabled: true
+  sample_sha256: 4c39dbdf3c31fcd0c99a0b9e68fdd7fc017c689cda01546d1d34545a3c64b387
+  sample_retrieved_at: '2026-10-03T14:05:43.428241+00:00'
+- id: dgt_vehicles_2024
+  organization: DGT
+  dataset: vehicles
+  url: https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/publicaciones/Parque-de-vehiculos-Tablas-Estadisticas/Parque-de-vehiculos-Tablas-estadisticas-2024.xlsx
+  page_url: https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Parque-de-vehiculos-Tablas-estadisticas-2024/
+  filename: dgt_vehicles_2024.xlsx
+  format: xlsx
+  years:
+  - 2024
+  geographic_level: province
+  observation_unit: province-year
+  denominator: year-end registered vehicle stock excluding mopeds
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://www.dgt.es/contenido/aviso-legal/
+  comparability: Counts at crash location; exposure stock at residence; not individual
+    risk
+  enabled: true
+  sample_sha256: 85b8302a3d73546578500c3a94b32b9b068961d23eda16c39044e7e1e7b107a8
+  sample_retrieved_at: '2026-10-03T14:05:42.986232+00:00'
+- id: dgt_drivers_2024
+  organization: DGT
+  dataset: drivers
+  url: https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/publicaciones/Censo-conductores-Tablas-estadisticas/Censo-de-conductores-Tablas-estadisticas-2024.xlsx
+  page_url: https://www.dgt.es/menusecundario/dgt-en-cifras/dgt-en-cifras-resultados/dgt-en-cifras-detalle/Censo-de-conductores-Tablas-estadisticas-2024/
+  filename: dgt_drivers_2024.xlsx
+  format: xlsx
+  years:
+  - 2024
+  geographic_level: province
+  observation_unit: province-year
+  denominator: year-end resident licence holders
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://www.dgt.es/contenido/aviso-legal/
+  comparability: Counts at crash location; exposure stock at residence; not individual
+    risk
+  enabled: true
+  sample_sha256: 661de54f6cae97437e05bf4ea1b7ecebb7b4ab304e8155a068fd93fb5a197476
+  sample_retrieved_at: '2026-10-03T14:05:43.289207+00:00'
+- id: ine_population
+  organization: INE
+  dataset: population
+  url: https://www.ine.es/jaxiT3/files/t/csv_bd/2852.csv
+  page_url: https://www.ine.es/jaxiT3/Tabla.htm?t=2852
+  filename: ine_population.csv
+  format: csv
+  years:
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  geographic_level: province
+  observation_unit: province-year
+  denominator: resident population on 1 January
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://www.ine.es/aviso_legal
+  comparability: Population is an exposure proxy, not travel distance
+  enabled: false
+  sample_sha256: 60396c8312b6eed5870efdd487679c89aa2724697556bcf25b9610abdab04d77
+  sample_retrieved_at: '2026-10-03T14:05:43.812905+00:00'
+- id: erso_fatalities
+  organization: European Commission / Eurostat
+  dataset: fatalities
+  url: https://road-safety.transport.ec.europa.eu/document/download/a4a2cfe6-2100-4918-9702-188f995d9272_en?filename=fatalities_per_pop_2010-24_public_0.xlsx
+  page_url: https://road-safety.transport.ec.europa.eu/european-road-safety-observatory/data-and-analysis_en
+  filename: erso_fatalities.xlsx
+  format: xlsx
+  years:
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  geographic_level: country
+  observation_unit: country-year
+  denominator: none (numerator)
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://ec.europa.eu/eurostat/about-us/policies/copyright
+  comparability: 30-day fatalities; country notes and flags must be retained
+  enabled: true
+  sample_sha256: e72092cc2ecdbf835ed8563bab58438701583228cb0774341e6e5070f2db467e
+  sample_retrieved_at: '2026-10-03T14:05:44.159485+00:00'
+- id: insurance_europe_motor
+  organization: Insurance Europe
+  dataset: insurance
+  url: https://www.insuranceeurope.eu/downloads/european-insurance-industry-database-motor-insurance-statistics/Database-Motor.xlsx
+  page_url: https://www.insuranceeurope.eu/statistics
+  filename: insurance_europe_motor.xlsx
+  format: xlsx
+  years:
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  geographic_level: country
+  observation_unit: workbook tables
+  denominator: insured vehicle-years (check each table)
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://www.insuranceeurope.eu/about-us/2/how-we-work/disclaimer
+  comparability: Historical coverage and reporting vary; do not combine with modern
+    Spanish incidents
+  enabled: true
+  sample_sha256: 8af8a6600082567fced7bce9d298d398ec82669f018cf0e77dd952ab51ae443b
+  sample_retrieved_at: '2026-10-03T14:05:44.084833+00:00'
+- id: ine_population_67988
+  organization: INE
+  dataset: population
+  url: https://www.ine.es/jaxiT3/files/t/csv_bd/67988.csv
+  page_url: https://www.ine.es/jaxiT3/Tabla.htm?t=67988
+  filename: ine_population_67988.csv
+  format: csv
+  years:
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  geographic_level: province
+  observation_unit: province-year
+  denominator: resident population on 1 January
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://www.ine.es/aviso_legal
+  comparability: Population is an exposure proxy, not travel distance
+  enabled: true
+  sample_sha256: 1e83b03f07744c99d44edc6146237b50d88ca24b8efe65879a081aa27a03c8e1
+  sample_retrieved_at: '2026-10-03T14:10:57.184770+00:00'
+- id: eurostat_fatalities
+  organization: European Commission / Eurostat
+  dataset: fatalities
+  url: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tran_sf_roadus?lang=EN&sex=T&age=TOTAL&unit=NR&pers_cat=TOTAL&sinceTimePeriod=2022&untilTimePeriod=2024
+  page_url: https://ec.europa.eu/eurostat/cache/metadata/en/tran_sf_road_esms.htm
+  filename: eurostat_fatalities.json
+  format: json
+  years:
+  - 2022
+  - 2023
+  - 2024
+  geographic_level: country
+  observation_unit: country-year
+  denominator: none (numerator)
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://ec.europa.eu/eurostat/about-us/policies/copyright
+  comparability: 30-day fatalities; country notes and flags must be retained
+  enabled: true
+  sample_sha256: 473b64a8351608c08de88cd66cf94db8ea03a3c0d2f1b44363f755540ba991c1
+  sample_retrieved_at: '2026-10-03T14:10:56.876324+00:00'
+- id: eurostat_population
+  organization: European Commission / Eurostat
+  dataset: population
+  url: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjan?lang=EN&sex=T&age=TOTAL&unit=NR&sinceTimePeriod=2022&untilTimePeriod=2024
+  page_url: https://ec.europa.eu/eurostat/databrowser/view/demo_pjan/default/table
+  filename: eurostat_population.json
+  format: json
+  years:
+  - 2022
+  - 2023
+  - 2024
+  geographic_level: country
+  observation_unit: country-year
+  denominator: resident population on 1 January
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://ec.europa.eu/eurostat/about-us/policies/copyright
+  comparability: Country population is an exposure proxy
+  enabled: true
+  sample_sha256: e924bf4b65c94a4c03e8053b8f60702304687ba6df34903d8c8408e37db7ec5a
+  sample_retrieved_at: '2026-10-03T14:10:57.543652+00:00'
+- id: gisco_nuts3
+  organization: European Commission / Eurostat
+  dataset: geography
+  url: https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_20M_2024_4326_LEVL_3.geojson
+  page_url: https://gisco-services.ec.europa.eu/distribution/v2/nuts/
+  filename: gisco_nuts3.geojson
+  format: geojson
+  years:
+  - 2024
+  geographic_level: NUTS3
+  observation_unit: polygon
+  denominator: not applicable
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://ec.europa.eu/eurostat/about-us/policies/copyright
+  comparability: Administrative boundary vintage 2024; islands require province aggregation
+  enabled: true
+  sample_sha256: 2ce745f8ace09acabacb6944482ba8a57d7df9ba99827a7e78e6ba73094127c4
+  sample_retrieved_at: '2026-10-03T14:10:57.101762+00:00'
