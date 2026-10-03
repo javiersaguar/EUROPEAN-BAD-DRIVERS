@@ -7,24 +7,24 @@ name = "ebdi"
 version = "0.1.0"
 description = "Reproducible road-safety metrics, exposure audits and index experiments"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.14"
 license = "MIT"
 authors = [{name = "Javier Saguar"}]
 dependencies = [
   "pandas>=2.2,<3", "pyarrow>=18", "duckdb>=1.2", "requests>=2.32",
   "pyyaml>=6", "openpyxl>=3.1", "python-calamine>=0.3",
-  "numpy>=2", "scipy>=1.14", "scikit-learn>=1.6", "plotly>=6",
+  "numpy>=2", "scipy>=1.14", "scikit-learn==1.8.0", "plotly>=6",
   "streamlit>=1.44", "matplotlib>=3.9", "joblib>=1.4",
 ]
 
 [project.optional-dependencies]
-explain = ["shap>=0.47"]
+explain = ["shap==0.51.0", "numba>=0.61,<0.65"]
 
 [project.scripts]
 ebdi = "ebdi.cli:main"
 
 [dependency-groups]
-dev = ["pytest>=8", "ruff>=0.11", "mypy>=1.15", "pandas-stubs", "types-PyYAML", "types-requests"]
+dev = ["pytest>=8", "ruff>=0.11", "mypy>=1.15", "pandas-stubs", "types-PyYAML", "types-requests", "nbclient>=0.10", "nbformat>=5.10", "ipykernel>=6.29"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/ebdi"]
@@ -44,4 +44,3 @@ testpaths = ["tests"]
 files = ["src/ebdi"]
 ignore_missing_imports = true
 check_untyped_defs = true
-

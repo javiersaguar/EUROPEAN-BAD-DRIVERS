@@ -1,0 +1,104 @@
+{
+  "target": "Recorded injury crash has >=1 fatality or hospitalized injury at 30 days",
+  "personal_accident_risk": false,
+  "train_year": 2022,
+  "validation_year": 2023,
+  "test_year": 2024,
+  "refit_years": [
+    2022,
+    2023
+  ],
+  "selected_model": "hist_gradient_boosting",
+  "selection_criterion": "2023 validation log loss; 2024 never used for model selection",
+  "threshold": 0.5,
+  "threshold_policy": "fixed in advance; not tuned using test labels",
+  "features": [
+    "COD_PROVINCIA",
+    "ZONA_AGRUPADA",
+    "TIPO_VIA",
+    "TIPO_ACCIDENTE",
+    "NUDO",
+    "CONDICION_METEO",
+    "CONDICION_ILUMINACION",
+    "CONDICION_FIRME",
+    "DIA_SEMANA",
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos"
+  ],
+  "test_metrics": [
+    {
+      "model": "dummy",
+      "split": "test_2024",
+      "selected_on_validation": false,
+      "n": 101996,
+      "positive_n": 10019,
+      "prevalence": 0.09822934232715008,
+      "roc_auc": 0.5,
+      "pr_auc": 0.09822934232715008,
+      "log_loss": 0.3212542729863035,
+      "brier": 0.08859407788030776,
+      "threshold": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tn": 91977,
+      "fp": 0,
+      "fn": 10019,
+      "tp": 0
+    },
+    {
+      "model": "logistic",
+      "split": "test_2024",
+      "selected_on_validation": false,
+      "n": 101996,
+      "positive_n": 10019,
+      "prevalence": 0.09822934232715008,
+      "roc_auc": 0.6891672508470681,
+      "pr_auc": 0.21213531164745877,
+      "log_loss": 0.29953778982273266,
+      "brier": 0.08407781163364063,
+      "threshold": 0.5,
+      "precision": 0.39473684210526316,
+      "recall": 0.001497155404731011,
+      "tn": 91954,
+      "fp": 23,
+      "fn": 10004,
+      "tp": 15
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "split": "test_2024",
+      "selected_on_validation": true,
+      "n": 101996,
+      "positive_n": 10019,
+      "prevalence": 0.09822934232715008,
+      "roc_auc": 0.7030374932745584,
+      "pr_auc": 0.23352253830500663,
+      "log_loss": 0.2956973158879946,
+      "brier": 0.08309910740070359,
+      "threshold": 0.5,
+      "precision": 0.6823529411764706,
+      "recall": 0.011578001796586485,
+      "tn": 91923,
+      "fp": 54,
+      "fn": 9903,
+      "tp": 116
+    }
+  ],
+  "source_hashes": [
+    {
+      "id": "dgt_accidents_2022",
+      "sha256": "89f1b926c7df70588d1506ab89c373c1a64c373bb042e01406830759a0ede600"
+    },
+    {
+      "id": "dgt_accidents_2023",
+      "sha256": "d46c80382cb1d6655111735decfade72fe85b97abc315a9584e2c291f81f1e8b"
+    },
+    {
+      "id": "dgt_accidents_2024",
+      "sha256": "4c39dbdf3c31fcd0c99a0b9e68fdd7fc017c689cda01546d1d34545a3c64b387"
+    }
+  ],
+  "notes": "Descriptive conditional severity; reporting and outcome-based selection limit generalization. Permutation importance is association, not causal influence."
+}

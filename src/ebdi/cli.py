@@ -9,7 +9,8 @@ from ebdi.utils.io import project_root
 def main() -> None:
     parser = argparse.ArgumentParser(description="European Bad Drivers Index research pipeline")
     parser.add_argument(
-        "command", choices=["download", "process", "analysis", "model", "all", "dashboard"]
+        "command",
+        choices=["download", "process", "analysis", "model", "explain", "all", "dashboard"],
     )
     parser.add_argument("--root", type=Path)
     parser.add_argument(
@@ -35,6 +36,10 @@ def main() -> None:
         from ebdi.modeling.severity import train
 
         train(root)
+    if args.command == "explain":
+        from ebdi.modeling.explain import explain
+
+        explain(root)
     if args.command == "dashboard":
         import subprocess
         import sys

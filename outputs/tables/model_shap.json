@@ -1,0 +1,10 @@
+{
+  "model": "hist_gradient_boosting",
+  "sample_year": 2024,
+  "sample_n": 400,
+  "seed": 42,
+  "output": "raw log-odds of recorded-crash severity",
+  "maximum_additivity_error": 3.552713678800501e-15,
+  "causal_interpretation": false,
+  "dependence_assumption": "tree-path-dependent for boosting; training background for logistic"
+}
