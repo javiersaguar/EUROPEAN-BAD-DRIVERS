@@ -13,6 +13,7 @@ from ebdi.metrics.index import bootstrap_index, composite, sensitivity
 from ebdi.utils.io import read_yaml, write_json
 
 COLORS = ["#163b4c", "#cd693e", "#3a8d91", "#d5b662"]
+plt.rcParams["svg.hashsalt"] = "ebdi-v0.1"
 
 
 def save_figure(fig: plt.Figure, path: Path) -> None:
@@ -20,7 +21,17 @@ def save_figure(fig: plt.Figure, path: Path) -> None:
         ax.spines[["top", "right"]].set_visible(False)
         ax.tick_params(colors="#304552", labelsize=9)
     fig.savefig(path.with_suffix(".png"), dpi=220, bbox_inches="tight", facecolor="#fffdf9")
-    fig.savefig(path.with_suffix(".svg"), bbox_inches="tight", facecolor="#fffdf9")
+    fig.savefig(
+        path.with_suffix(".svg"),
+        bbox_inches="tight",
+        facecolor="#fffdf9",
+        metadata={"Date": None, "Creator": "EBDI | Javier Saguar"},
+    )
+    svg = path.with_suffix(".svg")
+    svg.write_text(
+        "\n".join(line.rstrip() for line in svg.read_text(encoding="utf-8").splitlines()) + "\n",
+        encoding="utf-8",
+    )
     plt.close(fig)
 
 
@@ -32,6 +43,10 @@ def analysis(root: Path) -> dict:
     weights, method = config["weights"], config["normalization"]
     minimum = config["minimum_injury_crashes"]
     latest_year = int(panel.year.max())
+    from ebdi.visualization.eda import breakdowns, figures
+
+    breakdown = breakdowns(root, accidents)
+    figures(root, breakdown, latest_year)
     latest = panel.loc[panel.year.eq(latest_year)].reset_index(drop=True)
     indices = pd.concat(
         [composite(group, weights, method, minimum) for _, group in panel.groupby("year")],
@@ -220,7 +235,9 @@ def analysis(root: Path) -> dict:
                 f"{component_corr.iloc[i, j]:.2f}",
                 ha="center",
                 va="center",
-                color="white" if abs(component_corr.to_numpy(dtype=float)[i, j]) > 0.65 else COLORS[0],
+                color="white"
+                if abs(component_corr.to_numpy(dtype=float)[i, j]) > 0.65
+                else COLORS[0],
             )
     fig.colorbar(image, ax=ax, label="Spearman correlation")
     save_figure(fig, fig_dir / "component_correlations")
@@ -232,15 +249,17 @@ def analysis(root: Path) -> dict:
         "latest_injury_crashes": int(nation.iloc[-1].injury_crashes),
         "latest_fatalities": int(nation.iloc[-1].fatalities),
         "count_vs_population_rank_correlation": float(correlation.to_numpy(dtype=float)[0, 1]),
-        "injury_vs_fatality_rank_correlation": float(
-            correlation.to_numpy(dtype=float)[1, -1]
-        ),
+        "injury_vs_fatality_rank_correlation": float(correlation.to_numpy(dtype=float)[1, -1]),
         "index_rank_stability_first_last": float(rank_stability.to_numpy(dtype=float)[0, -1]),
         "largest_weight_rank_span": float(
             (summary.weight_rank_max - summary.weight_rank_min).max()
         ),
-        "largest_injury_population_rate_province": latest.sort_values("injury_crashes_per_100k_population").iloc[-1]["province"],
-        "largest_fatality_population_rate_province": latest.sort_values("fatalities_per_100k_population").iloc[-1]["province"],
+        "largest_injury_population_rate_province": latest.sort_values(
+            "injury_crashes_per_100k_population"
+        ).iloc[-1]["province"],
+        "largest_fatality_population_rate_province": latest.sort_values(
+            "fatalities_per_100k_population"
+        ).iloc[-1]["province"],
         "weights": weights,
         "normalization": method,
     }

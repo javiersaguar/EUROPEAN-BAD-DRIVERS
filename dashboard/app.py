@@ -110,6 +110,30 @@ if section == "Panorama":
     st.info(
         f"En {year}, la correlación de rankings entre tasas de siniestros y mortalidad es {correlation:.3f}. Elegir un indicador cambia la pregunta que responde el ranking."
     )
+    breakdown_path = ROOT / "outputs/tables/crash_breakdowns.csv"
+    if breakdown_path.exists():
+        with st.expander("Cuándo y cómo se registran los siniestros"):
+            groups = load_table("crash_breakdowns")
+            dimension = st.selectbox(
+                "Dimensión",
+                ["MES", "HORA", "DIA_SEMANA", "TIPO_ACCIDENTE", "TIPO_VIA", "CONDICION_METEO"],
+                key="eda_dimension",
+            )
+            grouped = groups.loc[groups.year.eq(year) & groups.dimension.eq(dimension)]
+            fig = px.bar(
+                grouped,
+                x="label",
+                y="injury_crashes",
+                hover_data=["severe_crashes", "conditional_severe_fraction", "small_sample"],
+                labels={
+                    "label": "Categoría registrada",
+                    "injury_crashes": "Siniestros registrados",
+                },
+            )
+            st.plotly_chart(style(fig), width="stretch", key="eda_counts")
+            st.caption(
+                "Recuentos y gravedad entre siniestros registrados. Sin viajes o kilómetros por grupo, no miden la probabilidad de sufrir un accidente."
+            )
 
 elif section == "Territorios":
     st.subheader("Un territorio, varios denominadores")

@@ -25,6 +25,20 @@ sources:
   enabled: true
   sample_sha256: 89f1b926c7df70588d1506ab89c373c1a64c373bb042e01406830759a0ede600
   sample_retrieved_at: '2026-10-03T14:05:45.587679+00:00'
+  dataset_title: Recorded road crashes with victims
+  key_variables: &id001
+  - ID_ACCIDENTE
+  - ANYO
+  - MES
+  - DIA_SEMANA
+  - HORA
+  - COD_PROVINCIA
+  - TIPO_ACCIDENTE
+  - ZONA_AGRUPADA
+  - TOTAL_MU30DF
+  - TOTAL_HG30DF
+  known_limitations: Injury crashes only; no driver demographics, individual vehicle
+    age or non-crash controls; crash location differs from exposure residence.
 - id: dgt_dictionary
   organization: DGT
   dataset: dictionary
@@ -46,6 +60,12 @@ sources:
   enabled: true
   sample_sha256: 1df06643eff95dd7f3211fca7fad2c95f2d926930d12ca97a345c764995d0ae9
   sample_retrieved_at: '2026-10-03T14:05:42.665749+00:00'
+  dataset_title: Accident table code dictionary
+  key_variables:
+  - category code
+  - publisher label
+  known_limitations: Code labels require workbook-specific sheet layouts; optional
+    missing categories remain unknown.
 - id: dgt_vehicles_2022
   organization: DGT
   dataset: vehicles
@@ -67,6 +87,13 @@ sources:
   enabled: true
   sample_sha256: 051ae4c25c968bbcdd1d18363616ff83986ff7c93b0773ac5005d40d491e92ec
   sample_retrieved_at: '2026-10-03T14:05:42.482615+00:00'
+  dataset_title: Registered vehicle fleet by province
+  key_variables: &id002
+  - province
+  - vehicle-category stocks
+  - total stock
+  known_limitations: Year-end registrations, not vehicle-kilometres; selected total
+    excludes mopeds and includes trailers/semitrailers.
 - id: dgt_drivers_2022
   organization: DGT
   dataset: drivers
@@ -78,7 +105,7 @@ sources:
   - 2022
   geographic_level: province
   observation_unit: province-year
-  denominator: year-end resident licence holders
+  denominator: year-end resident driving-permit holders excluding special licences
   update_frequency: annual
   schema_version: audited 2026-10-03
   reuse: Source terms apply; not relicensed under MIT
@@ -88,6 +115,15 @@ sources:
   enabled: true
   sample_sha256: 465d8f878a4708571a940c11fb9823bf668b53548c57d88211ce24d464c94725
   sample_retrieved_at: '2026-10-03T14:05:47.554894+00:00'
+  dataset_title: Driving-permit holders by residence province
+  key_variables: &id003
+  - residence province
+  - sex
+  - driving permits
+  - special licences
+  known_limitations: Year-end residence stock, not trips; selected column excludes
+    special licences; crash participant demographics cannot be derived from census
+    sex.
 - id: dgt_accidents_2023
   organization: DGT
   dataset: accidents
@@ -109,6 +145,10 @@ sources:
   enabled: true
   sample_sha256: d46c80382cb1d6655111735decfade72fe85b97abc315a9584e2c291f81f1e8b
   sample_retrieved_at: '2026-10-03T14:05:45.339797+00:00'
+  dataset_title: Recorded road crashes with victims
+  key_variables: *id001
+  known_limitations: Injury crashes only; no driver demographics, individual vehicle
+    age or non-crash controls; crash location differs from exposure residence.
 - id: dgt_accidents_2024
   organization: DGT
   dataset: accidents
@@ -123,13 +163,18 @@ sources:
   denominator: none (numerator)
   update_frequency: annual
   schema_version: audited 2026-10-03
-  reuse: Source terms apply; not relicensed under MIT
+  reuse: CC BY 4.0 per datos.gob.es catalogue; attribute DGT and identify transformations;
+    MIT applies only to original code
   license_url: https://www.dgt.es/contenido/aviso-legal/
   comparability: Counts at crash location; exposure stock at residence; not individual
     risk
   enabled: true
   sample_sha256: 4c39dbdf3c31fcd0c99a0b9e68fdd7fc017c689cda01546d1d34545a3c64b387
   sample_retrieved_at: '2026-10-03T14:05:43.428241+00:00'
+  dataset_title: Recorded road crashes with victims
+  key_variables: *id001
+  known_limitations: Injury crashes only; no driver demographics, individual vehicle
+    age or non-crash controls; crash location differs from exposure residence.
 - id: dgt_vehicles_2024
   organization: DGT
   dataset: vehicles
@@ -151,6 +196,10 @@ sources:
   enabled: true
   sample_sha256: 85b8302a3d73546578500c3a94b32b9b068961d23eda16c39044e7e1e7b107a8
   sample_retrieved_at: '2026-10-03T14:05:42.986232+00:00'
+  dataset_title: Registered vehicle fleet by province
+  key_variables: *id002
+  known_limitations: Year-end registrations, not vehicle-kilometres; selected total
+    excludes mopeds and includes trailers/semitrailers.
 - id: dgt_drivers_2024
   organization: DGT
   dataset: drivers
@@ -162,7 +211,7 @@ sources:
   - 2024
   geographic_level: province
   observation_unit: province-year
-  denominator: year-end resident licence holders
+  denominator: year-end resident driving-permit holders excluding special licences
   update_frequency: annual
   schema_version: audited 2026-10-03
   reuse: Source terms apply; not relicensed under MIT
@@ -172,6 +221,11 @@ sources:
   enabled: true
   sample_sha256: 661de54f6cae97437e05bf4ea1b7ecebb7b4ab304e8155a068fd93fb5a197476
   sample_retrieved_at: '2026-10-03T14:05:43.289207+00:00'
+  dataset_title: Driving-permit holders by residence province
+  key_variables: *id003
+  known_limitations: Year-end residence stock, not trips; selected column excludes
+    special licences; crash participant demographics cannot be derived from census
+    sex.
 - id: ine_population
   organization: INE
   dataset: population
@@ -217,6 +271,17 @@ sources:
   enabled: false
   sample_sha256: 60396c8312b6eed5870efdd487679c89aa2724697556bcf25b9610abdab04d77
   sample_retrieved_at: '2026-10-03T14:05:43.812905+00:00'
+  dataset_title: Population on 1 January
+  key_variables: &id004
+  - geography
+  - sex total
+  - age total where available
+  - year
+  - residents
+  - publisher flags where available
+  known_limitations: Resident stock is a travel exposure proxy; source geography and
+    reference date must match explicitly. This legacy table ends in 2021; disabled
+    for the 2022–2024 panel.
 - id: erso_fatalities
   organization: European Commission / Eurostat
   dataset: fatalities
@@ -251,6 +316,14 @@ sources:
   enabled: true
   sample_sha256: e72092cc2ecdbf835ed8563bab58438701583228cb0774341e6e5070f2db467e
   sample_retrieved_at: '2026-10-03T14:05:44.159485+00:00'
+  dataset_title: Road fatalities at 30 days
+  key_variables: &id005
+  - country
+  - year
+  - fatalities
+  - publisher flags or notes
+  known_limitations: Includes all road users; follow-up and registration differ; retain
+    notes/flags. Not an injury or driving-quality comparison.
 - id: insurance_europe_motor
   organization: Insurance Europe
   dataset: insurance
@@ -284,6 +357,16 @@ sources:
   enabled: true
   sample_sha256: 8af8a6600082567fced7bce9d298d398ec82669f018cf0e77dd952ab51ae443b
   sample_retrieved_at: '2026-10-03T14:05:44.084833+00:00'
+  dataset_title: Historical motor insurance statistical workbook
+  key_variables:
+  - MTPL claims
+  - insured vehicle-years
+  - claim frequency
+  - country
+  - year
+  - table notes
+  known_limitations: Ends in 2016; units/country coverage vary; frequency notes permit
+    fallback denominators. Downloaded for audit only, excluded from current facts.
 - id: ine_population_67988
   organization: INE
   dataset: population
@@ -308,6 +391,10 @@ sources:
   enabled: true
   sample_sha256: 1e83b03f07744c99d44edc6146237b50d88ca24b8efe65879a081aa27a03c8e1
   sample_retrieved_at: '2026-10-03T14:10:57.184770+00:00'
+  dataset_title: Population on 1 January
+  key_variables: *id004
+  known_limitations: Resident stock is a travel exposure proxy; source geography and
+    reference date must match explicitly.
 - id: eurostat_fatalities
   organization: European Commission / Eurostat
   dataset: fatalities
@@ -330,6 +417,10 @@ sources:
   enabled: true
   sample_sha256: 473b64a8351608c08de88cd66cf94db8ea03a3c0d2f1b44363f755540ba991c1
   sample_retrieved_at: '2026-10-03T14:10:56.876324+00:00'
+  dataset_title: Road fatalities at 30 days
+  key_variables: *id005
+  known_limitations: Includes all road users; follow-up and registration differ; retain
+    notes/flags. Not an injury or driving-quality comparison.
 - id: eurostat_population
   organization: European Commission / Eurostat
   dataset: population
@@ -352,6 +443,10 @@ sources:
   enabled: true
   sample_sha256: e924bf4b65c94a4c03e8053b8f60702304687ba6df34903d8c8408e37db7ec5a
   sample_retrieved_at: '2026-10-03T14:10:57.543652+00:00'
+  dataset_title: Population on 1 January
+  key_variables: *id004
+  known_limitations: Resident stock is a travel exposure proxy; source geography and
+    reference date must match explicitly.
 - id: gisco_nuts3
   organization: European Commission / Eurostat
   dataset: geography
@@ -366,9 +461,18 @@ sources:
   denominator: not applicable
   update_frequency: annual
   schema_version: audited 2026-10-03
-  reuse: Source terms apply; not relicensed under MIT
+  reuse: 'GISCO download provisions and map attribution: © EuroGeographics; not relicensed
+    under MIT'
   license_url: https://ec.europa.eu/eurostat/about-us/policies/copyright
   comparability: Administrative boundary vintage 2024; islands require province aggregation
   enabled: true
   sample_sha256: 2ce745f8ace09acabacb6944482ba8a57d7df9ba99827a7e78e6ba73094127c4
   sample_retrieved_at: '2026-10-03T14:10:57.101762+00:00'
+  dataset_title: NUTS 2024 level-3 boundaries at 1:20 million
+  key_variables:
+  - NUTS_ID
+  - NUTS_NAME
+  - CNTR_CODE
+  - geometry
+  known_limitations: Map only; generalized boundary vintage; island NUTS3 areas aggregated
+    to Spanish provinces; no exposure measure.

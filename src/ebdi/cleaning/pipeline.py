@@ -151,10 +151,15 @@ def europe(root: Path) -> pd.DataFrame:
     df = checked_join(left, right, ["geo", "time"])
     if (
         df.duplicated(["geo", "time"]).any()
+        or df[["fatalities", "population"]].isna().any().any()
         or df.population.le(0).any()
         or df.fatalities.lt(0).any()
     ):
         raise ValueError("Invalid European observations")
+    years = read_yaml(root / "configs/sources.yaml")["years"]
+    expected = {(country, str(year)) for country in EU27 for year in years}
+    if set(df[["geo", "time"]].itertuples(index=False, name=None)) != expected:
+        raise ValueError("European country/year coverage changed; expected EU-27 for audited years")
     labels = json.loads(raw_path(root, "eurostat_fatalities").read_text(encoding="utf-8"))[
         "dimension"
     ]["geo"]["category"]["label"]
@@ -193,6 +198,7 @@ def process(root: Path) -> dict[str, Any]:
         "TITULARIDAD_VIA",
         "CONDICION_METEO",
         "CONDICION_ILUMINACION",
+        "CONDICION_FIRME",
         "NUDO",
     ]
     allowed = {c: set(dictionary(root, c)) for c in categorical}
@@ -257,6 +263,42 @@ def process(root: Path) -> dict[str, Any]:
     # Public summary contains aggregated original analysis, never participant identifiers.
     panel.to_csv(root / "outputs/tables/spain_metrics.csv", index=False)
     euro.to_csv(root / "outputs/tables/europe_metrics.csv", index=False)
+    comparisons = []
+    for record in euro.to_dict("records"):
+        for variable in [
+            "fatalities",
+            "population",
+            "injury_crashes",
+            "insurance_claims",
+            "vehicle_km",
+        ]:
+            available = variable in {"fatalities", "population"}
+            comparisons.append(
+                {
+                    "geo": record["geo"],
+                    "country": record["country"],
+                    "year": record["year"],
+                    "variable": variable,
+                    "included": available,
+                    "source": "tran_sf_roadus"
+                    if variable == "fatalities"
+                    else "demo_pjan"
+                    if variable == "population"
+                    else "not harmonized in this release",
+                    "status_flag": record.get(f"{variable}_status", ""),
+                    "definition": "30-day road deaths, all users"
+                    if variable == "fatalities"
+                    else "resident population, 1 January"
+                    if variable == "population"
+                    else "no audited comparable modern panel",
+                    "comparability": "limited: registration differences; retain publisher flags"
+                    if variable == "fatalities"
+                    else "exposure proxy, not kilometres travelled"
+                    if variable == "population"
+                    else "excluded; never filled or combined with modern fatalities",
+                }
+            )
+    pd.DataFrame(comparisons).to_csv(root / "outputs/tables/country_comparability.csv", index=False)
     write_json(
         root / "outputs/tables/source_schema.json",
         {
