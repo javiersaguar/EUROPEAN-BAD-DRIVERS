@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-03T18:36:22.836960+00:00",
+  "checked_at": "2026-10-03T22:56:43.158343+00:00",
   "availability": "ok",
-  "release": "0.2.0",
-  "audit_date": "2026-10-03",
+  "release": "0.3.0",
+  "audit_date": "2026-10-04",
   "url": "https://javiersaguar.github.io/EUROPEAN-BAD-DRIVERS/",
   "note": "Availability/version consistency only; source freshness is checked separately"
 }

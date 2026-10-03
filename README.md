@@ -12,7 +12,7 @@ The provocative name is a research hook. An experimental composite describes **o
 [![Observatory checks](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/web.yml/badge.svg)](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/web.yml)
 [![Source and availability monitoring](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/monitor.yml/badge.svg)](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/monitor.yml)
 
-![Published React observatory, version 0.2.0](outputs/figures/observatory_desktop.png)
+![Published material-damage observatory, version 0.3.0](outputs/figures/material_desktop_0.3.0.png)
 
 ## New material-damage and demographic analysis
 
