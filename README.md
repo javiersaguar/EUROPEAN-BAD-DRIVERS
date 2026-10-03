@@ -1,8 +1,10 @@
-# European Bad Drivers Index
+# Observatorio europeo de siniestralidad vial
+
+[Open the observatory](https://javiersaguar.github.io/EUROPEAN-BAD-DRIVERS/) · [Release 0.2.0 / twenty improvements](docs/release_0.2.0.md) · [Verification](docs/verification_0.2.0.md)
 
 **Can public data tell us where people drive “worse”—or does the answer change with the measure?**
 
-EBDI turns that question into a reproducible road-safety research project. It combines real DGT crash records, INE population, DGT vehicle/permit stocks and Eurostat mortality data, then tests how territorial rankings change with outcomes, denominators and explicit methodological choices. The Spanish dashboard is an interactive companion to the English research documentation.
+EBDI turns that question into a reproducible road-safety research project. It combines real DGT crash records, INE population, DGT vehicle/permit stocks and Eurostat mortality data, then tests how territorial rankings change with outcomes, denominators and explicit methodological choices. The Spanish React observatory is the public product; Python and English research documentation provide its reproducible analytical foundation.
 
 The provocative name is a research hook. An experimental composite describes **observed territorial burden**, not the driving ability of residents. A separate **Golpes de chapa** explorer adds real UNESPA material-damage insurance data for 2024, with its own coverage and selection limits.
 
@@ -24,22 +26,22 @@ Every result is computed by the pipeline and traceable through [findings](docs/f
 
 ![Changing weights changes the rank](outputs/figures/weight_sensitivity.png)
 
-## Run the dashboard
+## Run the observatory
 
-Install [uv](https://docs.astral.sh/uv/), then:
+Node 24, no API keys:
 
 ```sh
 git clone https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS.git
-cd EUROPEAN-BAD-DRIVERS
-uv sync --locked
-uv run ebdi dashboard
+cd EUROPEAN-BAD-DRIVERS/web
+npm ci --ignore-scripts
+npm run dev -- --port 8501
 ```
 
-Published aggregate CSVs make the dashboard usable immediately. The Spain map becomes available after downloading and processing the source geography. The eight views cover overview, **material-damage insurance**, selectable territorial measures/denominators, configurable index weights, temporal comparisons, EU mortality, conditional-severity models, and visible methodology/source coverage. CSV downloads retain the units and coverage of each source. The insurance explorer contains 40 published cities per coverage, national shares/costs and explicitly labelled all-coverage provincial volumes. See [insurance definitions and limits](docs/insurance.md). The developer toolbar is hidden.
+Ten views: overview, provincial rates and matched state-network exposure, province profile, comparison of up to three territories, material-damage insurance, 2010–2024 history, Europe, configurable index, severity models and sources. All filters are shareable. Charts have text/table alternatives; downloads include CSV, PDF, SVG and PNG with provenance and scope. Fonts and derived GISCO cartography are bundled; there is no developer toolbar or Deploy button.
 
-<img src="outputs/figures/dashboard_overview.png" alt="Spanish dashboard with headline totals and methodology explanation" width="420">
+The published aggregates make the app usable immediately without downloading raw crash files. The layout takes inspiration from the quiet console in [HS-Maisa](https://github.com/javiersaguar/HS-Maisa), with original code, assets and design tokens. See [deployment](docs/deployment.md), [the twenty improvements](docs/release_0.2.0.md) and [insurance limits](docs/insurance.md).
 
-<img src="outputs/figures/dashboard_insurance.png" alt="Material-damage insurance section with audited UNESPA 2024 coverage data and no developer toolbar" width="420">
+The optional legacy research dashboard remains available: install uv, then `uv sync --locked` and `uv run ebdi dashboard` on a different port if React is running. It is not the public production frontend.
 
 ## Reproduce the research in stages
 
@@ -53,11 +55,16 @@ uv run python scripts/build_reference.py
 uv run ebdi analysis                 # EDA, rates, index, sensitivity, original figures
 uv run ebdi model                    # temporal model selection and final evaluation
 uv run --extra explain ebdi explain  # SHAP on a real held-out sample
+uv run ebdi history                 # separate EU-27 mortality context, 2010–2024
+uv run ebdi exposure                # matched RCE/state-road panel, 2022
+uv run ebdi alternative             # 50/50 injury/mortality index
+uv run ebdi policy                  # exploratory validation-selected threshold
+uv run ebdi site                    # versioned public aggregate contract
 uv run python scripts/build_notebooks.py
 uv run pytest -q
 ```
 
-`uv run ebdi all` runs the five core data/model commands. `make install` and `make all` also support the full workflow, including SHAP, executed notebooks and checks. Installation and fresh source downloads need network access; cached analysis runs locally. See [reproduction](docs/reproduction.md) for selective targets, optional Docker, cache revisions and maintenance. Source endpoints can change: audited hash mismatches require review and are never silently accepted.
+`uv run ebdi all` runs the core data/model and observatory aggregate commands. `make install` and `make all` also support the full workflow, including SHAP, executed notebooks and checks. Installation and fresh source downloads need network access; cached analysis runs locally. See [reproduction](docs/reproduction.md) for selective targets, optional Docker, cache revisions and maintenance. Source endpoints can change: audited hash mismatches require review and are never silently accepted.
 
 ## Sources and coverage
 
@@ -65,7 +72,7 @@ uv run pytest -q
 |---|---|---|
 | DGT accident-with-victims microdata and dictionary | Crash, severity, road/collision/time circumstances | 2022–2024, one crash per row; no individual driver demographics or vehicle ages |
 | INE annual census, table 67988 | Same-year population denominator | Resident population on 1 January; exposure proxy |
-| DGT fleet and resident permit census | Alternative denominators | Audited 2022 and 2024 stocks; 2023 stays missing |
+| DGT fleet and resident permit census | Alternative denominators | Audited 2022, 2023 and 2024 stocks; all 156 province-years complete |
 | Eurostat `tran_sf_roadus`, `demo_pjan`; ERSO cross-check | EU-27 deaths per million residents | Shared 30-day outcome, 2022–2024; flags retained |
 | GISCO NUTS 2024 | Local provincial choropleth | Island polygons explicitly aggregated; cartographic attribution required |
 | UNESPA 2024 automobile report | Separate material-damage explorer | National coverage shares/costs, 40 selected cities per coverage and 50 all-coverage provincial totals; no complete municipal claims/exposure panel |
@@ -112,6 +119,6 @@ All candidates' metrics, confusion matrices, calibration bin sizes, holdout perm
 
 Tests cover formulas, zero/missing denominators, geographic joins, temporal mappings, category/schema drift, weights, leakage, cache integrity, aggregate conservation and dashboard behavior. GitHub Actions checks Windows/Linux and executes the four notebooks without downloading national raw files on every push.
 
-The central limits are injury-only reporting, imperfect exposure proxies, missing 2023 stock denominators, overlapping components, a short temporal window, and differing registration systems. Complete municipal claims/exposure panels, full-network vehicle-kilometres and demographic involvement risk require additional audited sources. The separate [insurance explorer](docs/insurance.md) preserves the selection and definition limits of UNESPA's published 2024 tables. See [limitations](docs/limitations.md) and the honest [publication draft](docs/publication_note.md).
+The central limits are injury-only reporting, imperfect exposure proxies, overlapping components, a short Spanish injury-crash window, and differing registration systems. Complete municipal claims/exposure panels, full-network vehicle-kilometres and demographic involvement risk require additional audited sources. The separate [insurance explorer](docs/insurance.md) preserves the selection and definition limits of UNESPA's published 2024 tables. See [limitations](docs/limitations.md) and the honest [publication draft](docs/publication_note.md).
 
 **Author: Javier Saguar.** Delivery follows six [stages](docs/stages.md). Commits use Javier's author identity, without co-author trailers. Original code is [MIT licensed](LICENSE); underlying datasets retain their own reuse terms. Credit DGT, INE, Eurostat/CARE, European Commission/ERSO, UNESPA and © EuroGeographics for applicable cartography. Derived figures identify analysis choices and source coverage.

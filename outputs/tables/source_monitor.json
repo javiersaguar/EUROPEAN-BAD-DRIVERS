@@ -1,0 +1,127 @@
+{
+  "checked_at": "2026-10-03T18:03:48.907854+00:00",
+  "active_sources_changed": false,
+  "sources": [
+    {
+      "id": "dgt_accidents_2022",
+      "audited_sha256": "89f1b926c7df70588d1506ab89c373c1a64c373bb042e01406830759a0ede600",
+      "retrieved_sha256": "89f1b926c7df70588d1506ab89c373c1a64c373bb042e01406830759a0ede600",
+      "status": "unchanged"
+    },
+    {
+      "id": "dgt_dictionary",
+      "audited_sha256": "1df06643eff95dd7f3211fca7fad2c95f2d926930d12ca97a345c764995d0ae9",
+      "retrieved_sha256": "1df06643eff95dd7f3211fca7fad2c95f2d926930d12ca97a345c764995d0ae9",
+      "status": "unchanged"
+    },
+    {
+      "id": "dgt_vehicles_2022",
+      "audited_sha256": "051ae4c25c968bbcdd1d18363616ff83986ff7c93b0773ac5005d40d491e92ec",
+      "retrieved_sha256": "051ae4c25c968bbcdd1d18363616ff83986ff7c93b0773ac5005d40d491e92ec",
+      "status": "unchanged"
+    },
+    {
+      "id": "dgt_drivers_2022",
+      "audited_sha256": "465d8f878a4708571a940c11fb9823bf668b53548c57d88211ce24d464c94725",
+      "retrieved_sha256": "465d8f878a4708571a940c11fb9823bf668b53548c57d88211ce24d464c94725",
+      "status": "unchanged"
+    },
+    {
+      "id": "dgt_accidents_2023",
+      "audited_sha256": "d46c80382cb1d6655111735decfade72fe85b97abc315a9584e2c291f81f1e8b",
+      "retrieved_sha256": "d46c80382cb1d6655111735decfade72fe85b97abc315a9584e2c291f81f1e8b",
+      "status": "unchanged"
+    },
+    {
+      "id": "dgt_accidents_2024",
+      "audited_sha256": "4c39dbdf3c31fcd0c99a0b9e68fdd7fc017c689cda01546d1d34545a3c64b387",
+      "retrieved_sha256": "4c39dbdf3c31fcd0c99a0b9e68fdd7fc017c689cda01546d1d34545a3c64b387",
+      "status": "unchanged"
+    },
+    {
+      "id": "dgt_vehicles_2024",
+      "audited_sha256": "85b8302a3d73546578500c3a94b32b9b068961d23eda16c39044e7e1e7b107a8",
+      "retrieved_sha256": "85b8302a3d73546578500c3a94b32b9b068961d23eda16c39044e7e1e7b107a8",
+      "status": "unchanged"
+    },
+    {
+      "id": "dgt_drivers_2024",
+      "audited_sha256": "661de54f6cae97437e05bf4ea1b7ecebb7b4ab304e8155a068fd93fb5a197476",
+      "retrieved_sha256": "661de54f6cae97437e05bf4ea1b7ecebb7b4ab304e8155a068fd93fb5a197476",
+      "status": "unchanged"
+    },
+    {
+      "id": "erso_fatalities",
+      "audited_sha256": "e72092cc2ecdbf835ed8563bab58438701583228cb0774341e6e5070f2db467e",
+      "retrieved_sha256": "e72092cc2ecdbf835ed8563bab58438701583228cb0774341e6e5070f2db467e",
+      "status": "unchanged"
+    },
+    {
+      "id": "insurance_europe_motor",
+      "audited_sha256": "8af8a6600082567fced7bce9d298d398ec82669f018cf0e77dd952ab51ae443b",
+      "retrieved_sha256": "8af8a6600082567fced7bce9d298d398ec82669f018cf0e77dd952ab51ae443b",
+      "status": "unchanged"
+    },
+    {
+      "id": "ine_population_67988",
+      "audited_sha256": "1e83b03f07744c99d44edc6146237b50d88ca24b8efe65879a081aa27a03c8e1",
+      "retrieved_sha256": "1e83b03f07744c99d44edc6146237b50d88ca24b8efe65879a081aa27a03c8e1",
+      "status": "unchanged"
+    },
+    {
+      "id": "eurostat_fatalities",
+      "audited_sha256": "473b64a8351608c08de88cd66cf94db8ea03a3c0d2f1b44363f755540ba991c1",
+      "retrieved_sha256": "473b64a8351608c08de88cd66cf94db8ea03a3c0d2f1b44363f755540ba991c1",
+      "status": "unchanged"
+    },
+    {
+      "id": "eurostat_population",
+      "audited_sha256": "e924bf4b65c94a4c03e8053b8f60702304687ba6df34903d8c8408e37db7ec5a",
+      "retrieved_sha256": "e924bf4b65c94a4c03e8053b8f60702304687ba6df34903d8c8408e37db7ec5a",
+      "status": "unchanged"
+    },
+    {
+      "id": "gisco_nuts3",
+      "audited_sha256": "2ce745f8ace09acabacb6944482ba8a57d7df9ba99827a7e78e6ba73094127c4",
+      "retrieved_sha256": "2ce745f8ace09acabacb6944482ba8a57d7df9ba99827a7e78e6ba73094127c4",
+      "status": "unchanged"
+    },
+    {
+      "id": "unespa_motor_2024",
+      "audited_sha256": "20211e0e670fc7397e0455320d27166036c357a331b6bc8fddd8fd95d32aa429",
+      "retrieved_sha256": "20211e0e670fc7397e0455320d27166036c357a331b6bc8fddd8fd95d32aa429",
+      "status": "unchanged"
+    },
+    {
+      "id": "dgt_vehicles_2023",
+      "audited_sha256": "f46f244b13d4fd14666565e59c0e7c312e22c429f9e805c118a3b5f625d8fb48",
+      "retrieved_sha256": "f46f244b13d4fd14666565e59c0e7c312e22c429f9e805c118a3b5f625d8fb48",
+      "status": "unchanged"
+    },
+    {
+      "id": "dgt_drivers_2023",
+      "audited_sha256": "520377ec2091e8164f4ef5caeb6f3e2c93fc6e6157664e955273347d6e0857d0",
+      "retrieved_sha256": "520377ec2091e8164f4ef5caeb6f3e2c93fc6e6157664e955273347d6e0857d0",
+      "status": "unchanged"
+    },
+    {
+      "id": "eurostat_fatalities_history",
+      "audited_sha256": "1e494a4fc8eae2525ff2715071bc4c7fd5034fc6a7c2b29517d9b14e2ddfc35c",
+      "retrieved_sha256": "1e494a4fc8eae2525ff2715071bc4c7fd5034fc6a7c2b29517d9b14e2ddfc35c",
+      "status": "unchanged"
+    },
+    {
+      "id": "eurostat_population_history",
+      "audited_sha256": "4865bb658213b0622be6fe798be8eab314bf97df646b6bf0962674942e13220f",
+      "retrieved_sha256": "4865bb658213b0622be6fe798be8eab314bf97df646b6bf0962674942e13220f",
+      "status": "unchanged"
+    },
+    {
+      "id": "transport_rce_2022",
+      "audited_sha256": "3bdb0d71ead2877b6bdd952fee7ee3a6b8491bff99ec3cad5fde52e01bc0dd85",
+      "retrieved_sha256": "3bdb0d71ead2877b6bdd952fee7ee3a6b8491bff99ec3cad5fde52e01bc0dd85",
+      "status": "unchanged"
+    }
+  ],
+  "attention_required": false
+}
