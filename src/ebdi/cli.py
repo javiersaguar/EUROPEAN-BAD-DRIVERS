@@ -19,9 +19,18 @@ def main() -> None:
             "explain",
             "all",
             "dashboard",
+            "history",
+            "exposure",
+            "alternative",
+            "policy",
+            "site",
+            "monitor",
+            "claims-import",
         ],
     )
     parser.add_argument("--root", type=Path)
+    parser.add_argument("--file", type=Path)
+    parser.add_argument("--metadata", type=Path)
     parser.add_argument(
         "--refresh",
         action="store_true",
@@ -53,6 +62,39 @@ def main() -> None:
         from ebdi.modeling.explain import explain
 
         explain(root)
+    if args.command in {"history", "all"}:
+        from ebdi.ingestion.history import process_history
+
+        print(f"Historical rows: {len(process_history(root))}")
+    if args.command in {"exposure", "all"}:
+        from ebdi.ingestion.exposure import process_exposure
+
+        print(f"Network rows: {len(process_exposure(root))}")
+    if args.command in {"alternative", "all"}:
+        from ebdi.metrics.alternatives import alternative_index
+
+        print(f"Alternative index rows: {len(alternative_index(root))}")
+    if args.command in {"policy", "all"}:
+        from ebdi.modeling.policy import evaluate_policy
+
+        evaluate_policy(root)
+    if args.command in {"site", "all"}:
+        from ebdi.visualization.site import export_site
+
+        print(export_site(root))
+    if args.command == "monitor":
+        from ebdi.ingestion.monitor import monitor_sources
+
+        report = monitor_sources(root)
+        print([(r["id"], r["status"]) for r in report["sources"]])
+        if report["attention_required"]:
+            raise SystemExit(1)
+    if args.command == "claims-import":
+        if not args.file or not args.metadata:
+            parser.error("claims-import requires --file and --metadata")
+        from ebdi.ingestion.claims import import_claims
+
+        print(f"Validated insurer rows: {len(import_claims(root, args.file, args.metadata))}")
     if args.command == "dashboard":
         import subprocess
         import sys

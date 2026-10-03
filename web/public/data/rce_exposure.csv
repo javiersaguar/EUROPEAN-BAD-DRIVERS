@@ -1,0 +1,53 @@
+province_code,province,rce_injury_crashes,rce_fatalities,source_name,road_length_km,vehicle_km_million,year,rce_crashes_per_100m_vkm,lower,upper,matched_exposure,scope
+01,Araba/Álava,0,0,,,,2022,,,,False,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+02,Albacete,95,2,ALBACETE,696.5,2058.1,2022,4.615907876196492,3.734545117503044,5.64270801338883,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+03,Alicante/Alacant,539,19,ALICANTE,659.6,6331.0,2022,8.513662928447323,7.810001179968303,9.26370362755847,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+04,Almería,155,10,ALMERIA,359.5,2126.1,2022,7.290343822021542,6.187815820506033,8.532661092166665,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+05,Ávila,76,11,AVILA,475.0,968.5,2022,7.847186370676304,6.182690333139245,9.821923899156591,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+06,Badajoz,125,5,BADAJOZ,881.3,2291.8,2022,5.4542281176367915,4.5400514474430675,6.49846657417456,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+07,"Balears, Illes",11,0,,,,2022,,,,False,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+08,Barcelona,1112,19,BARCELONA,312.8,7846.1,2022,14.172646282866646,13.351779700712099,15.030774266657838,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+09,Burgos,108,12,BURGOS,981.6,2887.5,2022,3.74025974025974,3.068207560477358,4.515764858538488,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+10,Cáceres,99,3,CACERES,816.1,1912.4,2022,5.176741267517255,4.207399856421009,6.3024967450928395,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+11,Cádiz,243,6,CADIZ,322.2,2763.6,2022,8.792878853669128,7.721995936879624,9.970744315620784,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+12,Castellón/Castelló,206,13,CASTELLON,458.4,2731.0,2022,7.543024533138045,6.548078212952632,8.646424532607835,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+13,Ciudad Real,106,17,CIUDAD REAL,718.8,1999.3,2022,5.301855649477317,4.340724992088508,6.412441680985708,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+14,Córdoba,166,13,CORDOBA,618.6,1995.7,2022,8.317883449416245,7.100651551903257,9.683908909189414,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+15,"Coruña, A",253,11,A CORUÑA,574.3,3129.3,2022,8.084875211708688,7.119245528888529,9.144945800674519,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+16,Cuenca,118,12,CUENCA,983.3,2579.6,2022,4.5743526128081875,3.7863125655251575,5.478040189326353,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+17,Girona,294,20,GIRONA,408.7,2770.0,2022,10.613718411552346,9.435038320189278,11.898931535819754,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+18,Granada,219,8,GRANADA,410.5,2350.4,2022,9.317562968005445,8.124303636890904,10.636752198597845,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+19,Guadalajara,107,5,GUADALAJARA,414.8,1619.2,2022,6.608201581027668,5.415580669283337,7.985335182862175,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+20,Gipuzkoa,0,0,,,,2022,,,,False,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+21,Huelva,146,8,HUELVA,477.4,1798.1,2022,8.119681886435682,6.8560459657897885,9.548736175425491,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+22,Huesca,138,13,HUESCA,892.0,1719.9,2022,8.023722309436595,6.740910034192047,9.479605314478466,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+23,Jaén,120,6,JAEN,507.1,1959.9,2022,6.122761365375784,5.076377653244487,7.321321769955215,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+24,León,114,6,LEON,931.5,2047.4,2022,5.568037510989548,4.592944327535187,6.6889139194117115,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+25,Lleida,236,2,LLEIDA,506.3,1970.4,2022,11.977263499796996,10.497792841006559,13.606829400773451,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+26,"Rioja, La",117,4,La Rioja,437.1,1508.6,2022,7.755534933050511,6.414038694099144,9.294805064474117,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+27,Lugo,105,7,LUGO,772.8,1659.9,2022,6.325682270016266,5.173781391666856,7.6576240658374495,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+28,Madrid,1603,30,MADRID,750.5,16007.1,2022,10.014306151645208,9.530017188137746,10.516828868043646,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+29,Málaga,406,11,MALAGA,401.5,5687.8,2022,7.138085024086641,6.460553028725634,7.8673520801959,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+30,Murcia,190,15,MURCIA,584.6,4555.1,2022,4.171148822199293,3.5991090639858063,4.808272206167357,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+31,Navarra,1,3,NAVARRA,41.6,215.8,2022,0.46339202965708987,0.011732070428308572,2.5818551394526867,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+32,Ourense,91,1,Ourense,499.6,1276.6,2022,7.1283095723014265,5.739270209684402,8.751984561847697,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+33,Asturias,296,12,ASTURIAS,850.0,3522.6,2022,8.402884233236813,7.4727875855690025,9.416747844044767,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+34,Palencia,35,2,PALENCIA,439.2,996.5,2022,3.5122930255895635,2.4464407829924504,4.8847493596671425,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+35,"Palmas, Las",4,0,,,,2022,,,,False,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+36,Pontevedra,405,8,PONTEVEDRA,539.8,2937.0,2022,13.789581205311542,12.479128734822083,15.200225909118101,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+37,Salamanca,90,8,SALAMANCA,583.9,1521.3,2022,5.9159929008085195,4.757156913896403,7.271759665411585,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+38,Santa Cruz de Tenerife,1,0,,,,2022,,,,False,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+39,Cantabria,331,9,CANTABRIA,581.5,3299.4,2022,10.032127053403649,8.980359271169997,11.173236317659672,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+40,Segovia,77,6,SEGOVIA,372.1,1245.6,2022,6.181759794476558,4.87854815787143,7.726139089605242,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+41,Sevilla,342,17,SEVILLA,473.4,4662.8,2022,7.334648708930256,6.577810725211563,8.154686358519141,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+42,Soria,39,9,SORIA,579.3,887.7,2022,4.393376140588036,3.124119915448516,6.005889812530453,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+43,Tarragona,528,18,TARRAGONA,555.8,4195.3,2022,12.585512359068481,11.534764167948321,13.706259909788198,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+44,Teruel,83,3,TERUEL,677.0,1039.9,2022,7.981536686219828,6.357249418002029,9.894315587774408,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+45,Toledo,287,11,TOLEDO,906.7,4706.0,2022,6.098597535061623,5.413369385437361,6.846546580565212,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+46,Valencia/València,590,24,VALENCIA,791.0,8379.4,2022,7.041076926748932,6.484315760442088,7.63285741681397,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+47,Valladolid,144,9,VALLADOLID,543.0,2619.5,2022,5.497232296239741,4.636053491042774,6.4719798796541745,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+48,Bizkaia,0,0,,,,2022,,,,False,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+49,Zamora,75,12,ZAMORA,773.5,1585.2,2022,4.7312641937925815,3.7214394209848254,5.930680636439109,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+50,Zaragoza,311,18,ZARAGOZA,968.3,4538.2,2022,6.852937287911507,6.1123867863517765,7.658478508946566,True,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+51,Ceuta,18,0,,,,2022,,,,False,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ
+52,Melilla,1,0,,,,2022,,,,False,RCE traffic / DGT state-owned roads; all vehicles; 2022; administrative network definitions may differ

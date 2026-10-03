@@ -1,0 +1,406 @@
+geo,country,year,variable,included,source,status_flag,definition,comparability
+AT,Austria,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+AT,Austria,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+AT,Austria,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+AT,Austria,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+AT,Austria,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+AT,Austria,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+AT,Austria,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+AT,Austria,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+AT,Austria,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+AT,Austria,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+AT,Austria,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+AT,Austria,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+AT,Austria,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+AT,Austria,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+AT,Austria,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BE,Belgium,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+BE,Belgium,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+BE,Belgium,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BE,Belgium,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BE,Belgium,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BE,Belgium,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+BE,Belgium,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+BE,Belgium,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BE,Belgium,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BE,Belgium,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BE,Belgium,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+BE,Belgium,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+BE,Belgium,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BE,Belgium,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BE,Belgium,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BG,Bulgaria,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+BG,Bulgaria,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+BG,Bulgaria,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BG,Bulgaria,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BG,Bulgaria,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BG,Bulgaria,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+BG,Bulgaria,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+BG,Bulgaria,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BG,Bulgaria,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BG,Bulgaria,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BG,Bulgaria,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+BG,Bulgaria,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+BG,Bulgaria,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BG,Bulgaria,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+BG,Bulgaria,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CY,Cyprus,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+CY,Cyprus,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+CY,Cyprus,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CY,Cyprus,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CY,Cyprus,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CY,Cyprus,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+CY,Cyprus,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+CY,Cyprus,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CY,Cyprus,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CY,Cyprus,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CY,Cyprus,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+CY,Cyprus,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+CY,Cyprus,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CY,Cyprus,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CY,Cyprus,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CZ,Czechia,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+CZ,Czechia,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+CZ,Czechia,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CZ,Czechia,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CZ,Czechia,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CZ,Czechia,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+CZ,Czechia,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+CZ,Czechia,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CZ,Czechia,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CZ,Czechia,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CZ,Czechia,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+CZ,Czechia,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+CZ,Czechia,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CZ,Czechia,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+CZ,Czechia,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DE,Germany,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+DE,Germany,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+DE,Germany,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DE,Germany,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DE,Germany,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DE,Germany,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+DE,Germany,2023,population,True,demo_pjan,b,"resident population, 1 January","exposure proxy, not kilometres travelled"
+DE,Germany,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DE,Germany,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DE,Germany,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DE,Germany,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+DE,Germany,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+DE,Germany,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DE,Germany,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DE,Germany,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DK,Denmark,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+DK,Denmark,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+DK,Denmark,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DK,Denmark,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DK,Denmark,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DK,Denmark,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+DK,Denmark,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+DK,Denmark,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DK,Denmark,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DK,Denmark,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DK,Denmark,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+DK,Denmark,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+DK,Denmark,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DK,Denmark,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+DK,Denmark,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EE,Estonia,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+EE,Estonia,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+EE,Estonia,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EE,Estonia,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EE,Estonia,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EE,Estonia,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+EE,Estonia,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+EE,Estonia,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EE,Estonia,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EE,Estonia,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EE,Estonia,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+EE,Estonia,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+EE,Estonia,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EE,Estonia,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EE,Estonia,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EL,Greece,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+EL,Greece,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+EL,Greece,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EL,Greece,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EL,Greece,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EL,Greece,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+EL,Greece,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+EL,Greece,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EL,Greece,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EL,Greece,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EL,Greece,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+EL,Greece,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+EL,Greece,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EL,Greece,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+EL,Greece,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+ES,Spain,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+ES,Spain,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+ES,Spain,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+ES,Spain,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+ES,Spain,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+ES,Spain,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+ES,Spain,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+ES,Spain,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+ES,Spain,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+ES,Spain,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+ES,Spain,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+ES,Spain,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+ES,Spain,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+ES,Spain,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+ES,Spain,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FI,Finland,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+FI,Finland,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+FI,Finland,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FI,Finland,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FI,Finland,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FI,Finland,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+FI,Finland,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+FI,Finland,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FI,Finland,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FI,Finland,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FI,Finland,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+FI,Finland,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+FI,Finland,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FI,Finland,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FI,Finland,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FR,France,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+FR,France,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+FR,France,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FR,France,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FR,France,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FR,France,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+FR,France,2023,population,True,demo_pjan,p,"resident population, 1 January","exposure proxy, not kilometres travelled"
+FR,France,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FR,France,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FR,France,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FR,France,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+FR,France,2024,population,True,demo_pjan,p,"resident population, 1 January","exposure proxy, not kilometres travelled"
+FR,France,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FR,France,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+FR,France,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HR,Croatia,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+HR,Croatia,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+HR,Croatia,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HR,Croatia,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HR,Croatia,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HR,Croatia,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+HR,Croatia,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+HR,Croatia,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HR,Croatia,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HR,Croatia,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HR,Croatia,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+HR,Croatia,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+HR,Croatia,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HR,Croatia,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HR,Croatia,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HU,Hungary,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+HU,Hungary,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+HU,Hungary,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HU,Hungary,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HU,Hungary,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HU,Hungary,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+HU,Hungary,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+HU,Hungary,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HU,Hungary,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HU,Hungary,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HU,Hungary,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+HU,Hungary,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+HU,Hungary,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HU,Hungary,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+HU,Hungary,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IE,Ireland,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+IE,Ireland,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+IE,Ireland,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IE,Ireland,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IE,Ireland,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IE,Ireland,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+IE,Ireland,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+IE,Ireland,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IE,Ireland,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IE,Ireland,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IE,Ireland,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+IE,Ireland,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+IE,Ireland,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IE,Ireland,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IE,Ireland,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IT,Italy,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+IT,Italy,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+IT,Italy,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IT,Italy,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IT,Italy,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IT,Italy,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+IT,Italy,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+IT,Italy,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IT,Italy,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IT,Italy,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IT,Italy,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+IT,Italy,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+IT,Italy,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IT,Italy,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+IT,Italy,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LT,Lithuania,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+LT,Lithuania,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+LT,Lithuania,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LT,Lithuania,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LT,Lithuania,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LT,Lithuania,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+LT,Lithuania,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+LT,Lithuania,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LT,Lithuania,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LT,Lithuania,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LT,Lithuania,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+LT,Lithuania,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+LT,Lithuania,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LT,Lithuania,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LT,Lithuania,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LU,Luxembourg,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+LU,Luxembourg,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+LU,Luxembourg,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LU,Luxembourg,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LU,Luxembourg,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LU,Luxembourg,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+LU,Luxembourg,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+LU,Luxembourg,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LU,Luxembourg,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LU,Luxembourg,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LU,Luxembourg,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+LU,Luxembourg,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+LU,Luxembourg,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LU,Luxembourg,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LU,Luxembourg,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LV,Latvia,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+LV,Latvia,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+LV,Latvia,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LV,Latvia,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LV,Latvia,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LV,Latvia,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+LV,Latvia,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+LV,Latvia,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LV,Latvia,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LV,Latvia,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LV,Latvia,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+LV,Latvia,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+LV,Latvia,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LV,Latvia,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+LV,Latvia,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+MT,Malta,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+MT,Malta,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+MT,Malta,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+MT,Malta,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+MT,Malta,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+MT,Malta,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+MT,Malta,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+MT,Malta,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+MT,Malta,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+MT,Malta,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+MT,Malta,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+MT,Malta,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+MT,Malta,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+MT,Malta,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+MT,Malta,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+NL,Netherlands,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+NL,Netherlands,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+NL,Netherlands,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+NL,Netherlands,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+NL,Netherlands,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+NL,Netherlands,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+NL,Netherlands,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+NL,Netherlands,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+NL,Netherlands,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+NL,Netherlands,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+NL,Netherlands,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+NL,Netherlands,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+NL,Netherlands,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+NL,Netherlands,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+NL,Netherlands,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PL,Poland,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+PL,Poland,2022,population,True,demo_pjan,ep,"resident population, 1 January","exposure proxy, not kilometres travelled"
+PL,Poland,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PL,Poland,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PL,Poland,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PL,Poland,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+PL,Poland,2023,population,True,demo_pjan,ep,"resident population, 1 January","exposure proxy, not kilometres travelled"
+PL,Poland,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PL,Poland,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PL,Poland,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PL,Poland,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+PL,Poland,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+PL,Poland,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PL,Poland,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PL,Poland,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PT,Portugal,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+PT,Portugal,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+PT,Portugal,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PT,Portugal,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PT,Portugal,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PT,Portugal,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+PT,Portugal,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+PT,Portugal,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PT,Portugal,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PT,Portugal,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PT,Portugal,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+PT,Portugal,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+PT,Portugal,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PT,Portugal,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+PT,Portugal,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+RO,Romania,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+RO,Romania,2022,population,True,demo_pjan,e,"resident population, 1 January","exposure proxy, not kilometres travelled"
+RO,Romania,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+RO,Romania,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+RO,Romania,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+RO,Romania,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+RO,Romania,2023,population,True,demo_pjan,e,"resident population, 1 January","exposure proxy, not kilometres travelled"
+RO,Romania,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+RO,Romania,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+RO,Romania,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+RO,Romania,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+RO,Romania,2024,population,True,demo_pjan,e,"resident population, 1 January","exposure proxy, not kilometres travelled"
+RO,Romania,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+RO,Romania,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+RO,Romania,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SE,Sweden,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+SE,Sweden,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+SE,Sweden,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SE,Sweden,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SE,Sweden,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SE,Sweden,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+SE,Sweden,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+SE,Sweden,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SE,Sweden,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SE,Sweden,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SE,Sweden,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+SE,Sweden,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+SE,Sweden,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SE,Sweden,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SE,Sweden,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SI,Slovenia,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+SI,Slovenia,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+SI,Slovenia,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SI,Slovenia,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SI,Slovenia,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SI,Slovenia,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+SI,Slovenia,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+SI,Slovenia,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SI,Slovenia,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SI,Slovenia,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SI,Slovenia,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+SI,Slovenia,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+SI,Slovenia,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SI,Slovenia,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SI,Slovenia,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SK,Slovakia,2022,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+SK,Slovakia,2022,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+SK,Slovakia,2022,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SK,Slovakia,2022,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SK,Slovakia,2022,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SK,Slovakia,2023,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+SK,Slovakia,2023,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+SK,Slovakia,2023,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SK,Slovakia,2023,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SK,Slovakia,2023,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SK,Slovakia,2024,fatalities,True,tran_sf_roadus,,"30-day road deaths, all users",limited: registration differences; retain publisher flags
+SK,Slovakia,2024,population,True,demo_pjan,,"resident population, 1 January","exposure proxy, not kilometres travelled"
+SK,Slovakia,2024,injury_crashes,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SK,Slovakia,2024,insurance_claims,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
+SK,Slovakia,2024,vehicle_km,False,not harmonized in this release,,no audited comparable modern panel,excluded; never filled or combined with modern fatalities
