@@ -30,6 +30,10 @@ uv run ebdi history
 uv run ebdi exposure
 uv run ebdi alternative
 uv run ebdi policy
+uv run ebdi demographics
+uv run ebdi material
+uv run ebdi ncid
+uv run ebdi extended-analysis
 uv run ebdi site
 uv run --extra explain python scripts/build_notebooks.py
 uv run --extra explain pytest -q
@@ -38,7 +42,7 @@ uv run --extra explain ruff format --check src dashboard tests scripts
 uv run --extra explain mypy
 ```
 
-`uv run ebdi all` runs download, process, insurance, analysis, model, history, exposure, alternative, policy and site. `make all` also generates SHAP, executes the four notebooks and runs checks. For complete model illustrations, run `explain` before `site`, as shown above. Individual Makefile targets support the same stages. Full reproduction downloads three national crash workbooks plus official stocks, population, European fatalities/history, the UNESPA and RCE PDFs and cartography; training and bootstrap take several minutes and require more memory than the aggregate frontend. Network access is needed for installation/source downloads. Raw files, Parquet, DuckDB and fitted models stay local; aggregate tables and original figures are versioned. `ebdi site` derives the browser payload and normalizes exported CSV line endings before hashing, so Windows/Linux publications agree.
+`uv run ebdi all` runs download, process, insurance, analysis, model, history, exposure, alternative, policy, demographics, material, ncid, extended-analysis and site. `make all` also generates SHAP, executes the five notebooks and runs checks. For complete model illustrations, run `explain` before `site`, as shown above. Individual Makefile targets support the same stages. Full reproduction downloads three national crash workbooks plus official stocks, population, European fatalities/history, the UNESPA and RCE PDFs and cartography; training and bootstrap take several minutes and require more memory than the aggregate frontend. Network access is needed for installation/source downloads. Raw files, Parquet, DuckDB and fitted models stay local; aggregate tables and original figures are versioned. `ebdi site` derives the browser payload and normalizes exported CSV line endings before hashing, so Windows/Linux publications agree.
 
 Optional authorized insurance aggregates use the strict [claims import contract](claims_import.md). No artificial insured exposure is included. For source checks, run `uv run ebdi monitor`; it quarantines revisions without changing the active catalogue or manifest.
 
@@ -56,7 +60,7 @@ Live publisher endpoints can revise old years, JSON metadata or boundary files. 
 
 Python tests cover rates, missing denominators, schema/category/year validation, join cardinality, geography, normalization, leakage, history, network scope, insurance import, immutable monitoring and publication hashes. Integration tests check national totals, EU coverage, sensitivity, breakdown conservation and insurance selection limits. Streamlit AppTest retains legacy checks. CI runs Python checks plus notebook execution, Ruff and mypy on Windows/Linux with Python 3.12, without downloading raw data or retraining on every push. The raw-PDF roundtrip test is skipped when the audited PDF is absent; published insurance checks still run. A separate developer reproduction verifies the full pipeline against real files.
 
-React checks run from `web`: `npm run lint`, `npm run format:check`, `npm test`, `npm run build`, and `npm run test:e2e`. Browser tests require `npx playwright install --with-deps chromium`; CI installs it automatically. Tests cover all ten pages, desktop/mobile navigation, axe, keyboard map, filter history, failures/retries and actual CSV/PDF/SVG/PNG downloads. CI also audits npm/Python dependencies and checks the production container. Executed results are in [verification](verification_0.2.0.md).
+React checks run from `web`: `npm run lint`, `npm run format:check`, `npm test`, `npm run build`, and `npm run test:e2e`. Browser tests require `npx playwright install --with-deps chromium`; CI installs it automatically. Tests cover all thirteen pages, desktop/mobile navigation, axe, keyboard map, filter history, failures/retries and actual CSV/PDF/SVG/PNG downloads. CI also audits npm/Python dependencies and checks the production container. Executed results are in [verification](verification_0.3.0.md).
 
 ## Optional container
 

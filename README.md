@@ -1,6 +1,6 @@
 # Observatorio europeo de siniestralidad vial
 
-[Open the observatory](https://javiersaguar.github.io/EUROPEAN-BAD-DRIVERS/) · [Release 0.2.0 / twenty improvements](docs/release_0.2.0.md) · [Verification](docs/verification_0.2.0.md)
+[Open the observatory](https://javiersaguar.github.io/EUROPEAN-BAD-DRIVERS/) · [Release 0.3.0 / material damage and people](docs/release_0.3.0.md) · [Analytical extension](docs/extended_analysis.md) · [Verification](docs/verification_0.3.0.md)
 
 **Can public data tell us where people drive “worse”—or does the answer change with the measure?**
 
@@ -13,6 +13,12 @@ The provocative name is a research hook. An experimental composite describes **o
 [![Source and availability monitoring](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/monitor.yml/badge.svg)](https://github.com/javiersaguar/EUROPEAN-BAD-DRIVERS/actions/workflows/monitor.yml)
 
 ![Published React observatory, version 0.2.0](outputs/figures/observatory_desktop.png)
+
+## New material-damage and demographic analysis
+
+Eleven additional official releases extend the project to **32 registered sources (31 active)**. The new pages include **21 charts**, interpretation, data tables and shareable filters: [material damage](https://javiersaguar.github.io/EUROPEAN-BAD-DRIVERS/?page=material), [people and sex](https://javiersaguar.github.io/EUROPEAN-BAD-DRIVERS/?page=persons), and [accident types](https://javiersaguar.github.io/EUROPEAN-BAD-DRIVERS/?page=circumstances).
+
+Irish NCID records an estimated 193,329.2 material claims in 2024 with matched portfolio exposure; Germany records 2,221,996 police property-only crashes. Spanish tables add 3,780 harmonized sex/age/user cells, distinct victim and involvement populations, crude and age-standardized mortality. The EU sex/user contract has 8,100 keys with missing observations and original flags retained. Sources remain separate: insured claims are not unique crashes, and demographic counts do not identify fault or personal risk. See the [full analysis and source discrepancies](docs/extended_analysis.md) and [executed fifth notebook](notebooks/05_material_and_persons.ipynb). Complete Spanish provincial bodywork claims with insured exposure remain unavailable.
 
 ## What the actual analysis found
 
@@ -41,7 +47,7 @@ npm ci --ignore-scripts
 npm run dev -- --port 8501
 ```
 
-Ten views: overview, provincial rates and matched state-network exposure, province profile, comparison of up to three territories, material-damage insurance, 2010–2024 history, Europe, configurable index, severity models and sources. All filters are shareable. Charts have text/table alternatives; downloads include CSV, PDF, SVG and PNG with provenance and scope. Fonts and derived GISCO cartography are bundled; there is no developer toolbar or Deploy button.
+Thirteen views: material-damage time series in Ireland and Germany, sex/age/user analysis in Spain and the EU, accident categories and vehicle ages, plus overview, provincial rates and matched state-network exposure, province profile, comparison of up to three territories, material-damage insurance, 2010–2024 history, Europe, configurable index, severity models and sources. All filters are shareable. Charts have text/table alternatives; downloads include CSV, PDF, SVG and PNG with provenance and scope. Fonts and derived GISCO cartography are bundled; there is no developer toolbar or Deploy button.
 
 The published aggregates make the app usable immediately without downloading raw crash files. The layout takes inspiration from the quiet console in [HS-Maisa](https://github.com/javiersaguar/HS-Maisa), with original code, assets and design tokens. See [deployment](docs/deployment.md), [the twenty improvements](docs/release_0.2.0.md) and [insurance limits](docs/insurance.md).
 
@@ -63,6 +69,10 @@ uv run ebdi history                 # separate EU-27 mortality context, 2010–2
 uv run ebdi exposure                # matched RCE/state-road panel, 2022
 uv run ebdi alternative             # 50/50 injury/mortality index
 uv run ebdi policy                  # exploratory validation-selected threshold
+uv run ebdi demographics            # audited age/sex/user tables and mortality rates
+uv run ebdi material                # German property-only police crashes
+uv run ebdi ncid                    # Irish claims, matched policy exposure, deflated costs
+uv run ebdi extended-analysis       # categories, intervals, changes and scientific figures
 uv run ebdi site                    # versioned public aggregate contract
 uv run python scripts/build_notebooks.py
 uv run pytest -q
@@ -121,8 +131,8 @@ All candidates' metrics, confusion matrices, calibration bin sizes, holdout perm
 
 ## Quality, limitations and authorship
 
-Tests cover formulas, zero/missing denominators, geographic joins, temporal mappings, category/schema drift, weights, leakage, cache integrity, aggregate conservation and dashboard behavior. GitHub Actions checks Windows/Linux and executes the four notebooks without downloading national raw files on every push.
+Tests cover formulas, zero/missing denominators, geographic joins, temporal mappings, category/schema drift, weights, leakage, cache integrity, aggregate conservation and dashboard behavior. GitHub Actions checks Windows/Linux and executes the five notebooks without downloading national raw files on every push.
 
-The central limits are injury-only reporting, imperfect exposure proxies, overlapping components, a short Spanish injury-crash window, and differing registration systems. Complete municipal claims/exposure panels, full-network vehicle-kilometres and demographic involvement risk require additional audited sources. The separate [insurance explorer](docs/insurance.md) preserves the selection and definition limits of UNESPA's published 2024 tables. See [limitations](docs/limitations.md) and the honest [publication draft](docs/publication_note.md).
+The central limits are injury-only reporting, imperfect exposure proxies, overlapping components, a short Spanish injury-crash window, and differing registration systems. Complete municipal claims/exposure panels, full-network vehicle-kilometres and demographic involvement risk require additional audited sources; the new national demographic tables analyze registered people without estimating involvement risk. The separate [insurance explorer](docs/insurance.md) preserves the selection and definition limits of UNESPA's published 2024 tables. See [limitations](docs/limitations.md) and the honest [publication draft](docs/publication_note.md).
 
-**Author: Javier Saguar.** Delivery follows six [stages](docs/stages.md). Commits use Javier's author identity, without co-author trailers. Original code is [MIT licensed](LICENSE); underlying datasets retain their own reuse terms. Credit DGT, INE, Eurostat/CARE, European Commission/ERSO, UNESPA and © EuroGeographics for applicable cartography. Derived figures identify analysis choices and source coverage.
+**Author: Javier Saguar.** Delivery follows six [stages](docs/stages.md). Commits use Javier's author identity, without co-author trailers. Original code is [MIT licensed](LICENSE); underlying datasets retain their own reuse terms. Credit DGT, INE, Eurostat/CARE, European Commission/ERSO, UNESPA, Central Bank of Ireland, Destatis and © EuroGeographics for applicable cartography. Derived figures identify analysis choices and source coverage.
