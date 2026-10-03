@@ -42,6 +42,7 @@ export function MetricFilters({ f, update }: { f: Filters; update: PageProps['up
       <label>
         Indicador
         <select
+          aria-label="Indicador"
           value={f.incident}
           onChange={(e) => update({ incident: e.target.value as Filters['incident'] })}
         >
@@ -55,6 +56,7 @@ export function MetricFilters({ f, update }: { f: Filters; update: PageProps['up
       <label>
         Denominador
         <select
+          aria-label="Denominador"
           value={f.denominator}
           onChange={(e) => update({ denominator: e.target.value as Filters['denominator'] })}
         >

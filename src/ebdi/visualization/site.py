@@ -51,6 +51,12 @@ def export_site(root: Path) -> dict:
     )
     for name in names:
         path = root / "outputs/tables" / f"{name}.csv"
+        # The public lineage hashes the committed UTF-8/LF representation.
+        # Pandas defaults to CRLF on Windows; Git normalizes these text files.
+        # Canonicalize derived CSVs so Linux/Windows hash the same publication.
+        canonical = path.read_bytes().replace(b"\r\n", b"\n")
+        if canonical != path.read_bytes():
+            path.write_bytes(canonical)
         frame = pd.read_csv(path, dtype={"province_code": str})
         # pandas JSON emits true JSON nulls (no non-standard NaN, no zero fill).
         payload["tables"][name] = json.loads(

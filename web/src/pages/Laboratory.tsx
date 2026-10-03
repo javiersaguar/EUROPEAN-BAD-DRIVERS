@@ -43,6 +43,7 @@ export function Laboratory({ data, f, update }: PageProps) {
             <label>
               Definición
               <select
+                aria-label="Definición"
                 value={f.indexMode}
                 onChange={(e) => update({ indexMode: e.target.value as Filters['indexMode'] })}
               >
@@ -53,6 +54,7 @@ export function Laboratory({ data, f, update }: PageProps) {
             <label>
               Normalización
               <select
+                aria-label="Normalización"
                 value={f.method}
                 onChange={(e) => update({ method: e.target.value as Filters['method'] })}
               >

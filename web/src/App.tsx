@@ -315,7 +315,11 @@ export default function App() {
               {!['insurance', 'trends', 'models', 'sources'].includes(f.page) && (
                 <label>
                   Año
-                  <select value={f.year} onChange={(e) => update({ year: Number(e.target.value) })}>
+                  <select
+                    aria-label="Año"
+                    value={f.year}
+                    onChange={(e) => update({ year: Number(e.target.value) })}
+                  >
                     {[2024, 2023, 2022].map((y) => (
                       <option key={y}>{y}</option>
                     ))}

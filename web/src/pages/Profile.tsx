@@ -16,7 +16,11 @@ export function Profile({ data, f, update }: PageProps) {
     <>
       <label className="province-select">
         Provincia
-        <select value={f.province} onChange={(e) => update({ province: e.target.value })}>
+        <select
+          aria-label="Provincia"
+          value={f.province}
+          onChange={(e) => update({ province: e.target.value })}
+        >
           {rows.map((r) => (
             <option key={label(r, 'province_code')} value={label(r, 'province_code')}>
               {r.province}

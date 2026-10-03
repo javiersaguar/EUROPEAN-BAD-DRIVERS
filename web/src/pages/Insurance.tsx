@@ -24,6 +24,7 @@ export function Insurance({ data, f, update }: PageProps) {
         <label>
           Cobertura
           <select
+            aria-label="Cobertura"
             value={f.insurance}
             onChange={(e) => update({ insurance: e.target.value as Filters['insurance'] })}
           >
@@ -34,6 +35,7 @@ export function Insurance({ data, f, update }: PageProps) {
         <label>
           Selección publicada
           <select
+            aria-label="Selección publicada"
             value={f.selection}
             onChange={(e) => update({ selection: e.target.value as Filters['selection'] })}
           >

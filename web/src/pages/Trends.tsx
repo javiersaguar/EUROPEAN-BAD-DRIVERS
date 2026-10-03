@@ -13,7 +13,11 @@ export function Trends({ data, f, update }: PageProps) {
     <>
       <label className="province-select">
         País
-        <select value={f.country} onChange={(e) => update({ country: e.target.value })}>
+        <select
+          aria-label="País"
+          value={f.country}
+          onChange={(e) => update({ country: e.target.value })}
+        >
           {countries.map((r) => (
             <option key={label(r, 'geo')} value={label(r, 'geo')}>
               {r.country}

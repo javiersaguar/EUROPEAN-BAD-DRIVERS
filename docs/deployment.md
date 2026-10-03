@@ -29,11 +29,11 @@ docker build -t ebdi-observatory .
 docker run --rm --read-only --tmpfs /tmp --tmpfs /var/cache/nginx -p 8080:8080 ebdi-observatory
 ```
 
-The multi-stage image builds with Node and serves through unprivileged Nginx, user 101, port 8080, with healthcheck, cache controls and security headers. HTTPS termination belongs to the deployment platform/reverse proxy. Mutable base-image tags are checked by Dependabot; pin approved digests if a deployment requires bit-for-bit image reproducibility. `Dockerfile.research` retains the optional legacy Python research dashboard.
+The multi-stage image builds with Node and serves through unprivileged Nginx, user 101, port 8080, with healthcheck, cache controls and security headers. HTTPS termination belongs to the deployment platform/reverse proxy. Approved base images are pinned to verified multi-architecture registry digests. Update them explicitly after reviewing a new image and rerunning the container checks; no bot authors commits. `Dockerfile.research` retains the optional legacy Python research dashboard.
 
 ## Checks and monitoring
 
-- `web.yml`: frontend lint/format/unit/build, dependency audit, Chromium desktop/mobile and axe tests, downloads and error states; container build/read-only smoke.
+- `web.yml`: frontend lint/format/unit/build, dependency audits, Chromium desktop/mobile and axe tests, downloads and error states; container build/read-only smoke. Checks also run weekly on Monday at 05:47 UTC. Dependency updates are reviewed explicitly; no automated dependency PR authors or merges.
 - `ci.yml`: Python checks on Linux/Windows and executed notebooks.
 - `monitor.yml`: weekly Monday 06:17 UTC upstream hash/structure checks and HTTPS availability/aggregate-contract check. Failures and quarantined originals are workflow artifacts; changed data are never activated automatically.
 - `uv run ebdi monitor`: manual upstream checks, report `outputs/tables/source_monitor.json`.
