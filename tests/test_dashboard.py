@@ -5,7 +5,7 @@ from streamlit.testing.v1 import AppTest
 APP = Path(__file__).resolve().parents[1] / "dashboard/app.py"
 
 
-def test_dashboard_navigation_and_missing_denominator_behavior():
+def test_research_dashboard_navigation_and_observed_denominators():
     app = AppTest.from_file(str(APP), default_timeout=20).run()
     assert not app.exception
     assert len(app.metric) == 3
@@ -24,7 +24,7 @@ def test_dashboard_navigation_and_missing_denominator_behavior():
     app.selectbox(key="year").set_value(2023).run()
     app.selectbox(key="denominator").set_value("registered_vehicles").run()
     assert not app.exception
-    assert any("52 provincias" in warning.value for warning in app.warning)
+    assert not any("52 provincias" in warning.value for warning in app.warning)
 
 
 def test_laboratory_zero_weights_is_a_clear_validation_state():

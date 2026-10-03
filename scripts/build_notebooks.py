@@ -35,8 +35,8 @@ print("Missing exposures:", quality["missing_exposures"])""",
                 """assert not spain.duplicated(["province_code", "year"]).any()
 assert spain.groupby("year").size().eq(52).all()
 assert spain.population.gt(0).all()
-assert spain.loc[spain.year.eq(2023), ["registered_vehicles", "licensed_drivers"]].isna().all().all()
-print("156 unique province-years; 2023 stocks explicitly missing")""",
+assert spain[["registered_vehicles", "licensed_drivers"]].notna().all().all()
+print("156 unique province-years; all stock denominators observed")""",
             ),
             (
                 "Country-variable inclusion and actual publisher flags",

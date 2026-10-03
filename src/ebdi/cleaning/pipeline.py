@@ -39,6 +39,18 @@ def stocks(root: Path, kind: str, year: int, geography: pd.DataFrame) -> pd.Data
     column = "registered_vehicles" if kind == "vehicles" else "licensed_drivers"
     df = df.iloc[:, [0, 9 if kind == "vehicles" else 3]].copy()
     df.columns = ["source_name", column]
+    if kind == "vehicles" and year == 2023:
+        # The published V_4 cells truncate five names. Exact audited aliases,
+        # scoped to this source/year; never fuzzy matching or row-order joins.
+        df["source_name"] = df.source_name.replace(
+            {
+                "Alicante/Ala": "Alicante/Alacant",
+                "Balears (Ill": "Illes Balears",
+                "Castellón/C": "Castellón/Castelló",
+                "Santa Cruz d": "Santa Cruz de Tenerife",
+                "Valencia/Val": "Valencia/València",
+            }
+        )
     keys = {
         normalized_name(n): c
         for c, n in geography[["province_code", "province"]].itertuples(index=False, name=None)
@@ -237,9 +249,7 @@ def process(root: Path) -> dict[str, Any]:
     panel[count_cols] = panel[count_cols].fillna(0).astype(int)
     panel = checked_join(panel, geo[["province_code", "province"]], ["province_code"])
     for kind in ["vehicles", "drivers"]:
-        stock = pd.concat(
-            [stocks(root, kind, year, geo) for year in [2022, 2024]], ignore_index=True
-        )
+        stock = pd.concat([stocks(root, kind, year, geo) for year in years], ignore_index=True)
         panel = panel.merge(stock, on=["province_code", "year"], how="left", validate="one_to_one")
     panel = add_rates(panel)
     panel = panel.sort_values(["year", "province_code"]).reset_index(drop=True)
@@ -326,7 +336,7 @@ def process(root: Path) -> dict[str, Any]:
             f"| {r['year']} | {r['rows']:,} | {r['fatalities_30d']:,} | {r['unknown_municipality']:,} | passed |"
             for r in reports
         )
-        + "\n\n52 provinces × 3 years; no missing population joins. Vehicle and driver stocks are missing for all 52 provinces in 2023 and remain missing.\n\n"
+        + "\n\n52 provinces × 3 years; no missing population joins. Vehicle and permit stocks are observed for all 52 provinces in every year, including 2023; no interpolation.\n\n"
         + "Checks reject duplicate IDs, null critical fields, negative/fractional counts, invalid time bins, unknown provinces, category/schema drift, inconsistent victim/stock totals and source revisions. Optional code missingness is retained. Full details: `outputs/tables/data_quality.json`.\n",
         encoding="utf-8",
     )

@@ -1,0 +1,8 @@
+{
+  "year": 2022,
+  "provinces_with_exposure": 44,
+  "vkm_million_sum": 134902.6,
+  "state_injury_crashes": 10956,
+  "unmatched_injury_crashes": 35,
+  "scope": "Only state-owned road network; not all-road risk; rounding and administrative classifications retained"
+}

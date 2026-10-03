@@ -43,7 +43,7 @@ not proof that every variable or reporting process is complete.
   Tourists, commuters, pedestrians and vehicle occupancy complicate interpretation.
 - Default coverage is a fully observed three-year crash/population panel. Vehicle and driver denominators
   are available for 2022 and 2024 only in the audited workbook releases. The initial implementation
-  leaves 2023 values missing; it never interpolates them.
+  uses audited 2023 stock releases without interpolation.
 - Insurance Europe's downloadable `Database-Motor.xlsx` contains historical country tables through 2016,
   including MTPL insured vehicle-years and notified claims. Calculated frequency tables explicitly permit
   alternative denominators. Zeros, missing countries, nil-claim definitions and older years prevent
@@ -82,10 +82,10 @@ reconciliation before replacing the workbook series. No emails or data-access re
 ## Recommended MVP and architecture
 
 Use the province × year panel for 2022–2024: DGT injury crashes plus INE table 67988,
-supplemented with observed driver/vehicle stocks in 2022 and 2024. Start with individual rates,
+supplemented with observed driver/vehicle stocks in 2022–2024. Start with individual rates,
 then experiment with transparent weighted indices and normalization changes. Retain missingness explicitly.
 Use immutable local raw files with hashes, schema checks, Parquet fact/dimension tables,
-a DuckDB analytical view, reproducible report/figure generation and Streamlit.
+a DuckDB analytical view, reproducible report/figure generation and a static React observatory (Streamlit retained for research).
 
 The European extension should compare **30-day fatality burden per population** for a common country/year
 set, retaining Eurostat flags and excluding aggregate pseudo-countries. No European composite of incompatible
@@ -105,4 +105,4 @@ MIT applies to original code only. The [government catalogue entry](https://dato
 identifies CC BY 4.0 for the 2024 DGT crash dataset; credit DGT and identify transformations.
 Other source releases have their own terms. INE requires attribution and responsibility for derived calculations;
 Insurance Europe retains copyright. GISCO has separate download provisions and map attribution.
-Raw source workbooks, the historical insurance tables and geometry are downloaded locally and are not committed.
+Raw workbooks, insurance publications and original geometry are downloaded locally, not committed. A derived province geometry is published with GISCO / EuroGeographics attribution.

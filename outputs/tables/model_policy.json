@@ -1,0 +1,11 @@
+{
+  "model": "hist_gradient_boosting",
+  "fit_year": 2022,
+  "threshold_selection_year": 2023,
+  "reported_year": 2024,
+  "selection_objective": "maximize F2 on validation (recall weighted 4x precision in harmonic denominator)",
+  "selected_threshold": 0.0745805793874931,
+  "confirmatory": false,
+  "future_holdout_required": true,
+  "notes": "Exploratory extension after original 2024 results were inspected. No test labels used to choose this threshold. Same 2022-fitted model for both policies; not the refitted original model. Conditional recorded-crash severity, no personal accident probability."
+}

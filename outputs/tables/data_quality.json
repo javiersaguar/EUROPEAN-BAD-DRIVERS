@@ -69,8 +69,8 @@
   "province_count": 52,
   "missing_exposures": {
     "population": 0,
-    "registered_vehicles": 52,
-    "licensed_drivers": 52
+    "registered_vehicles": 0,
+    "licensed_drivers": 0
   },
   "europe_rows": 81,
   "denominators_are_travel_proxies": true

@@ -82,8 +82,8 @@ def main() -> None:
 | `severe_crashes` / `severe` | Crash has ≥1 fatality or hospitalized injured person at 30 days |
 | `unknown_collision` | Count/flag of missing collision type |
 | `population` | INE residents at 1 January of the same year |
-| `registered_vehicles` | DGT year-end total excluding mopeds, including trailers; missing in 2023 |
-| `licensed_drivers` | DGT resident driving-permit holders excluding special licences; missing in 2023 |
+| `registered_vehicles` | DGT year-end total excluding mopeds, including trailers; audited 2022–2024 |
+| `licensed_drivers` | DGT resident driving-permit holders excluding special licences; audited 2022–2024 |
 | `*_per_100k_*` | Numerator divided by named stock ×100,000 |
 | `*_lower`, `*_upper` | Conditional Poisson central 95% interval for the named rate |
 | `small_sample` | Province has fewer than 30 injury crashes |

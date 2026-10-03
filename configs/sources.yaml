@@ -485,17 +485,200 @@ sources:
   filename: unespa_motor_2024.pdf
   transport: urllib
   format: pdf
-  years: [2024]
+  years:
+  - 2024
   geographic_level: national, province and selected municipality
   observation_unit: coverage or selected municipality-coverage, year 2024
-  denominator: Published national coverage shares and relative municipal differences; insured vehicle-years unavailable
-  key_variables: [coverage, claims_share_pct, payments_share_pct, mean_cost_eur, municipality, relative_difference_pct, all_coverage_claims]
+  denominator: Published national coverage shares and relative municipal differences;
+    insured vehicle-years unavailable
+  key_variables:
+  - coverage
+  - claims_share_pct
+  - payments_share_pct
+  - mean_cost_eur
+  - municipality
+  - relative_difference_pct
+  - all_coverage_claims
   update_frequency: annual
   schema_version: PDF published 2026-02-10, 11 pages, audited 2026-10-03
-  reuse: Publisher terms apply; factual aggregates attributed to UNESPA; no raw PDF redistributed or relicensed under MIT
+  reuse: Publisher terms apply; factual aggregates attributed to UNESPA; no raw PDF
+    redistributed or relicensed under MIT
   license_url: https://www.unespa.es/aviso-legal/
-  comparability: Separate insurance explorer; never merged with DGT or the composite index
-  known_limitations: Only 20 highest and 20 lowest cities per coverage above 50,000 inhabitants. Relative differences, not absolute probabilities. Material claims need not be injury-free. Provincial totals cover all categories; counts and exposures by municipal coverage unavailable.
+  comparability: Separate insurance explorer; never merged with DGT or the composite
+    index
+  known_limitations: Only 20 highest and 20 lowest cities per coverage above 50,000
+    inhabitants. Relative differences, not absolute probabilities. Material claims
+    need not be injury-free. Provincial totals cover all categories; counts and exposures
+    by municipal coverage unavailable.
   enabled: true
   sample_sha256: 20211e0e670fc7397e0455320d27166036c357a331b6bc8fddd8fd95d32aa429
   sample_retrieved_at: '2026-10-03T16:46:40.020620+00:00'
+- id: dgt_vehicles_2023
+  organization: DGT
+  dataset: vehicles
+  url: https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/publicaciones/Parque-de-vehiculos-Tablas-Estadisticas/Parque-de-vehiculos-Tablas-estadisticas-2023.xlsx
+  page_url: https://datos.gob.es/es/catalogo/e00130502-parque-de-vehiculos-tablas-estadisticas-2023
+  filename: dgt_vehicles_2023.xlsx
+  format: xlsx
+  years:
+  - 2023
+  geographic_level: province
+  observation_unit: province-year
+  denominator: year-end registered vehicle stock excluding mopeds
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://www.dgt.es/contenido/aviso-legal/
+  comparability: Counts at crash location; exposure stock at residence; not individual
+    risk
+  enabled: true
+  sample_sha256: f46f244b13d4fd14666565e59c0e7c312e22c429f9e805c118a3b5f625d8fb48
+  sample_retrieved_at: '2026-10-03T17:17:04.056779+00:00'
+  dataset_title: Registered vehicle fleet by province
+  key_variables:
+  - province
+  - vehicle-category stocks
+  - total stock
+  known_limitations: Year-end registrations, not vehicle-kilometres; selected total
+    excludes mopeds and includes trailers/semitrailers.
+- id: dgt_drivers_2023
+  organization: DGT
+  dataset: drivers
+  url: https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/dgt-en-cifras/publicaciones/Censo_conductores/Censo-de-conductores-Tablas-estadisticas-2023.xlsx
+  page_url: https://datos.gob.es/es/catalogo/e00130502-censo-de-conductores-tablas-estadisticas-2023
+  filename: dgt_drivers_2023.xlsx
+  format: xlsx
+  years:
+  - 2023
+  geographic_level: province
+  observation_unit: province-year
+  denominator: year-end resident driving-permit holders excluding special licences
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://www.dgt.es/contenido/aviso-legal/
+  comparability: Counts at crash location; exposure stock at residence; not individual
+    risk
+  enabled: true
+  sample_sha256: 520377ec2091e8164f4ef5caeb6f3e2c93fc6e6157664e955273347d6e0857d0
+  sample_retrieved_at: '2026-10-03T17:17:04.350327+00:00'
+  dataset_title: Driving-permit holders by residence province
+  key_variables:
+  - residence province
+  - sex
+  - driving permits
+  - special licences
+  known_limitations: Year-end residence stock, not trips; selected column excludes
+    special licences; crash participant demographics cannot be derived from census
+    sex.
+- id: eurostat_fatalities_history
+  organization: European Commission / Eurostat
+  dataset: history
+  url: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tran_sf_roadus?lang=EN&sex=T&age=TOTAL&unit=NR&pers_cat=TOTAL&sinceTimePeriod=2010&untilTimePeriod=2024
+  page_url: https://ec.europa.eu/eurostat/cache/metadata/en/tran_sf_road_esms.htm
+  filename: eurostat_fatalities_history.json
+  format: json
+  years:
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  geographic_level: country
+  observation_unit: country-year
+  denominator: none (numerator)
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://ec.europa.eu/eurostat/about-us/policies/copyright
+  comparability: 30-day fatalities; country notes and flags must be retained
+  enabled: true
+  sample_sha256: 1e494a4fc8eae2525ff2715071bc4c7fd5034fc6a7c2b29517d9b14e2ddfc35c
+  sample_retrieved_at: '2026-10-03T17:17:05.688048+00:00'
+  dataset_title: Road fatalities at 30 days · 2010–2024 historical context
+  key_variables:
+  - country
+  - year
+  - fatalities
+  - publisher flags or notes
+  known_limitations: Includes all road users; follow-up and registration differ; retain
+    notes/flags. Not an injury or driving-quality comparison.
+- id: eurostat_population_history
+  organization: European Commission / Eurostat
+  dataset: history
+  url: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjan?lang=EN&sex=T&age=TOTAL&unit=NR&sinceTimePeriod=2010&untilTimePeriod=2024
+  page_url: https://ec.europa.eu/eurostat/databrowser/view/demo_pjan/default/table
+  filename: eurostat_population_history.json
+  format: json
+  years:
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  geographic_level: country
+  observation_unit: country-year
+  denominator: resident population on 1 January
+  update_frequency: annual
+  schema_version: audited 2026-10-03
+  reuse: Source terms apply; not relicensed under MIT
+  license_url: https://ec.europa.eu/eurostat/about-us/policies/copyright
+  comparability: Country population is an exposure proxy
+  enabled: true
+  sample_sha256: 4865bb658213b0622be6fe798be8eab314bf97df646b6bf0962674942e13220f
+  sample_retrieved_at: '2026-10-03T17:17:06.840293+00:00'
+  dataset_title: Population on 1 January · 2010–2024 historical context
+  key_variables:
+  - geography
+  - sex total
+  - age total where available
+  - year
+  - residents
+  - publisher flags where available
+  known_limitations: Resident stock is a travel exposure proxy; source geography and
+    reference date must match explicitly.
+- id: transport_rce_2022
+  organization: Ministerio de Transportes y Movilidad Sostenible
+  dataset: matched_exposure
+  dataset_title: Traffic in the State Road Network, 2022; provincial vehicle-kilometres
+  url: https://mapatrafico.mitma.es/informes/anejos/Bloque%202.pdf
+  page_url: https://mapatrafico.mitma.es/
+  filename: transport_rce_2022.pdf
+  format: pdf
+  years:
+  - 2022
+  geographic_level: province, State Road Network only
+  observation_unit: province-network-year
+  denominator: million vehicle-kilometres, all vehicles, State Road Network (RCE)
+  update_frequency: annual
+  schema_version: PDF page 3, year 2022, published 27 February 2024; audited 2026-10-03
+  reuse: Publisher terms apply; attributed factual aggregates; raw PDF not redistributed
+  license_url: https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-administrativa/aviso-legal
+  comparability: Only DGT injury crashes labelled Estatal, year 2022, matched province;
+    no all-road rates
+  known_limitations: VKT rounded to 0.1 million. Missing territories excluded, never
+    zero-filled. Road-owner classifications may differ between registries; association
+    is territorial burden per traffic, not personal risk.
+  enabled: true
+  sample_sha256: 3bdb0d71ead2877b6bdd952fee7ee3a6b8491bff99ec3cad5fde52e01bc0dd85
+  sample_retrieved_at: '2026-10-03T17:27:29.917519+00:00'

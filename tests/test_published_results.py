@@ -25,9 +25,10 @@ def test_national_reconciliation_exposure_coverage_and_rate_formula():
     assert frame.loc[frame.year.eq(2024), "population"].sum() == 48619695
     assert frame.loc[frame.year.eq(2024), "registered_vehicles"].sum() == 36241784
     assert frame.loc[frame.year.eq(2024), "licensed_drivers"].sum() == 28138441
-    missing = frame.year.eq(2023)
-    assert frame.loc[missing, ["registered_vehicles", "licensed_drivers"]].isna().all().all()
-    assert frame.loc[missing, "injury_crashes_per_100k_registered_vehicles"].isna().all()
+    observed = frame.loc[frame.year.eq(2023)]
+    assert observed.registered_vehicles.sum() == 36075238
+    assert observed.licensed_drivers.sum() == 27910056
+    assert frame[["registered_vehicles", "licensed_drivers"]].notna().all().all()
     np.testing.assert_allclose(
         frame.injury_crashes_per_100k_population, frame.injury_crashes / frame.population * 100000
     )
