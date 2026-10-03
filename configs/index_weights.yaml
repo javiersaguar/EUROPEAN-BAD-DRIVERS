@@ -1,0 +1,12 @@
+# An experiment about reported territorial burden, never inherent driving skill.
+normalization: percentile
+minimum_injury_crashes: 30
+random_seed: 42
+weight_scenarios: 500
+bootstrap_repetitions: 200
+weights:
+  injury_crashes_per_100k_population: 0.40
+  urban_crashes_per_100k_population: 0.25
+  rear_lateral_crashes_per_100k_population: 0.20
+  fatalities_per_100k_population: 0.15
+

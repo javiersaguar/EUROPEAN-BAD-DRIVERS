@@ -1,0 +1,24 @@
+{
+  "years": [
+    2022,
+    2023,
+    2024
+  ],
+  "recorded_crashes": 301218,
+  "latest_year": 2024,
+  "latest_injury_crashes": 101996,
+  "latest_fatalities": 1785,
+  "count_vs_population_rank_correlation": 0.45496456928199436,
+  "injury_vs_fatality_rank_correlation": -0.35242892512592844,
+  "index_rank_stability_first_last": 0.903564567769477,
+  "largest_weight_rank_span": 50.0,
+  "largest_injury_population_rate_province": "Melilla",
+  "largest_fatality_population_rate_province": "Zamora",
+  "weights": {
+    "injury_crashes_per_100k_population": 0.4,
+    "urban_crashes_per_100k_population": 0.25,
+    "rear_lateral_crashes_per_100k_population": 0.2,
+    "fatalities_per_100k_population": 0.15
+  },
+  "normalization": "percentile"
+}

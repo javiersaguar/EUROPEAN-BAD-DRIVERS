@@ -1,0 +1,1249 @@
+province_code,province,index_score,index_rank,scenario,normalization
+01,Araba/Álava,72.05882352941177,11.0,default,percentile
+02,Albacete,66.66666666666667,14.0,default,percentile
+03,Alicante/Alacant,55.78431372549019,23.5,default,percentile
+04,Almería,63.92156862745098,18.0,default,percentile
+05,Ávila,68.13725490196077,13.0,default,percentile
+06,Badajoz,43.52941176470589,30.0,default,percentile
+07,"Balears, Illes",76.1764705882353,10.0,default,percentile
+08,Barcelona,81.17647058823529,7.0,default,percentile
+09,Burgos,56.86274509803921,22.0,default,percentile
+10,Cáceres,26.764705882352942,42.0,default,percentile
+11,Cádiz,69.50980392156863,12.0,default,percentile
+12,Castellón/Castelló,42.74509803921569,32.0,default,percentile
+13,Ciudad Real,22.05882352941176,47.0,default,percentile
+14,Córdoba,14.509803921568627,50.0,default,percentile
+15,"Coruña, A",32.64705882352941,37.0,default,percentile
+16,Cuenca,23.823529411764703,45.0,default,percentile
+17,Girona,77.94117647058823,8.0,default,percentile
+18,Granada,38.8235294117647,35.0,default,percentile
+19,Guadalajara,28.137254901960787,41.0,default,percentile
+20,Gipuzkoa,46.9607843137255,26.0,default,percentile
+21,Huelva,29.509803921568626,39.0,default,percentile
+22,Huesca,50.196078431372555,25.0,default,percentile
+23,Jaén,42.15686274509804,33.0,default,percentile
+24,León,13.431372549019608,51.0,default,percentile
+25,Lleida,85.09803921568627,2.0,default,percentile
+26,"Rioja, La",65.7843137254902,16.0,default,percentile
+27,Lugo,19.901960784313726,48.0,default,percentile
+28,Madrid,62.84313725490196,19.0,default,percentile
+29,Málaga,84.80392156862746,4.0,default,percentile
+30,Murcia,85.19607843137256,1.0,default,percentile
+31,Navarra,26.27450980392157,43.0,default,percentile
+32,Ourense,25.098039215686278,44.0,default,percentile
+33,Asturias,55.78431372549019,23.5,default,percentile
+34,Palencia,12.647058823529411,52.0,default,percentile
+35,"Palmas, Las",41.56862745098039,34.0,default,percentile
+36,Pontevedra,43.92156862745098,29.0,default,percentile
+37,Salamanca,64.6078431372549,17.0,default,percentile
+38,Santa Cruz de Tenerife,45.0,28.0,default,percentile
+39,Cantabria,58.4313725490196,20.0,default,percentile
+40,Segovia,58.13725490196079,21.0,default,percentile
+41,Sevilla,77.54901960784312,9.0,default,percentile
+42,Soria,22.15686274509804,46.0,default,percentile
+43,Tarragona,84.60784313725492,5.0,default,percentile
+44,Teruel,36.86274509803921,36.0,default,percentile
+45,Toledo,16.96078431372549,49.0,default,percentile
+46,Valencia/València,66.07843137254902,15.0,default,percentile
+47,Valladolid,43.333333333333336,31.0,default,percentile
+48,Bizkaia,29.117647058823533,40.0,default,percentile
+49,Zamora,30.3921568627451,38.0,default,percentile
+50,Zaragoza,45.68627450980392,27.0,default,percentile
+51,Ceuta,83.62745098039217,6.0,default,percentile
+52,Melilla,85.0,3.0,default,percentile
+01,Araba/Álava,0.4294539333366757,12.0,default,zscore
+02,Albacete,0.17405094162869722,15.0,default,zscore
+03,Alicante/Alacant,-0.054690049713748815,24.0,default,zscore
+04,Almería,0.13742369710252705,16.0,default,zscore
+05,Ávila,0.47340717301634794,10.0,default,zscore
+06,Badajoz,-0.29438262092750256,33.0,default,zscore
+07,"Balears, Illes",0.456280094435089,11.0,default,zscore
+08,Barcelona,1.0403120134365338,5.0,default,zscore
+09,Burgos,0.03709436959851395,21.0,default,zscore
+10,Cáceres,-0.6563045065921316,45.0,default,zscore
+11,Cádiz,0.2969685357785622,13.0,default,zscore
+12,Castellón/Castelló,-0.2875271801701384,32.0,default,zscore
+13,Ciudad Real,-0.7547085784298512,48.0,default,zscore
+14,Córdoba,-0.9215971321861175,50.0,default,zscore
+15,"Coruña, A",-0.5247239769129802,38.0,default,zscore
+16,Cuenca,-0.6012819390844398,41.0,default,zscore
+17,Girona,0.6246744444946581,8.0,default,zscore
+18,Granada,-0.403641970173331,37.0,default,zscore
+19,Guadalajara,-0.5771925030921804,40.0,default,zscore
+20,Gipuzkoa,-0.21381231625895508,27.0,default,zscore
+21,Huelva,-0.6061738028946863,42.0,default,zscore
+22,Huesca,-0.0178958632619505,22.0,default,zscore
+23,Jaén,-0.31119644907465877,34.0,default,zscore
+24,León,-0.9861252726916259,51.0,default,zscore
+25,Lleida,1.1455738770880628,4.0,default,zscore
+26,"Rioja, La",0.12702506800230787,17.0,default,zscore
+27,Lugo,-0.7123177916117234,47.0,default,zscore
+28,Madrid,0.09489930788173867,19.0,default,zscore
+29,Málaga,1.2236115509036642,3.0,default,zscore
+30,Murcia,0.8305257598543625,6.0,default,zscore
+31,Navarra,-0.6657073644306865,46.0,default,zscore
+32,Ourense,-0.6495258679381218,44.0,default,zscore
+33,Asturias,-0.08063580945801915,25.0,default,zscore
+34,Palencia,-1.0018287235384318,52.0,default,zscore
+35,"Palmas, Las",-0.3688113614531294,36.0,default,zscore
+36,Pontevedra,-0.2683888705566289,30.0,default,zscore
+37,Salamanca,0.1110583350287365,18.0,default,zscore
+38,Santa Cruz de Tenerife,-0.26265324604674,29.0,default,zscore
+39,Cantabria,-0.04229251809253523,23.0,default,zscore
+40,Segovia,0.07328533263529982,20.0,default,zscore
+41,Sevilla,0.6027508215128121,9.0,default,zscore
+42,Soria,-0.564252570437376,39.0,default,zscore
+43,Tarragona,0.8159042511603858,7.0,default,zscore
+44,Teruel,-0.3418783227651827,35.0,default,zscore
+45,Toledo,-0.8127380904002,49.0,default,zscore
+46,Valencia/València,0.19064136359410086,14.0,default,zscore
+47,Valladolid,-0.28713752726799874,31.0,default,zscore
+48,Bizkaia,-0.6429297705684178,43.0,default,zscore
+49,Zamora,-0.11866883614914381,26.0,default,zscore
+50,Zaragoza,-0.25951660991605907,28.0,default,zscore
+51,Ceuta,2.040654318695191,2.0,default,zscore
+52,Melilla,3.3649422529104194,1.0,default,zscore
+01,Araba/Álava,0.7421845689545128,12.0,default,robust_zscore
+02,Albacete,0.4266227580318455,15.0,default,robust_zscore
+03,Alicante/Alacant,0.13889993590333255,24.0,default,robust_zscore
+04,Almería,0.36317916262559163,17.0,default,robust_zscore
+05,Ávila,0.7581235890494978,11.0,default,robust_zscore
+06,Badajoz,-0.15521024566541833,32.0,default,robust_zscore
+07,"Balears, Illes",0.7595570288226804,10.0,default,robust_zscore
+08,Barcelona,1.5115420550744914,5.0,default,robust_zscore
+09,Burgos,0.24405256200971903,21.0,default,robust_zscore
+10,Cáceres,-0.6176407487097162,46.0,default,robust_zscore
+11,Cádiz,0.5879180419808802,13.0,default,robust_zscore
+12,Castellón/Castelló,-0.1628638260191337,33.0,default,robust_zscore
+13,Ciudad Real,-0.7384531461006952,48.0,default,robust_zscore
+14,Córdoba,-0.9435598287524554,50.0,default,robust_zscore
+15,"Coruña, A",-0.4584959902252028,38.0,default,robust_zscore
+16,Cuenca,-0.5712782974137893,42.0,default,robust_zscore
+17,Girona,0.9691969176883017,8.0,default,robust_zscore
+18,Granada,-0.3047818738671633,37.0,default,robust_zscore
+19,Guadalajara,-0.5339761353101351,40.0,default,robust_zscore
+20,Gipuzkoa,-0.06913241675046736,27.0,default,robust_zscore
+21,Huelva,-0.5601602465735417,41.0,default,robust_zscore
+22,Huesca,0.15268171818036785,22.0,default,robust_zscore
+23,Jaén,-0.18223845997331456,34.0,default,robust_zscore
+24,León,-1.0362764811030734,51.0,default,robust_zscore
+25,Lleida,1.5912449972956133,4.0,default,robust_zscore
+26,"Rioja, La",0.3728114360338107,16.0,default,robust_zscore
+27,Lugo,-0.693745076018648,47.0,default,robust_zscore
+28,Madrid,0.3455267106991353,19.0,default,robust_zscore
+29,Málaga,1.7418996483894789,3.0,default,robust_zscore
+30,Murcia,1.2479025732349691,6.0,default,robust_zscore
+31,Navarra,-0.6141109314084591,44.0,default,robust_zscore
+32,Ourense,-0.6159471260252517,45.0,default,robust_zscore
+33,Asturias,0.10383473018056912,25.0,default,robust_zscore
+34,Palencia,-1.0575105734625851,52.0,default,robust_zscore
+35,"Palmas, Las",-0.2567103957887993,36.0,default,robust_zscore
+36,Pontevedra,-0.1394235636612367,30.0,default,robust_zscore
+37,Salamanca,0.34809822100932575,18.0,default,robust_zscore
+38,Santa Cruz de Tenerife,-0.12529275532528172,29.0,default,robust_zscore
+39,Cantabria,0.15097005362060667,23.0,default,robust_zscore
+40,Segovia,0.2631612246363676,20.0,default,robust_zscore
+41,Sevilla,0.9670498776899247,9.0,default,robust_zscore
+42,Soria,-0.522572741760319,39.0,default,robust_zscore
+43,Tarragona,1.1934580167540494,7.0,default,robust_zscore
+44,Teruel,-0.24901723630370295,35.0,default,robust_zscore
+45,Toledo,-0.8162264466779519,49.0,default,robust_zscore
+46,Valencia/València,0.4562888125927679,14.0,default,robust_zscore
+47,Valladolid,-0.1468809618064531,31.0,default,robust_zscore
+48,Bizkaia,-0.5876451714525954,43.0,default,robust_zscore
+49,Zamora,0.015685554834646842,26.0,default,robust_zscore
+50,Zaragoza,-0.11498858421759238,28.0,default,robust_zscore
+51,Ceuta,2.7858532624569827,2.0,default,robust_zscore
+52,Melilla,4.453639354696603,1.0,default,robust_zscore
+01,Araba/Álava,32.51670122721599,12.0,default,minmax
+02,Albacete,27.881111546917225,15.0,default,minmax
+03,Alicante/Alacant,23.753672740352446,24.0,default,minmax
+04,Almería,27.309600279567608,16.0,default,minmax
+05,Ávila,33.58922769631749,10.0,default,minmax
+06,Badajoz,19.4107521651466,33.0,default,minmax
+07,"Balears, Illes",33.071047806864854,11.0,default,minmax
+08,Barcelona,43.45227630235684,5.0,default,minmax
+09,Burgos,25.494191991108693,21.0,default,minmax
+10,Cáceres,12.972731142396619,45.0,default,minmax
+11,Cádiz,30.015093513214303,13.0,default,minmax
+12,Castellón/Castelló,19.659151294264895,31.0,default,minmax
+13,Ciudad Real,11.18201641251004,48.0,default,minmax
+14,Córdoba,8.152028427149567,50.0,default,minmax
+15,"Coruña, A",15.38659235348263,38.0,default,minmax
+16,Cuenca,14.133720877192241,41.0,default,minmax
+17,Girona,36.143367803520356,8.0,default,minmax
+18,Granada,17.526249146241152,37.0,default,minmax
+19,Guadalajara,14.513842663516533,40.0,default,minmax
+20,Gipuzkoa,20.976611665650644,27.0,default,minmax
+21,Huelva,13.901235413316808,42.0,default,minmax
+22,Huesca,24.678950685521272,22.0,default,minmax
+23,Jaén,19.151973466157898,34.0,default,minmax
+24,León,7.089242163121463,51.0,default,minmax
+25,Lleida,45.75842466499117,4.0,default,minmax
+26,"Rioja, La",27.00844653815401,17.0,default,minmax
+27,Lugo,12.013623452559068,47.0,default,minmax
+28,Madrid,26.315490429164168,20.0,default,minmax
+29,Málaga,46.708718415593125,3.0,default,minmax
+30,Murcia,39.66647619055075,7.0,default,minmax
+31,Navarra,12.695836202786843,46.0,default,minmax
+32,Ourense,13.152233815730636,43.0,default,minmax
+33,Asturias,23.331892551454754,25.0,default,minmax
+34,Palencia,6.814602553268861,52.0,default,minmax
+35,"Palmas, Las",18.123459024867053,36.0,default,minmax
+36,Pontevedra,20.00168295892892,30.0,default,minmax
+37,Salamanca,26.74343239368974,18.0,default,minmax
+38,Santa Cruz de Tenerife,20.04855854279631,29.0,default,minmax
+39,Cantabria,24.020787295355,23.0,default,minmax
+40,Segovia,26.361126430572977,19.0,default,minmax
+41,Sevilla,35.540669446829824,9.0,default,minmax
+42,Soria,14.785890239664617,39.0,default,minmax
+43,Tarragona,39.67295127457001,6.0,default,minmax
+44,Teruel,18.847842000763684,35.0,default,minmax
+45,Toledo,10.177493485770398,49.0,default,minmax
+46,Valencia/València,28.1007443060581,14.0,default,minmax
+47,Valladolid,19.55127264633586,32.0,default,minmax
+48,Bizkaia,13.136488116583958,44.0,default,minmax
+49,Zamora,22.93125642353798,26.0,default,minmax
+50,Zaragoza,20.05995434187735,28.0,default,minmax
+51,Ceuta,61.236971741716076,2.0,default,minmax
+52,Melilla,85.0,1.0,default,minmax
+01,Araba/Álava,64.2156862745098,13.5,equal,percentile
+02,Albacete,61.27450980392157,17.0,equal,percentile
+03,Alicante/Alacant,53.92156862745098,23.0,equal,percentile
+04,Almería,65.19607843137254,12.0,equal,percentile
+05,Ávila,68.62745098039215,11.0,equal,percentile
+06,Badajoz,44.117647058823536,28.5,equal,percentile
+07,"Balears, Illes",74.50980392156863,6.0,equal,percentile
+08,Barcelona,72.54901960784312,10.0,equal,percentile
+09,Burgos,60.78431372549019,18.0,equal,percentile
+10,Cáceres,30.88235294117647,41.5,equal,percentile
+11,Cádiz,64.2156862745098,13.5,equal,percentile
+12,Castellón/Castelló,44.117647058823536,28.5,equal,percentile
+13,Ciudad Real,28.92156862745098,46.0,equal,percentile
+14,Córdoba,18.627450980392155,52.0,equal,percentile
+15,"Coruña, A",35.294117647058826,38.0,equal,percentile
+16,Cuenca,30.392156862745097,43.0,equal,percentile
+17,Girona,73.52941176470587,8.0,equal,percentile
+18,Granada,44.11764705882353,30.0,equal,percentile
+19,Guadalajara,32.35294117647059,40.0,equal,percentile
+20,Gipuzkoa,42.15686274509804,33.5,equal,percentile
+21,Huelva,32.84313725490196,39.0,equal,percentile
+22,Huesca,52.94117647058823,25.0,equal,percentile
+23,Jaén,45.588235294117645,27.0,equal,percentile
+24,León,22.058823529411764,49.0,equal,percentile
+25,Lleida,83.33333333333333,3.0,equal,percentile
+26,"Rioja, La",62.74509803921568,16.0,equal,percentile
+27,Lugo,26.96078431372549,47.0,equal,percentile
+28,Madrid,57.352941176470594,20.0,equal,percentile
+29,Málaga,78.92156862745098,4.0,equal,percentile
+30,Murcia,83.8235294117647,1.5,equal,percentile
+31,Navarra,29.411764705882355,45.0,equal,percentile
+32,Ourense,30.88235294117647,41.5,equal,percentile
+33,Asturias,54.41176470588235,22.0,equal,percentile
+34,Palencia,20.098039215686274,51.0,equal,percentile
+35,"Palmas, Las",40.68627450980392,35.0,equal,percentile
+36,Pontevedra,42.647058823529406,32.0,equal,percentile
+37,Salamanca,63.725490196078425,15.0,equal,percentile
+38,Santa Cruz de Tenerife,43.13725490196079,31.0,equal,percentile
+39,Cantabria,53.921568627450974,24.0,equal,percentile
+40,Segovia,57.35294117647058,21.0,equal,percentile
+41,Sevilla,72.54901960784315,9.0,equal,percentile
+42,Soria,29.901960784313726,44.0,equal,percentile
+43,Tarragona,83.8235294117647,1.5,equal,percentile
+44,Teruel,37.74509803921569,36.5,equal,percentile
+45,Toledo,20.588235294117645,50.0,equal,percentile
+46,Valencia/València,60.294117647058826,19.0,equal,percentile
+47,Valladolid,42.15686274509804,33.5,equal,percentile
+48,Bizkaia,25.980392156862745,48.0,equal,percentile
+49,Zamora,37.74509803921569,36.5,equal,percentile
+50,Zaragoza,47.549019607843135,26.0,equal,percentile
+51,Ceuta,74.01960784313725,7.0,equal,percentile
+52,Melilla,75.0,5.0,equal,percentile
+01,Araba/Álava,0.2365353084349405,13.0,equal,zscore
+02,Albacete,0.06442526476666349,22.0,equal,zscore
+03,Alicante/Alacant,-0.09637148623655412,24.0,equal,zscore
+04,Almería,0.16906381602272316,15.0,equal,zscore
+05,Ávila,0.650927988806273,8.0,equal,zscore
+06,Badajoz,-0.28075083378148524,31.0,equal,zscore
+07,"Balears, Illes",0.4162704178836966,11.0,equal,zscore
+08,Barcelona,0.7605150528817102,7.0,equal,zscore
+09,Burgos,0.14306533708676245,16.0,equal,zscore
+10,Cáceres,-0.5770878780264813,45.0,equal,zscore
+11,Cádiz,0.20458626533595817,14.0,equal,zscore
+12,Castellón/Castelló,-0.26498307758811174,29.0,equal,zscore
+13,Ciudad Real,-0.5946079348098606,46.0,equal,zscore
+14,Córdoba,-0.8141299092273573,52.0,equal,zscore
+15,"Coruña, A",-0.47223685670222826,41.0,equal,zscore
+16,Cuenca,-0.4007212204333836,39.0,equal,zscore
+17,Girona,0.4666717204529781,10.0,equal,zscore
+18,Granada,-0.2679335049215335,30.0,equal,zscore
+19,Guadalajara,-0.47124526234203107,40.0,equal,zscore
+20,Gipuzkoa,-0.3106695541841973,35.0,equal,zscore
+21,Huelva,-0.5335328116111314,43.0,equal,zscore
+22,Huesca,0.11846599357374843,17.0,equal,zscore
+23,Jaén,-0.23839124669789963,28.0,equal,zscore
+24,León,-0.7473015415439742,49.0,equal,zscore
+25,Lleida,0.9589150106902552,4.0,equal,zscore
+26,"Rioja, La",0.07053694300110594,20.0,equal,zscore
+27,Lugo,-0.5455722223315529,44.0,equal,zscore
+28,Madrid,-0.03527686129615171,23.0,equal,zscore
+29,Málaga,1.0543506502298206,3.0,equal,zscore
+30,Murcia,0.7809378382750779,5.0,equal,zscore
+31,Navarra,-0.5965724632410759,47.0,equal,zscore
+32,Ourense,-0.5104299533323163,42.0,equal,zscore
+33,Asturias,-0.11220458606973546,25.0,equal,zscore
+34,Palencia,-0.8024126529310172,51.0,equal,zscore
+35,"Palmas, Las",-0.3895342577383188,38.0,equal,zscore
+36,Pontevedra,-0.3048569324228695,32.0,equal,zscore
+37,Salamanca,0.08167945315935374,19.0,equal,zscore
+38,Santa Cruz de Tenerife,-0.31146959935789836,36.0,equal,zscore
+39,Cantabria,-0.13135629748600633,26.0,equal,zscore
+40,Segovia,0.10544825224666643,18.0,equal,zscore
+41,Sevilla,0.49443702154055774,9.0,equal,zscore
+42,Soria,-0.3238066144483449,37.0,equal,zscore
+43,Tarragona,0.7620677755634326,6.0,equal,zscore
+44,Teruel,-0.3069617122561382,33.0,equal,zscore
+45,Toledo,-0.7322829657192969,48.0,equal,zscore
+46,Valencia/València,0.06971269797420732,21.0,equal,zscore
+47,Valladolid,-0.30965006569647896,34.0,equal,zscore
+48,Bizkaia,-0.752983768033677,50.0,equal,zscore
+49,Zamora,0.342023609526511,12.0,equal,zscore
+50,Zaragoza,-0.22284867179329587,27.0,equal,zscore
+51,Ceuta,1.6880580593838195,2.0,equal,zscore
+52,Melilla,2.819488265424141,1.0,equal,zscore
+01,Araba/Álava,0.5250504754630434,13.0,equal,robust_zscore
+02,Albacete,0.31013397980573865,22.0,equal,robust_zscore
+03,Alicante/Alacant,0.1046476470025951,24.0,equal,robust_zscore
+04,Almería,0.4158660171900975,15.0,equal,robust_zscore
+05,Ávila,0.9827048903578348,8.0,equal,robust_zscore
+06,Badajoz,-0.12265296025688545,30.0,equal,robust_zscore
+07,"Balears, Illes",0.7254809948491661,11.0,equal,robust_zscore
+08,Barcelona,1.1892560579071156,6.0,equal,robust_zscore
+09,Burgos,0.38551091165186996,16.0,equal,robust_zscore
+10,Cáceres,-0.5059987293896725,45.0,equal,robust_zscore
+11,Cádiz,0.49232708952397103,14.0,equal,robust_zscore
+12,Castellón/Castelló,-0.1202943617030007,29.0,equal,robust_zscore
+13,Ciudad Real,-0.5296719745839217,47.0,equal,robust_zscore
+14,Córdoba,-0.7971345340664748,51.0,equal,robust_zscore
+15,"Coruña, A",-0.37947219617410166,40.0,equal,robust_zscore
+16,Cuenca,-0.3155013374494948,39.0,equal,robust_zscore
+17,Girona,0.7929178791052244,10.0,equal,robust_zscore
+18,Granada,-0.12611931406697788,31.0,equal,robust_zscore
+19,Guadalajara,-0.3911744539124593,41.0,equal,robust_zscore
+20,Gipuzkoa,-0.16955557784495037,35.0,equal,robust_zscore
+21,Huelva,-0.45649406534151615,43.0,equal,robust_zscore
+22,Huesca,0.3297636607402916,17.0,equal,robust_zscore
+23,Jaén,-0.07905657980182848,28.0,equal,robust_zscore
+24,León,-0.7331361282945547,50.0,equal,robust_zscore
+25,Lleida,1.3778481127484825,4.0,equal,robust_zscore
+26,"Rioja, La",0.3199953426673075,20.0,equal,robust_zscore
+27,Lugo,-0.4775367765390348,44.0,equal,robust_zscore
+28,Madrid,0.20543130231495793,23.0,equal,robust_zscore
+29,Málaga,1.5518974961575107,3.0,equal,robust_zscore
+30,Murcia,1.201817235780286,5.0,equal,robust_zscore
+31,Navarra,-0.5140780030287844,46.0,equal,robust_zscore
+32,Ourense,-0.43306151340434407,42.0,equal,robust_zscore
+33,Asturias,0.08123093013529917,25.0,equal,robust_zscore
+34,Palencia,-0.8014447557505123,52.0,equal,robust_zscore
+35,"Palmas, Las",-0.26514207921401484,38.0,equal,robust_zscore
+36,Pontevedra,-0.16740758295809494,33.0,equal,robust_zscore
+37,Salamanca,0.3278031767168385,18.0,equal,robust_zscore
+38,Santa Cruz de Tenerife,-0.16774624269963198,34.0,equal,robust_zscore
+39,Cantabria,0.05958966525910464,26.0,equal,robust_zscore
+40,Segovia,0.3149994987279071,21.0,equal,robust_zscore
+41,Sevilla,0.8514598100135965,9.0,equal,robust_zscore
+42,Soria,-0.21917791676692078,37.0,equal,robust_zscore
+43,Tarragona,1.1410857874635554,7.0,equal,robust_zscore
+44,Teruel,-0.19264709404061214,36.0,equal,robust_zscore
+45,Toledo,-0.7027298016413325,49.0,equal,robust_zscore
+46,Valencia/València,0.32675102116960275,19.0,equal,robust_zscore
+47,Valladolid,-0.15767447541089746,32.0,equal,robust_zscore
+48,Bizkaia,-0.7023094295408392,48.0,equal,robust_zscore
+49,Zamora,0.580823521603556,12.0,equal,robust_zscore
+50,Zaragoza,-0.05503820113561605,27.0,equal,robust_zscore
+51,Ceuta,2.37522059797004,2.0,equal,robust_zscore
+52,Melilla,3.80872885176864,1.0,equal,robust_zscore
+01,Araba/Álava,29.056621142833425,13.0,equal,minmax
+02,Albacete,25.955228580605464,22.0,equal,minmax
+03,Alicante/Alacant,23.075874891505386,24.0,equal,minmax
+04,Almería,27.9776801902803,15.0,equal,minmax
+05,Ávila,36.95864847427594,8.0,equal,minmax
+06,Badajoz,19.757571310979152,31.0,equal,minmax
+07,"Balears, Illes",32.41741888185222,11.0,equal,minmax
+08,Barcelona,38.38016641253189,7.0,equal,minmax
+09,Burgos,27.54304174140126,16.0,equal,minmax
+10,Cáceres,14.533196374210206,45.0,equal,minmax
+11,Cádiz,28.399215019715545,14.0,equal,minmax
+12,Castellón/Castelló,20.173015319725412,29.0,equal,minmax
+13,Ciudad Real,14.233209316055326,46.0,equal,minmax
+14,Córdoba,10.2341356900409,52.0,equal,minmax
+15,"Coruña, A",16.455331202849145,41.0,equal,minmax
+16,Cuenca,17.933785080633623,38.0,equal,minmax
+17,Girona,33.323049965164245,10.0,equal,minmax
+18,Granada,20.121558252518795,30.0,equal,minmax
+19,Guadalajara,16.56893954183913,40.0,equal,minmax
+20,Gipuzkoa,19.289381796983818,35.0,equal,minmax
+21,Huelva,15.337123504932915,43.0,equal,minmax
+22,Huesca,27.29247227656568,17.0,equal,minmax
+23,Jaén,20.59006647926215,28.0,equal,minmax
+24,León,11.596961386150973,49.0,equal,minmax
+25,Lleida,42.41452330564381,4.0,equal,minmax
+26,"Rioja, La",26.064973810782792,20.0,equal,minmax
+27,Lugo,15.189701260481439,44.0,equal,minmax
+28,Madrid,24.007433876857053,23.0,equal,minmax
+29,Málaga,43.6630472376802,3.0,equal,minmax
+30,Murcia,38.8342573744809,5.0,equal,minmax
+31,Navarra,14.070698558203794,47.0,equal,minmax
+32,Ourense,15.819051308551717,42.0,equal,minmax
+33,Asturias,22.84812484959252,25.0,equal,minmax
+34,Palencia,10.59511672783051,51.0,equal,minmax
+35,"Palmas, Las",17.835570836449822,39.0,equal,minmax
+36,Pontevedra,19.426096840724814,33.0,equal,minmax
+37,Salamanca,26.296677703878665,19.0,equal,minmax
+38,Santa Cruz de Tenerife,19.24333398459882,36.0,equal,minmax
+39,Cantabria,22.474943462635675,26.0,equal,minmax
+40,Segovia,27.057613903246086,18.0,equal,minmax
+41,Sevilla,33.62834089370329,9.0,equal,minmax
+42,Soria,19.321617798669074,34.0,equal,minmax
+43,Tarragona,38.76632738806797,6.0,equal,minmax
+44,Teruel,19.600824376119608,32.0,equal,minmax
+45,Toledo,11.761876990849498,48.0,equal,minmax
+46,Valencia/València,25.961977082433492,21.0,equal,minmax
+47,Valladolid,19.233148167047233,37.0,equal,minmax
+48,Bizkaia,11.212680381751701,50.0,equal,minmax
+49,Zamora,31.520842859662714,12.0,equal,minmax
+50,Zaragoza,20.83049673022871,27.0,equal,minmax
+51,Ceuta,54.799663390652185,2.0,equal,minmax
+52,Melilla,75.0,1.0,equal,minmax
+01,Araba/Álava,86.27450980392157,8.0,injury_crashes_per_100k_population,percentile
+02,Albacete,74.50980392156863,14.0,injury_crashes_per_100k_population,percentile
+03,Alicante/Alacant,52.94117647058824,25.0,injury_crashes_per_100k_population,percentile
+04,Almería,60.78431372549019,21.0,injury_crashes_per_100k_population,percentile
+05,Ávila,78.43137254901961,12.0,injury_crashes_per_100k_population,percentile
+06,Badajoz,35.294117647058826,34.0,injury_crashes_per_100k_population,percentile
+07,"Balears, Illes",80.3921568627451,11.0,injury_crashes_per_100k_population,percentile
+08,Barcelona,94.11764705882352,4.0,injury_crashes_per_100k_population,percentile
+09,Burgos,47.05882352941176,28.0,injury_crashes_per_100k_population,percentile
+10,Cáceres,17.647058823529413,43.0,injury_crashes_per_100k_population,percentile
+11,Cádiz,72.54901960784314,15.0,injury_crashes_per_100k_population,percentile
+12,Castellón/Castelló,43.13725490196079,30.0,injury_crashes_per_100k_population,percentile
+13,Ciudad Real,5.88235294117647,49.0,injury_crashes_per_100k_population,percentile
+14,Córdoba,3.9215686274509802,50.0,injury_crashes_per_100k_population,percentile
+15,"Coruña, A",29.411764705882355,37.0,injury_crashes_per_100k_population,percentile
+16,Cuenca,19.607843137254903,42.0,injury_crashes_per_100k_population,percentile
+17,Girona,88.23529411764706,7.0,injury_crashes_per_100k_population,percentile
+18,Granada,25.49019607843137,39.0,injury_crashes_per_100k_population,percentile
+19,Guadalajara,27.450980392156865,38.0,injury_crashes_per_100k_population,percentile
+20,Gipuzkoa,58.82352941176471,22.0,injury_crashes_per_100k_population,percentile
+21,Huelva,23.52941176470588,40.0,injury_crashes_per_100k_population,percentile
+22,Huesca,54.90196078431373,24.0,injury_crashes_per_100k_population,percentile
+23,Jaén,31.372549019607842,36.0,injury_crashes_per_100k_population,percentile
+24,León,0.0,52.0,injury_crashes_per_100k_population,percentile
+25,Lleida,96.07843137254902,3.0,injury_crashes_per_100k_population,percentile
+26,"Rioja, La",68.62745098039215,17.0,injury_crashes_per_100k_population,percentile
+27,Lugo,7.8431372549019605,48.0,injury_crashes_per_100k_population,percentile
+28,Madrid,64.70588235294117,19.0,injury_crashes_per_100k_population,percentile
+29,Málaga,92.15686274509804,5.0,injury_crashes_per_100k_population,percentile
+30,Murcia,84.31372549019608,9.0,injury_crashes_per_100k_population,percentile
+31,Navarra,11.76470588235294,46.0,injury_crashes_per_100k_population,percentile
+32,Ourense,15.686274509803921,44.0,injury_crashes_per_100k_population,percentile
+33,Asturias,56.86274509803921,23.0,injury_crashes_per_100k_population,percentile
+34,Palencia,1.9607843137254901,51.0,injury_crashes_per_100k_population,percentile
+35,"Palmas, Las",39.21568627450981,32.0,injury_crashes_per_100k_population,percentile
+36,Pontevedra,49.01960784313725,27.0,injury_crashes_per_100k_population,percentile
+37,Salamanca,62.745098039215684,20.0,injury_crashes_per_100k_population,percentile
+38,Santa Cruz de Tenerife,45.09803921568628,29.0,injury_crashes_per_100k_population,percentile
+39,Cantabria,66.66666666666666,18.0,injury_crashes_per_100k_population,percentile
+40,Segovia,76.47058823529412,13.0,injury_crashes_per_100k_population,percentile
+41,Sevilla,82.35294117647058,10.0,injury_crashes_per_100k_population,percentile
+42,Soria,13.725490196078432,45.0,injury_crashes_per_100k_population,percentile
+43,Tarragona,90.19607843137256,6.0,injury_crashes_per_100k_population,percentile
+44,Teruel,50.98039215686274,26.0,injury_crashes_per_100k_population,percentile
+45,Toledo,9.803921568627452,47.0,injury_crashes_per_100k_population,percentile
+46,Valencia/València,70.58823529411765,16.0,injury_crashes_per_100k_population,percentile
+47,Valladolid,41.17647058823529,31.0,injury_crashes_per_100k_population,percentile
+48,Bizkaia,33.33333333333333,35.0,injury_crashes_per_100k_population,percentile
+49,Zamora,21.568627450980394,41.0,injury_crashes_per_100k_population,percentile
+50,Zaragoza,37.254901960784316,33.0,injury_crashes_per_100k_population,percentile
+51,Ceuta,98.0392156862745,2.0,injury_crashes_per_100k_population,percentile
+52,Melilla,100.0,1.0,injury_crashes_per_100k_population,percentile
+01,Araba/Álava,0.8683555639794966,8.0,injury_crashes_per_100k_population,zscore
+02,Albacete,0.3587168384399916,14.0,injury_crashes_per_100k_population,zscore
+03,Alicante/Alacant,-0.0729179190171825,25.0,injury_crashes_per_100k_population,zscore
+04,Almería,0.052257727451015513,21.0,injury_crashes_per_100k_population,zscore
+05,Ávila,0.4524256193028238,12.0,injury_crashes_per_100k_population,zscore
+06,Badajoz,-0.4510684624266654,34.0,injury_crashes_per_100k_population,zscore
+07,"Balears, Illes",0.5672771219896592,11.0,injury_crashes_per_100k_population,zscore
+08,Barcelona,1.5548566114944917,4.0,injury_crashes_per_100k_population,zscore
+09,Burgos,-0.1629199347231897,28.0,injury_crashes_per_100k_population,zscore
+10,Cáceres,-0.8466746888757868,43.0,injury_crashes_per_100k_population,zscore
+11,Cádiz,0.296829631495068,15.0,injury_crashes_per_100k_population,zscore
+12,Castellón/Castelló,-0.28552478715348767,30.0,injury_crashes_per_100k_population,zscore
+13,Ciudad Real,-1.1569887289308955,49.0,injury_crashes_per_100k_population,zscore
+14,Córdoba,-1.2391618264356448,50.0,injury_crashes_per_100k_population,zscore
+15,"Coruña, A",-0.5849297038286081,37.0,injury_crashes_per_100k_population,zscore
+16,Cuenca,-0.823917796271633,42.0,injury_crashes_per_100k_population,zscore
+17,Girona,1.1136291485194794,7.0,injury_crashes_per_100k_population,zscore
+18,Granada,-0.7444442657300642,39.0,injury_crashes_per_100k_population,zscore
+19,Guadalajara,-0.6614607141290626,38.0,injury_crashes_per_100k_population,zscore
+20,Gipuzkoa,0.04596713976348664,22.0,injury_crashes_per_100k_population,zscore
+21,Huelva,-0.7677173316454278,40.0,injury_crashes_per_100k_population,zscore
+22,Huesca,-0.03529914924021951,24.0,injury_crashes_per_100k_population,zscore
+23,Jaén,-0.5415467620077267,36.0,injury_crashes_per_100k_population,zscore
+24,León,-1.4464684344731062,52.0,injury_crashes_per_100k_population,zscore
+25,Lleida,2.0575629541565656,3.0,injury_crashes_per_100k_population,zscore
+26,"Rioja, La",0.17564426585524415,17.0,injury_crashes_per_100k_population,zscore
+27,Lugo,-1.0241780856502396,48.0,injury_crashes_per_100k_population,zscore
+28,Madrid,0.11963716220210771,19.0,injury_crashes_per_100k_population,zscore
+29,Málaga,1.3716088053952264,5.0,injury_crashes_per_100k_population,zscore
+30,Murcia,0.7845829193883629,9.0,injury_crashes_per_100k_population,zscore
+31,Navarra,-0.97068019579812,46.0,injury_crashes_per_100k_population,zscore
+32,Ourense,-0.883364340693237,44.0,injury_crashes_per_100k_population,zscore
+33,Asturias,-0.015513861283658918,23.0,injury_crashes_per_100k_population,zscore
+34,Palencia,-1.3692945516250723,51.0,injury_crashes_per_100k_population,zscore
+35,"Palmas, Las",-0.39351900462891415,32.0,injury_crashes_per_100k_population,zscore
+36,Pontevedra,-0.1465101275910901,27.0,injury_crashes_per_100k_population,zscore
+37,Salamanca,0.10776563360325167,20.0,injury_crashes_per_100k_population,zscore
+38,Santa Cruz de Tenerife,-0.19825960611370635,29.0,injury_crashes_per_100k_population,zscore
+39,Cantabria,0.13717640475038995,18.0,injury_crashes_per_100k_population,zscore
+40,Segovia,0.3695979669727299,13.0,injury_crashes_per_100k_population,zscore
+41,Sevilla,0.6610048012833589,10.0,injury_crashes_per_100k_population,zscore
+42,Soria,-0.8902944159021864,45.0,injury_crashes_per_100k_population,zscore
+43,Tarragona,1.1505061883166525,6.0,injury_crashes_per_100k_population,zscore
+44,Teruel,-0.08426651497030097,26.0,injury_crashes_per_100k_population,zscore
+45,Toledo,-0.9790730062411926,47.0,injury_crashes_per_100k_population,zscore
+46,Valencia/València,0.2707021785320441,16.0,injury_crashes_per_100k_population,zscore
+47,Valladolid,-0.3410653155765531,31.0,injury_crashes_per_100k_population,zscore
+48,Bizkaia,-0.47784516388147397,35.0,injury_crashes_per_100k_population,zscore
+49,Zamora,-0.7976777781256075,41.0,injury_crashes_per_100k_population,zscore
+50,Zaragoza,-0.4444256036484577,33.0,injury_crashes_per_100k_population,zscore
+51,Ceuta,2.3265402023413593,2.0,injury_crashes_per_100k_population,zscore
+52,Melilla,3.9943631913856885,1.0,injury_crashes_per_100k_population,zscore
+01,Araba/Álava,1.1913714000876154,8.0,injury_crashes_per_100k_population,robust_zscore
+02,Albacete,0.5741690864749854,14.0,injury_crashes_per_100k_population,robust_zscore
+03,Alicante/Alacant,0.05143414191955335,25.0,injury_crashes_per_100k_population,robust_zscore
+04,Almería,0.2030291733338992,21.0,injury_crashes_per_100k_population,robust_zscore
+05,Ávila,0.687655902637027,12.0,injury_crashes_per_100k_population,robust_zscore
+06,Badajoz,-0.4065282902702945,34.0,injury_crashes_per_100k_population,robust_zscore
+07,"Balears, Illes",0.8267477919065507,11.0,injury_crashes_per_100k_population,robust_zscore
+08,Barcelona,2.022764333140747,4.0,injury_crashes_per_100k_population,robust_zscore
+09,Burgos,-0.057563564769127114,28.0,injury_crashes_per_100k_population,robust_zscore
+10,Cáceres,-0.8856305758854264,43.0,injury_crashes_per_100k_population,robust_zscore
+11,Cádiz,0.49922005808434444,15.0,injury_crashes_per_100k_population,robust_zscore
+12,Castellón/Castelló,-0.20604521419639227,30.0,injury_crashes_per_100k_population,robust_zscore
+13,Ciudad Real,-1.2614390336625407,49.0,injury_crashes_per_100k_population,robust_zscore
+14,Córdoba,-1.3609554623698723,50.0,injury_crashes_per_100k_population,robust_zscore
+15,"Coruña, A",-0.5686420853098622,37.0,injury_crashes_per_100k_population,robust_zscore
+16,Cuenca,-0.858070647524313,42.0,injury_crashes_per_100k_population,robust_zscore
+17,Girona,1.488412060971235,7.0,injury_crashes_per_100k_population,robust_zscore
+18,Granada,-0.761823552350581,39.0,injury_crashes_per_100k_population,robust_zscore
+19,Guadalajara,-0.6613256163161634,38.0,injury_crashes_per_100k_population,robust_zscore
+20,Gipuzkoa,0.19541090360642538,22.0,injury_crashes_per_100k_population,robust_zscore
+21,Huelva,-0.7900085967908669,40.0,injury_crashes_per_100k_population,robust_zscore
+22,Huesca,0.09699267304770375,24.0,injury_crashes_per_100k_population,robust_zscore
+23,Jaén,-0.5161028045971869,36.0,injury_crashes_per_100k_population,robust_zscore
+24,León,-1.6120158934084663,52.0,injury_crashes_per_100k_population,robust_zscore
+25,Lleida,2.6315711255019854,3.0,injury_crashes_per_100k_population,robust_zscore
+26,"Rioja, La",0.3524574902090075,17.0,injury_crashes_per_100k_population,robust_zscore
+27,Lugo,-1.1005975744142709,48.0,injury_crashes_per_100k_population,robust_zscore
+28,Madrid,0.28462961092674793,19.0,injury_crashes_per_100k_population,robust_zscore
+29,Málaga,1.800840518836455,5.0,injury_crashes_per_100k_population,robust_zscore
+30,Murcia,1.0899178262753788,9.0,injury_crashes_per_100k_population,robust_zscore
+31,Navarra,-1.0358084998494055,46.0,injury_crashes_per_100k_population,robust_zscore
+32,Ourense,-0.9300638908055202,44.0,injury_crashes_per_100k_population,robust_zscore
+33,Asturias,0.12095381432352446,23.0,injury_crashes_per_100k_population,robust_zscore
+34,Palencia,-1.5185538061350683,51.0,injury_crashes_per_100k_population,robust_zscore
+35,"Palmas, Las",-0.3368325298817502,32.0,injury_crashes_per_100k_population,robust_zscore
+36,Pontevedra,-0.037690328258013904,27.0,injury_crashes_per_100k_population,robust_zscore
+37,Salamanca,0.2702524952364598,20.0,injury_crashes_per_100k_population,robust_zscore
+38,Santa Cruz de Tenerife,-0.10036197441008796,29.0,injury_crashes_per_100k_population,robust_zscore
+39,Cantabria,0.305870659805742,18.0,injury_crashes_per_100k_population,robust_zscore
+40,Segovia,0.5873467697407401,13.0,injury_crashes_per_100k_population,robust_zscore
+41,Sevilla,0.9402574951740467,10.0,injury_crashes_per_100k_population,robust_zscore
+42,Soria,-0.9384566173353678,45.0,injury_crashes_per_100k_population,robust_zscore
+43,Tarragona,1.533072313698117,6.0,injury_crashes_per_100k_population,robust_zscore
+44,Teruel,0.037690328258013425,26.0,injury_crashes_per_100k_population,robust_zscore
+45,Toledo,-1.045972684326739,47.0,injury_crashes_per_100k_population,robust_zscore
+46,Valencia/València,0.4675781839302315,16.0,injury_crashes_per_100k_population,robust_zscore
+47,Valladolid,-0.27330804357752964,31.0,injury_crashes_per_100k_population,robust_zscore
+48,Bizkaia,-0.43895644233296865,35.0,injury_crashes_per_100k_population,robust_zscore
+49,Zamora,-0.8262924503478329,41.0,injury_crashes_per_100k_population,robust_zscore
+50,Zaragoza,-0.3984833996419941,33.0,injury_crashes_per_100k_population,robust_zscore
+51,Ceuta,2.9573183098688536,2.0,injury_crashes_per_100k_population,robust_zscore
+52,Melilla,4.977149527453002,1.0,injury_crashes_per_100k_population,robust_zscore
+01,Araba/Álava,42.54540771765245,8.0,injury_crashes_per_100k_population,minmax
+02,Albacete,33.178480736906884,14.0,injury_crashes_per_100k_population,minmax
+03,Alicante/Alacant,25.24523105857221,25.0,injury_crashes_per_100k_population,minmax
+04,Almería,27.545902262460825,21.0,injury_crashes_per_100k_population,minmax
+05,Ávila,34.900805324520654,12.0,injury_crashes_per_100k_population,minmax
+06,Badajoz,18.294996803716096,34.0,injury_crashes_per_100k_population,minmax
+07,"Balears, Illes",37.011723481608584,11.0,injury_crashes_per_100k_population,minmax
+08,Barcelona,55.16298338847898,4.0,injury_crashes_per_100k_population,minmax
+09,Burgos,23.59103512135092,28.0,injury_crashes_per_100k_population,minmax
+10,Cáceres,11.023935068063176,43.0,injury_crashes_per_100k_population,minmax
+11,Cádiz,32.041022142327506,15.0,injury_crashes_per_100k_population,minmax
+12,Castellón/Castelló,21.337613937582056,30.0,injury_crashes_per_100k_population,minmax
+13,Ciudad Real,5.320504758250419,49.0,injury_crashes_per_100k_population,minmax
+14,Córdoba,3.810200761445908,50.0,injury_crashes_per_100k_population,minmax
+15,"Coruña, A",15.834688332383577,37.0,injury_crashes_per_100k_population,minmax
+16,Cuenca,11.44219635914957,42.0,injury_crashes_per_100k_population,minmax
+17,Girona,47.05342416451811,7.0,injury_crashes_per_100k_population,minmax
+18,Granada,12.90288354828905,39.0,injury_crashes_per_100k_population,minmax
+19,Guadalajara,14.428083321180448,38.0,injury_crashes_per_100k_population,minmax
+20,Gipuzkoa,27.43028413420206,22.0,injury_crashes_per_100k_population,minmax
+21,Huelva,12.475135227522184,40.0,injury_crashes_per_100k_population,minmax
+22,Huesca,25.936646863431363,24.0,injury_crashes_per_100k_population,minmax
+23,Jaén,16.63204698643003,36.0,injury_crashes_per_100k_population,minmax
+24,León,0.0,52.0,injury_crashes_per_100k_population,minmax
+25,Lleida,64.40249633853698,3.0,injury_crashes_per_100k_population,minmax
+26,"Rioja, La",29.81369047736911,17.0,injury_crashes_per_100k_population,minmax
+27,Lugo,7.761503716009798,48.0,injury_crashes_per_100k_population,minmax
+28,Madrid,28.784305495357355,19.0,injury_crashes_per_100k_population,minmax
+29,Málaga,51.79497241698818,5.0,injury_crashes_per_100k_population,minmax
+30,Murcia,41.00570477604725,9.0,injury_crashes_per_100k_population,minmax
+31,Navarra,8.744770494526866,46.0,injury_crashes_per_100k_population,minmax
+32,Ourense,10.349596026893915,44.0,injury_crashes_per_100k_population,minmax
+33,Asturias,26.30029141847561,23.0,injury_crashes_per_100k_population,minmax
+34,Palencia,1.4184207149739292,51.0,injury_crashes_per_100k_population,minmax
+35,"Palmas, Las",19.352729550383614,32.0,injury_crashes_per_100k_population,minmax
+36,Pontevedra,23.89263988070624,27.0,injury_crashes_per_100k_population,minmax
+37,Salamanca,28.56611222243132,20.0,injury_crashes_per_100k_population,minmax
+38,Santa Cruz de Tenerife,22.941508103779622,29.0,injury_crashes_per_100k_population,minmax
+39,Cantabria,29.106668761754406,18.0,injury_crashes_per_100k_population,minmax
+40,Segovia,33.37847090901629,13.0,injury_crashes_per_100k_population,minmax
+41,Sevilla,38.734395413749205,10.0,injury_crashes_per_100k_population,minmax
+42,Soria,10.222224410098924,45.0,injury_crashes_per_100k_population,minmax
+43,Tarragona,47.731207311158904,6.0,injury_crashes_per_100k_population,minmax
+44,Teruel,25.036649048807718,26.0,injury_crashes_per_100k_population,minmax
+45,Toledo,8.59051447228233,47.0,injury_crashes_per_100k_population,minmax
+46,Valencia/València,31.560811491462164,16.0,injury_crashes_per_100k_population,minmax
+47,Valladolid,20.31680439517504,31.0,injury_crashes_per_100k_population,minmax
+48,Bizkaia,17.802853262137887,35.0,injury_crashes_per_100k_population,minmax
+49,Zamora,11.92447590666054,41.0,injury_crashes_per_100k_population,minmax
+50,Zaragoza,18.41708951370984,33.0,injury_crashes_per_100k_population,minmax
+51,Ceuta,69.3461752957467,2.0,injury_crashes_per_100k_population,minmax
+52,Melilla,100.0,1.0,injury_crashes_per_100k_population,minmax
+01,Araba/Álava,82.35294117647058,10.0,urban_crashes_per_100k_population,percentile
+02,Albacete,78.43137254901961,12.0,urban_crashes_per_100k_population,percentile
+03,Alicante/Alacant,66.66666666666666,18.0,urban_crashes_per_100k_population,percentile
+04,Almería,56.86274509803921,23.0,urban_crashes_per_100k_population,percentile
+05,Ávila,49.01960784313725,27.0,urban_crashes_per_100k_population,percentile
+06,Badajoz,58.82352941176471,22.0,urban_crashes_per_100k_population,percentile
+07,"Balears, Illes",70.58823529411765,16.0,urban_crashes_per_100k_population,percentile
+08,Barcelona,94.11764705882352,4.0,urban_crashes_per_100k_population,percentile
+09,Burgos,64.70588235294117,19.0,urban_crashes_per_100k_population,percentile
+10,Cáceres,25.49019607843137,39.0,urban_crashes_per_100k_population,percentile
+11,Cádiz,88.23529411764706,7.0,urban_crashes_per_100k_population,percentile
+12,Castellón/Castelló,35.294117647058826,34.0,urban_crashes_per_100k_population,percentile
+13,Ciudad Real,23.52941176470588,40.0,urban_crashes_per_100k_population,percentile
+14,Córdoba,15.686274509803921,44.0,urban_crashes_per_100k_population,percentile
+15,"Coruña, A",27.450980392156865,38.0,urban_crashes_per_100k_population,percentile
+16,Cuenca,3.9215686274509802,50.0,urban_crashes_per_100k_population,percentile
+17,Girona,76.47058823529412,13.0,urban_crashes_per_100k_population,percentile
+18,Granada,39.21568627450981,32.0,urban_crashes_per_100k_population,percentile
+19,Guadalajara,7.8431372549019605,48.0,urban_crashes_per_100k_population,percentile
+20,Gipuzkoa,41.17647058823529,31.0,urban_crashes_per_100k_population,percentile
+21,Huelva,21.568627450980394,41.0,urban_crashes_per_100k_population,percentile
+22,Huesca,31.372549019607842,36.0,urban_crashes_per_100k_population,percentile
+23,Jaén,50.98039215686274,26.0,urban_crashes_per_100k_population,percentile
+24,León,1.9607843137254901,51.0,urban_crashes_per_100k_population,percentile
+25,Lleida,68.62745098039215,17.0,urban_crashes_per_100k_population,percentile
+26,"Rioja, La",80.3921568627451,11.0,urban_crashes_per_100k_population,percentile
+27,Lugo,13.725490196078432,45.0,urban_crashes_per_100k_population,percentile
+28,Madrid,86.27450980392157,8.0,urban_crashes_per_100k_population,percentile
+29,Málaga,96.07843137254902,3.0,urban_crashes_per_100k_population,percentile
+30,Murcia,92.15686274509804,5.0,urban_crashes_per_100k_population,percentile
+31,Navarra,45.09803921568628,29.0,urban_crashes_per_100k_population,percentile
+32,Ourense,19.607843137254903,42.0,urban_crashes_per_100k_population,percentile
+33,Asturias,62.745098039215684,20.0,urban_crashes_per_100k_population,percentile
+34,Palencia,0.0,52.0,urban_crashes_per_100k_population,percentile
+35,"Palmas, Las",43.13725490196079,30.0,urban_crashes_per_100k_population,percentile
+36,Pontevedra,33.33333333333333,35.0,urban_crashes_per_100k_population,percentile
+37,Salamanca,74.50980392156863,14.0,urban_crashes_per_100k_population,percentile
+38,Santa Cruz de Tenerife,47.05882352941176,28.0,urban_crashes_per_100k_population,percentile
+39,Cantabria,60.78431372549019,21.0,urban_crashes_per_100k_population,percentile
+40,Segovia,29.411764705882355,37.0,urban_crashes_per_100k_population,percentile
+41,Sevilla,90.19607843137256,6.0,urban_crashes_per_100k_population,percentile
+42,Soria,5.88235294117647,49.0,urban_crashes_per_100k_population,percentile
+43,Tarragona,72.54901960784314,15.0,urban_crashes_per_100k_population,percentile
+44,Teruel,9.803921568627452,47.0,urban_crashes_per_100k_population,percentile
+45,Toledo,11.76470588235294,46.0,urban_crashes_per_100k_population,percentile
+46,Valencia/València,84.31372549019608,9.0,urban_crashes_per_100k_population,percentile
+47,Valladolid,54.90196078431373,24.0,urban_crashes_per_100k_population,percentile
+48,Bizkaia,37.254901960784316,33.0,urban_crashes_per_100k_population,percentile
+49,Zamora,17.647058823529413,43.0,urban_crashes_per_100k_population,percentile
+50,Zaragoza,52.94117647058824,25.0,urban_crashes_per_100k_population,percentile
+51,Ceuta,98.0392156862745,2.0,urban_crashes_per_100k_population,percentile
+52,Melilla,100.0,1.0,urban_crashes_per_100k_population,percentile
+01,Araba/Álava,0.5089617649723984,10.0,urban_crashes_per_100k_population,zscore
+02,Albacete,0.3519295623602467,12.0,urban_crashes_per_100k_population,zscore
+03,Alicante/Alacant,0.08457056562439913,18.0,urban_crashes_per_100k_population,zscore
+04,Almería,-0.04540552655969357,23.0,urban_crashes_per_100k_population,zscore
+05,Ávila,-0.1973009985278035,27.0,urban_crashes_per_100k_population,zscore
+06,Badajoz,-0.024666308726098915,22.0,urban_crashes_per_100k_population,zscore
+07,"Balears, Illes",0.22506916216852246,16.0,urban_crashes_per_100k_population,zscore
+08,Barcelona,1.2930092291825814,4.0,urban_crashes_per_100k_population,zscore
+09,Burgos,0.031099234118269325,19.0,urban_crashes_per_100k_population,zscore
+10,Cáceres,-0.6415684908885391,39.0,urban_crashes_per_100k_population,zscore
+11,Cádiz,0.6833519860447106,7.0,urban_crashes_per_100k_population,zscore
+12,Castellón/Castelló,-0.40399015614359396,34.0,urban_crashes_per_100k_population,zscore
+13,Ciudad Real,-0.6589944332486579,40.0,urban_crashes_per_100k_population,zscore
+14,Córdoba,-0.7888393055378905,44.0,urban_crashes_per_100k_population,zscore
+15,"Coruña, A",-0.6353144848986423,38.0,urban_crashes_per_100k_population,zscore
+16,Cuenca,-1.0597275178481405,50.0,urban_crashes_per_100k_population,zscore
+17,Girona,0.33555296902280357,13.0,urban_crashes_per_100k_population,zscore
+18,Granada,-0.40048918872395817,32.0,urban_crashes_per_100k_population,zscore
+19,Guadalajara,-0.9064771935202514,48.0,urban_crashes_per_100k_population,zscore
+20,Gipuzkoa,-0.3424554575854492,31.0,urban_crashes_per_100k_population,zscore
+21,Huelva,-0.7136738888612036,41.0,urban_crashes_per_100k_population,zscore
+22,Huesca,-0.5618307292890604,36.0,urban_crashes_per_100k_population,zscore
+23,Jaén,-0.15903656854443574,26.0,urban_crashes_per_100k_population,zscore
+24,León,-1.0865448474406758,51.0,urban_crashes_per_100k_population,zscore
+25,Lleida,0.20657192816887482,17.0,urban_crashes_per_100k_population,zscore
+26,"Rioja, La",0.4457459803155994,11.0,urban_crashes_per_100k_population,zscore
+27,Lugo,-0.8076664575200762,45.0,urban_crashes_per_100k_population,zscore
+28,Madrid,0.6830229970141429,8.0,urban_crashes_per_100k_population,zscore
+29,Málaga,1.5842209889965126,3.0,urban_crashes_per_100k_population,zscore
+30,Murcia,1.1378445011454026,5.0,urban_crashes_per_100k_population,zscore
+31,Navarra,-0.2882227507370378,29.0,urban_crashes_per_100k_population,zscore
+32,Ourense,-0.767441013292324,42.0,urban_crashes_per_100k_population,zscore
+33,Asturias,-0.0027598463972002205,20.0,urban_crashes_per_100k_population,zscore
+34,Palencia,-1.1627949039915477,52.0,urban_crashes_per_100k_population,zscore
+35,"Palmas, Las",-0.33021662227565907,30.0,urban_crashes_per_100k_population,zscore
+36,Pontevedra,-0.42375507818463953,35.0,urban_crashes_per_100k_population,zscore
+37,Salamanca,0.32638769309236193,14.0,urban_crashes_per_100k_population,zscore
+38,Santa Cruz de Tenerife,-0.2555255560280203,28.0,urban_crashes_per_100k_population,zscore
+39,Cantabria,-0.007661639856563507,21.0,urban_crashes_per_100k_population,zscore
+40,Segovia,-0.5955411571116993,37.0,urban_crashes_per_100k_population,zscore
+41,Sevilla,0.9451247684821469,6.0,urban_crashes_per_100k_population,zscore
+42,Soria,-0.9395652320306149,49.0,urban_crashes_per_100k_population,zscore
+43,Tarragona,0.24624720026538077,15.0,urban_crashes_per_100k_population,zscore
+44,Teruel,-0.8982029387333623,47.0,urban_crashes_per_100k_population,zscore
+45,Toledo,-0.8906959617709626,46.0,urban_crashes_per_100k_population,zscore
+46,Valencia/València,0.5802657783042446,9.0,urban_crashes_per_100k_population,zscore
+47,Valladolid,-0.05210955282542644,24.0,urban_crashes_per_100k_population,zscore
+48,Bizkaia,-0.40061355968553436,33.0,urban_crashes_per_100k_population,zscore
+49,Zamora,-0.779190046041534,43.0,urban_crashes_per_100k_population,zscore
+50,Zaragoza,-0.055004900494374315,25.0,urban_crashes_per_100k_population,zscore
+51,Ceuta,2.9593872748075487,2.0,urban_crashes_per_100k_population,zscore
+52,Melilla,4.6549187292345175,1.0,urban_crashes_per_100k_population,zscore
+01,Araba/Álava,0.9406771101969126,10.0,urban_crashes_per_100k_population,robust_zscore
+02,Albacete,0.7257010785218723,12.0,urban_crashes_per_100k_population,robust_zscore
+03,Alicante/Alacant,0.3596884059947606,18.0,urban_crashes_per_100k_population,robust_zscore
+04,Almería,0.18175200794666221,23.0,urban_crashes_per_100k_population,robust_zscore
+05,Ávila,-0.026191873944635343,27.0,urban_crashes_per_100k_population,robust_zscore
+06,Badajoz,0.21014385799873167,22.0,urban_crashes_per_100k_population,robust_zscore
+07,"Balears, Illes",0.5520300419047371,16.0,urban_crashes_per_100k_population,robust_zscore
+08,Barcelona,2.014032827667694,4.0,urban_crashes_per_100k_population,robust_zscore
+09,Burgos,0.28648651196058234,19.0,urban_crashes_per_100k_population,robust_zscore
+10,Cáceres,-0.6343910899094092,39.0,urban_crashes_per_100k_population,robust_zscore
+11,Cádiz,1.1794161526699596,7.0,urban_crashes_per_100k_population,robust_zscore
+12,Castellón/Castelló,-0.3091479438167722,34.0,urban_crashes_per_100k_population,robust_zscore
+13,Ciudad Real,-0.6582470880706834,40.0,urban_crashes_per_100k_population,robust_zscore
+14,Córdoba,-0.8360038469632162,44.0,urban_crashes_per_100k_population,robust_zscore
+15,"Coruña, A",-0.6258293976742146,38.0,urban_crashes_per_100k_population,robust_zscore
+16,Cuenca,-1.206847991930313,50.0,urban_crashes_per_100k_population,robust_zscore
+17,Girona,0.7032816321314095,13.0,urban_crashes_per_100k_population,robust_zscore
+18,Granada,-0.30435514291111476,32.0,urban_crashes_per_100k_population,robust_zscore
+19,Guadalajara,-0.9970493262496658,48.0,urban_crashes_per_100k_population,robust_zscore
+20,Gipuzkoa,-0.2249073543943443,31.0,urban_crashes_per_100k_population,robust_zscore
+21,Huelva,-0.7331028958999174,41.0,urban_crashes_per_100k_population,robust_zscore
+22,Huesca,-0.5252306293276773,36.0,urban_crashes_per_100k_population,robust_zscore
+23,Jaén,0.026191873944635343,26.0,urban_crashes_per_100k_population,robust_zscore
+24,León,-1.243560736195665,51.0,urban_crashes_per_100k_population,robust_zscore
+25,Lleida,0.5267074526774166,17.0,urban_crashes_per_100k_population,robust_zscore
+26,"Rioja, La",0.8541351251856744,11.0,urban_crashes_per_100k_population,robust_zscore
+27,Lugo,-0.8617780916948503,45.0,urban_crashes_per_100k_population,robust_zscore
+28,Madrid,1.1789657688946602,8.0,urban_crashes_per_100k_population,robust_zscore
+29,Málaga,2.4126997727943964,3.0,urban_crashes_per_100k_population,robust_zscore
+30,Murcia,1.80161335615486,5.0,urban_crashes_per_100k_population,robust_zscore
+31,Navarra,-0.1506631426254834,29.0,urban_crashes_per_100k_population,robust_zscore
+32,Ourense,-0.8067097284636091,42.0,urban_crashes_per_100k_population,robust_zscore
+33,Asturias,0.24013365793255095,20.0,urban_crashes_per_100k_population,robust_zscore
+34,Palencia,-1.3479465519686866,52.0,urban_crashes_per_100k_population,robust_zscore
+35,"Palmas, Las",-0.2081524709789891,30.0,urban_crashes_per_100k_population,robust_zscore
+36,Pontevedra,-0.3362059894664593,35.0,urban_crashes_per_100k_population,robust_zscore
+37,Salamanca,0.690734430882507,14.0,urban_crashes_per_100k_population,robust_zscore
+38,Santa Cruz de Tenerife,-0.10590090247012074,28.0,urban_crashes_per_100k_population,robust_zscore
+39,Cantabria,0.2334231355781823,21.0,urban_crashes_per_100k_population,robust_zscore
+40,Segovia,-0.5713799788166971,37.0,urban_crashes_per_100k_population,robust_zscore
+41,Sevilla,1.5377813353065748,6.0,urban_crashes_per_100k_population,robust_zscore
+42,Soria,-1.0423466289464722,49.0,urban_crashes_per_100k_population,robust_zscore
+43,Tarragona,0.5810226339526889,15.0,urban_crashes_per_100k_population,robust_zscore
+44,Teruel,-0.9857219269674501,47.0,urban_crashes_per_100k_population,robust_zscore
+45,Toledo,-0.9754449258784537,46.0,urban_crashes_per_100k_population,robust_zscore
+46,Valencia/València,1.0382918259915075,9.0,urban_crashes_per_100k_population,robust_zscore
+47,Valladolid,0.17257424097352694,24.0,urban_crashes_per_100k_population,robust_zscore
+48,Bizkaia,-0.3045254059229715,33.0,urban_crashes_per_100k_population,robust_zscore
+49,Zamora,-0.8227940754601519,43.0,urban_crashes_per_100k_population,robust_zscore
+50,Zaragoza,0.16861052944279517,25.0,urban_crashes_per_100k_population,robust_zscore
+51,Ceuta,4.295293190573305,2.0,urban_crashes_per_100k_population,robust_zscore
+52,Melilla,6.616464374506713,1.0,urban_crashes_per_100k_population,robust_zscore
+01,Araba/Álava,28.735630083547374,10.0,urban_crashes_per_100k_population,minmax
+02,Albacete,26.036421897786717,12.0,urban_crashes_per_100k_population,minmax
+03,Alicante/Alacant,21.44081933651746,18.0,urban_crashes_per_100k_population,minmax
+04,Almería,19.206675472134474,23.0,urban_crashes_per_100k_population,minmax
+05,Ávila,16.59576194932706,27.0,urban_crashes_per_100k_population,minmax
+06,Badajoz,19.5631594646629,22.0,urban_crashes_per_100k_population,minmax
+07,"Balears, Illes",23.855833299076725,16.0,urban_crashes_per_100k_population,minmax
+08,Barcelona,42.212530351245995,4.0,urban_crashes_per_100k_population,minmax
+09,Burgos,20.52170686592859,19.0,urban_crashes_per_100k_population,minmax
+10,Cáceres,8.959299923705178,39.0,urban_crashes_per_100k_population,minmax
+11,Cádiz,31.733203220807628,7.0,urban_crashes_per_100k_population,minmax
+12,Castellón/Castelló,13.043006165072752,34.0,urban_crashes_per_100k_population,minmax
+13,Ciudad Real,8.659767436224255,40.0,urban_crashes_per_100k_population,minmax
+14,Córdoba,6.4278790952845455,44.0,urban_crashes_per_100k_population,minmax
+15,"Coruña, A",9.066799302055102,38.0,urban_crashes_per_100k_population,minmax
+16,Cuenca,1.7716132597996896,50.0,urban_crashes_per_100k_population,minmax
+17,Girona,25.754926548068685,13.0,urban_crashes_per_100k_population,minmax
+18,Granada,13.103183885056099,32.0,urban_crashes_per_100k_population,minmax
+19,Guadalajara,4.405815181541721,48.0,urban_crashes_per_100k_population,minmax
+20,Gipuzkoa,14.100718909933697,31.0,urban_crashes_per_100k_population,minmax
+21,Huelva,7.719888661506626,41.0,urban_crashes_per_100k_population,minmax
+22,Huesca,10.329902992651046,36.0,urban_crashes_per_100k_population,minmax
+23,Jaén,17.2534847661538,26.0,urban_crashes_per_100k_population,minmax
+24,León,1.3106533143087944,51.0,urban_crashes_per_100k_population,minmax
+25,Lleida,23.537886504755217,17.0,urban_crashes_per_100k_population,minmax
+26,"Rioja, La",27.649021346125824,11.0,urban_crashes_per_100k_population,minmax
+27,Lugo,6.104261379303129,45.0,urban_crashes_per_100k_population,minmax
+28,Madrid,31.727548266794614,8.0,urban_crashes_per_100k_population,minmax
+29,Málaga,47.21813527051816,3.0,urban_crashes_per_100k_population,minmax
+30,Murcia,39.54542196779096,5.0,urban_crashes_per_100k_population,minmax
+31,Navarra,15.032918572335058,29.0,urban_crashes_per_100k_population,minmax
+32,Ourense,6.795691840885443,42.0,urban_crashes_per_100k_population,minmax
+33,Asturias,19.939707086460345,20.0,urban_crashes_per_100k_population,minmax
+34,Palencia,0.0,52.0,urban_crashes_per_100k_population,minmax
+35,"Palmas, Las",14.311090820298825,30.0,urban_crashes_per_100k_population,minmax
+36,Pontevedra,12.703269229102506,35.0,urban_crashes_per_100k_population,minmax
+37,Salamanca,25.597385690813407,14.0,urban_crashes_per_100k_population,minmax
+38,Santa Cruz de Tenerife,15.594946832410935,28.0,urban_crashes_per_100k_population,minmax
+39,Cantabria,19.855450731328524,21.0,urban_crashes_per_100k_population,minmax
+40,Segovia,9.75045838695385,37.0,urban_crashes_per_100k_population,minmax
+41,Sevilla,36.23278499709862,6.0,urban_crashes_per_100k_population,minmax
+42,Soria,3.837068753023968,49.0,urban_crashes_per_100k_population,minmax
+43,Tarragona,24.21986012184618,15.0,urban_crashes_per_100k_population,minmax
+44,Teruel,4.548040380452051,47.0,urban_crashes_per_100k_population,minmax
+45,Toledo,4.677076930472763,46.0,urban_crashes_per_100k_population,minmax
+46,Valencia/València,29.961266438774885,9.0,urban_crashes_per_100k_population,minmax
+47,Valladolid,19.09144074783583,24.0,urban_crashes_per_100k_population,minmax
+48,Bizkaia,13.10104608712693,33.0,urban_crashes_per_100k_population,minmax
+49,Zamora,6.593739089514027,43.0,urban_crashes_per_100k_population,minmax
+50,Zaragoza,19.04167295499687,25.0,urban_crashes_per_100k_population,minmax
+51,Ceuta,70.85570790656544,2.0,urban_crashes_per_100k_population,minmax
+52,Melilla,100.0,1.0,urban_crashes_per_100k_population,minmax
+01,Araba/Álava,74.50980392156863,14.0,rear_lateral_crashes_per_100k_population,percentile
+02,Albacete,68.62745098039215,17.0,rear_lateral_crashes_per_100k_population,percentile
+03,Alicante/Alacant,70.58823529411765,16.0,rear_lateral_crashes_per_100k_population,percentile
+04,Almería,78.43137254901961,12.0,rear_lateral_crashes_per_100k_population,percentile
+05,Ávila,49.01960784313725,27.0,rear_lateral_crashes_per_100k_population,percentile
+06,Badajoz,47.05882352941176,28.0,rear_lateral_crashes_per_100k_population,percentile
+07,"Balears, Illes",86.27450980392157,8.0,rear_lateral_crashes_per_100k_population,percentile
+08,Barcelona,94.11764705882352,4.0,rear_lateral_crashes_per_100k_population,percentile
+09,Burgos,43.13725490196079,30.0,rear_lateral_crashes_per_100k_population,percentile
+10,Cáceres,25.49019607843137,39.0,rear_lateral_crashes_per_100k_population,percentile
+11,Cádiz,80.3921568627451,11.0,rear_lateral_crashes_per_100k_population,percentile
+12,Castellón/Castelló,39.21568627450981,32.0,rear_lateral_crashes_per_100k_population,percentile
+13,Ciudad Real,17.647058823529413,43.0,rear_lateral_crashes_per_100k_population,percentile
+14,Córdoba,15.686274509803921,44.0,rear_lateral_crashes_per_100k_population,percentile
+15,"Coruña, A",27.450980392156865,38.0,rear_lateral_crashes_per_100k_population,percentile
+16,Cuenca,5.88235294117647,49.0,rear_lateral_crashes_per_100k_population,percentile
+17,Girona,82.35294117647058,10.0,rear_lateral_crashes_per_100k_population,percentile
+18,Granada,41.17647058823529,31.0,rear_lateral_crashes_per_100k_population,percentile
+19,Guadalajara,21.568627450980394,41.0,rear_lateral_crashes_per_100k_population,percentile
+20,Gipuzkoa,56.86274509803921,23.0,rear_lateral_crashes_per_100k_population,percentile
+21,Huelva,35.294117647058826,34.0,rear_lateral_crashes_per_100k_population,percentile
+22,Huesca,31.372549019607842,36.0,rear_lateral_crashes_per_100k_population,percentile
+23,Jaén,37.254901960784316,33.0,rear_lateral_crashes_per_100k_population,percentile
+24,León,0.0,52.0,rear_lateral_crashes_per_100k_population,percentile
+25,Lleida,84.31372549019608,9.0,rear_lateral_crashes_per_100k_population,percentile
+26,"Rioja, La",58.82352941176471,22.0,rear_lateral_crashes_per_100k_population,percentile
+27,Lugo,7.8431372549019605,48.0,rear_lateral_crashes_per_100k_population,percentile
+28,Madrid,72.54901960784314,15.0,rear_lateral_crashes_per_100k_population,percentile
+29,Málaga,96.07843137254902,3.0,rear_lateral_crashes_per_100k_population,percentile
+30,Murcia,92.15686274509804,5.0,rear_lateral_crashes_per_100k_population,percentile
+31,Navarra,23.52941176470588,40.0,rear_lateral_crashes_per_100k_population,percentile
+32,Ourense,13.725490196078432,45.0,rear_lateral_crashes_per_100k_population,percentile
+33,Asturias,52.94117647058824,25.0,rear_lateral_crashes_per_100k_population,percentile
+34,Palencia,1.9607843137254901,51.0,rear_lateral_crashes_per_100k_population,percentile
+35,"Palmas, Las",60.78431372549019,21.0,rear_lateral_crashes_per_100k_population,percentile
+36,Pontevedra,54.90196078431373,24.0,rear_lateral_crashes_per_100k_population,percentile
+37,Salamanca,64.70588235294117,19.0,rear_lateral_crashes_per_100k_population,percentile
+38,Santa Cruz de Tenerife,62.745098039215684,20.0,rear_lateral_crashes_per_100k_population,percentile
+39,Cantabria,66.66666666666666,18.0,rear_lateral_crashes_per_100k_population,percentile
+40,Segovia,33.33333333333333,35.0,rear_lateral_crashes_per_100k_population,percentile
+41,Sevilla,88.23529411764706,7.0,rear_lateral_crashes_per_100k_population,percentile
+42,Soria,3.9215686274509802,50.0,rear_lateral_crashes_per_100k_population,percentile
+43,Tarragona,90.19607843137256,6.0,rear_lateral_crashes_per_100k_population,percentile
+44,Teruel,9.803921568627452,47.0,rear_lateral_crashes_per_100k_population,percentile
+45,Toledo,19.607843137254903,42.0,rear_lateral_crashes_per_100k_population,percentile
+46,Valencia/València,76.47058823529412,13.0,rear_lateral_crashes_per_100k_population,percentile
+47,Valladolid,45.09803921568628,29.0,rear_lateral_crashes_per_100k_population,percentile
+48,Bizkaia,29.411764705882355,37.0,rear_lateral_crashes_per_100k_population,percentile
+49,Zamora,11.76470588235294,46.0,rear_lateral_crashes_per_100k_population,percentile
+50,Zaragoza,50.98039215686274,26.0,rear_lateral_crashes_per_100k_population,percentile
+51,Ceuta,98.0392156862745,2.0,rear_lateral_crashes_per_100k_population,percentile
+52,Melilla,100.0,1.0,rear_lateral_crashes_per_100k_population,percentile
+01,Araba/Álava,0.39095361567194853,14.0,rear_lateral_crashes_per_100k_population,zscore
+02,Albacete,0.21047233845353122,17.0,rear_lateral_crashes_per_100k_population,zscore
+03,Alicante/Alacant,0.2581053044007872,16.0,rear_lateral_crashes_per_100k_population,zscore
+04,Almería,0.5492305656421724,12.0,rear_lateral_crashes_per_100k_population,zscore
+05,Ávila,-0.21051850480683007,27.0,rear_lateral_crashes_per_100k_population,zscore
+06,Badajoz,-0.21396748358670437,28.0,rear_lateral_crashes_per_100k_population,zscore
+07,"Balears, Illes",0.8438329398120785,8.0,rear_lateral_crashes_per_100k_population,zscore
+08,Barcelona,1.3197581183125346,4.0,rear_lateral_crashes_per_100k_population,zscore
+09,Burgos,-0.2224954476914604,30.0,rear_lateral_crashes_per_100k_population,zscore
+10,Cáceres,-0.6845251693688433,39.0,rear_lateral_crashes_per_100k_population,zscore
+11,Cádiz,0.6334834019749831,11.0,rear_lateral_crashes_per_100k_population,zscore
+12,Castellón/Castelló,-0.3351424242908003,32.0,rear_lateral_crashes_per_100k_population,zscore
+13,Ciudad Real,-0.8559438397269005,43.0,rear_lateral_crashes_per_100k_population,zscore
+14,Córdoba,-0.8888959897400572,44.0,rear_lateral_crashes_per_100k_population,zscore
+15,"Coruña, A",-0.6323597688925403,38.0,rear_lateral_crashes_per_100k_population,zscore
+16,Cuenca,-0.9779401194337485,49.0,rear_lateral_crashes_per_100k_population,zscore
+17,Girona,0.6541765638144212,10.0,rear_lateral_crashes_per_100k_population,zscore
+18,Granada,-0.33443763830997997,31.0,rear_lateral_crashes_per_100k_population,zscore
+19,Guadalajara,-0.768648956053421,41.0,rear_lateral_crashes_per_100k_population,zscore
+20,Gipuzkoa,-0.09313645861526954,23.0,rear_lateral_crashes_per_100k_population,zscore
+21,Huelva,-0.45514788261060124,34.0,rear_lateral_crashes_per_100k_population,zscore
+22,Huesca,-0.47935198334477175,36.0,rear_lateral_crashes_per_100k_population,zscore
+23,Jaén,-0.33742707399087435,33.0,rear_lateral_crashes_per_100k_population,zscore
+24,León,-1.3494550880579392,52.0,rear_lateral_crashes_per_100k_population,zscore
+25,Lleida,0.703538786357617,9.0,rear_lateral_crashes_per_100k_population,zscore
+26,"Rioja, La",-0.07565524587453354,22.0,rear_lateral_crashes_per_100k_population,zscore
+27,Lugo,-0.9632658209644817,48.0,rear_lateral_crashes_per_100k_population,zscore
+28,Madrid,0.3570766881497698,15.0,rear_lateral_crashes_per_100k_population,zscore
+29,Málaga,1.7935372103462788,3.0,rear_lateral_crashes_per_100k_population,zscore
+30,Murcia,1.0406575385536918,5.0,rear_lateral_crashes_per_100k_population,zscore
+31,Navarra,-0.7254312492561411,40.0,rear_lateral_crashes_per_100k_population,zscore
+32,Ourense,-0.9136541887238075,45.0,rear_lateral_crashes_per_100k_population,zscore
+33,Asturias,-0.18317215711086235,25.0,rear_lateral_crashes_per_100k_population,zscore
+34,Palencia,-1.235560069487972,51.0,rear_lateral_crashes_per_100k_population,zscore
+35,"Palmas, Las",-0.07378786850687351,21.0,rear_lateral_crashes_per_100k_population,zscore
+36,Pontevedra,-0.12943342773341543,24.0,rear_lateral_crashes_per_100k_population,zscore
+37,Salamanca,0.0494097084615023,19.0,rear_lateral_crashes_per_100k_population,zscore
+38,Santa Cruz de Tenerife,-0.01308058601544762,20.0,rear_lateral_crashes_per_100k_population,zscore
+39,Cantabria,0.059866463942548416,18.0,rear_lateral_crashes_per_100k_population,zscore
+40,Segovia,-0.4565798948942515,35.0,rear_lateral_crashes_per_100k_population,zscore
+41,Sevilla,0.9264986283884619,7.0,rear_lateral_crashes_per_100k_population,zscore
+42,Soria,-1.0687694917952177,50.0,rear_lateral_crashes_per_100k_population,zscore
+43,Tarragona,0.9282463743325001,6.0,rear_lateral_crashes_per_100k_population,zscore
+44,Teruel,-0.9362874559117661,47.0,rear_lateral_crashes_per_100k_population,zscore
+45,Toledo,-0.790609264624549,42.0,rear_lateral_crashes_per_100k_population,zscore
+46,Valencia/València,0.4622324469228193,13.0,rear_lateral_crashes_per_100k_population,zscore
+47,Valladolid,-0.21740407346860924,29.0,rear_lateral_crashes_per_100k_population,zscore
+48,Bizkaia,-0.6323372561857944,37.0,rear_lateral_crashes_per_100k_population,zscore
+49,Zamora,-0.9308910545899012,46.0,rear_lateral_crashes_per_100k_population,zscore
+50,Zaragoza,-0.1840103175705943,26.0,rear_lateral_crashes_per_100k_population,zscore
+51,Ceuta,3.0049140999760877,2.0,rear_lateral_crashes_per_100k_population,zscore
+52,Melilla,4.183332457721216,1.0,rear_lateral_crashes_per_100k_population,zscore
+01,Araba/Álava,0.7048744527018331,14.0,rear_lateral_crashes_per_100k_population,robust_zscore
+02,Albacete,0.48859981354937604,17.0,rear_lateral_crashes_per_100k_population,robust_zscore
+03,Alicante/Alacant,0.545679432448221,16.0,rear_lateral_crashes_per_100k_population,robust_zscore
+04,Almería,0.8945411636678422,12.0,rear_lateral_crashes_per_100k_population,robust_zscore
+05,Ávila,-0.01588266859992508,27.0,rear_lateral_crashes_per_100k_population,robust_zscore
+06,Badajoz,-0.02001565487173144,28.0,rear_lateral_crashes_per_100k_population,robust_zscore
+07,"Balears, Illes",1.2475695949213848,8.0,rear_lateral_crashes_per_100k_population,robust_zscore
+08,Barcelona,1.817881085565309,4.0,rear_lateral_crashes_per_100k_population,robust_zscore
+09,Burgos,-0.030234899703588187,30.0,rear_lateral_crashes_per_100k_population,robust_zscore
+10,Cáceres,-0.5838951622723044,39.0,rear_lateral_crashes_per_100k_population,robust_zscore
+11,Cádiz,0.9955031695683091,11.0,rear_lateral_crashes_per_100k_population,robust_zscore
+12,Castellón/Castelló,-0.16522222133116046,32.0,rear_lateral_crashes_per_100k_population,robust_zscore
+13,Ciudad Real,-0.7893098825527726,43.0,rear_lateral_crashes_per_100k_population,robust_zscore
+14,Córdoba,-0.8287971604756145,44.0,rear_lateral_crashes_per_100k_population,robust_zscore
+15,"Coruña, A",-0.5213842285170963,38.0,rear_lateral_crashes_per_100k_population,robust_zscore
+16,Cuenca,-0.935500677399654,49.0,rear_lateral_crashes_per_100k_population,robust_zscore
+17,Girona,1.020300235384348,10.0,rear_lateral_crashes_per_100k_population,robust_zscore
+18,Granada,-0.16437766096439638,31.0,rear_lateral_crashes_per_100k_population,robust_zscore
+19,Guadalajara,-0.6847025251730404,41.0,rear_lateral_crashes_per_100k_population,robust_zscore
+20,Gipuzkoa,0.12477878988661872,23.0,rear_lateral_crashes_per_100k_population,robust_zscore
+21,Huelva,-0.30902737161847055,34.0,rear_lateral_crashes_per_100k_population,robust_zscore
+22,Huesca,-0.33803167185930605,36.0,rear_lateral_crashes_per_100k_population,robust_zscore
+23,Jaén,-0.16795996674768532,33.0,rear_lateral_crashes_per_100k_population,robust_zscore
+24,León,-1.3806951430931516,52.0,rear_lateral_crashes_per_100k_population,robust_zscore
+25,Lleida,1.0794520600657147,9.0,rear_lateral_crashes_per_100k_population,robust_zscore
+26,"Rioja, La",0.14572690725213683,22.0,rear_lateral_crashes_per_100k_population,robust_zscore
+27,Lugo,-0.9179161464434853,48.0,rear_lateral_crashes_per_100k_population,robust_zscore
+28,Madrid,0.6642789937801501,15.0,rear_lateral_crashes_per_100k_population,robust_zscore
+29,Málaga,2.385620874128377,3.0,rear_lateral_crashes_per_100k_population,robust_zscore
+30,Murcia,1.4834287916493303,5.0,rear_lateral_crashes_per_100k_population,robust_zscore
+31,Navarra,-0.6329138073257766,40.0,rear_lateral_crashes_per_100k_population,robust_zscore
+32,Ourense,-0.8584654486980834,45.0,rear_lateral_crashes_per_100k_population,robust_zscore
+33,Asturias,0.016887054505068094,25.0,rear_lateral_crashes_per_100k_population,robust_zscore
+34,Palencia,-1.2442122656328383,51.0,rear_lateral_crashes_per_100k_population,robust_zscore
+35,"Palmas, Las",0.14796462615892061,21.0,rear_lateral_crashes_per_100k_population,robust_zscore
+36,Pontevedra,0.08128334249539307,24.0,rear_lateral_crashes_per_100k_population,robust_zscore
+37,Salamanca,0.29559496163714044,19.0,rear_lateral_crashes_per_100k_population,robust_zscore
+38,Santa Cruz de Tenerife,0.22071148288063053,20.0,rear_lateral_crashes_per_100k_population,robust_zscore
+39,Cantabria,0.3081255191178027,18.0,rear_lateral_crashes_per_100k_population,robust_zscore
+40,Segovia,-0.31074338307783944,35.0,rear_lateral_crashes_per_100k_population,robust_zscore
+41,Sevilla,1.3466296871519503,7.0,rear_lateral_crashes_per_100k_population,robust_zscore
+42,Soria,-1.0443434894335457,50.0,rear_lateral_crashes_per_100k_population,robust_zscore
+43,Tarragona,1.348724049122359,6.0,rear_lateral_crashes_per_100k_population,robust_zscore
+44,Teruel,-0.8855873849418799,47.0,rear_lateral_crashes_per_100k_population,robust_zscore
+45,Toledo,-0.7110180404724447,42.0,rear_lateral_crashes_per_100k_population,robust_zscore
+46,Valencia/València,0.7902894261859517,13.0,rear_lateral_crashes_per_100k_population,robust_zscore
+47,Valladolid,-0.02413379525769784,29.0,rear_lateral_crashes_per_100k_population,robust_zscore
+48,Bizkaia,-0.5213572510510517,37.0,rear_lateral_crashes_per_100k_population,robust_zscore
+49,Zamora,-0.8791207598902645,46.0,rear_lateral_crashes_per_100k_population,robust_zscore
+50,Zaragoza,0.01588266859992508,26.0,rear_lateral_crashes_per_100k_population,robust_zscore
+51,Ceuta,3.837240143008296,2.0,rear_lateral_crashes_per_100k_population,robust_zscore
+52,Melilla,5.249364486429947,1.0,rear_lateral_crashes_per_100k_population,robust_zscore
+01,Araba/Álava,31.45627207496171,14.0,rear_lateral_crashes_per_100k_population,minmax
+02,Albacete,28.19424049097106,17.0,rear_lateral_crashes_per_100k_population,minmax
+03,Alicante/Alacant,29.055162143088246,16.0,rear_lateral_crashes_per_100k_population,minmax
+04,Almería,34.31698105141554,12.0,rear_lateral_crashes_per_100k_population,minmax
+05,Ávila,20.585221713781138,27.0,rear_lateral_crashes_per_100k_population,minmax
+06,Badajoz,20.52288462327591,28.0,rear_lateral_crashes_per_100k_population,minmax
+07,"Balears, Illes",39.64164554887401,8.0,rear_lateral_crashes_per_100k_population,minmax
+08,Barcelona,48.24355145186732,4.0,rear_lateral_crashes_per_100k_population,minmax
+09,Burgos,20.368749586746958,30.0,rear_lateral_crashes_per_100k_population,minmax
+10,Cáceres,12.017991169683658,39.0,rear_lateral_crashes_per_100k_population,minmax
+11,Cádiz,35.83977287444669,11.0,rear_lateral_crashes_per_100k_population,minmax
+12,Castellón/Castelló,18.332760030537163,32.0,rear_lateral_crashes_per_100k_population,minmax
+13,Ciudad Real,8.919757793836272,43.0,rear_lateral_crashes_per_100k_population,minmax
+14,Córdoba,8.324178264701898,44.0,rear_lateral_crashes_per_100k_population,minmax
+15,"Coruña, A",12.960832369434744,38.0,rear_lateral_crashes_per_100k_population,minmax
+16,Cuenca,6.714788260894124,49.0,rear_lateral_crashes_per_100k_population,minmax
+17,Girona,36.21378256970825,10.0,rear_lateral_crashes_per_100k_population,minmax
+18,Granada,18.345498383040105,31.0,rear_lateral_crashes_per_100k_population,minmax
+19,Guadalajara,10.497531799275444,41.0,rear_lateral_crashes_per_100k_population,minmax
+20,Gipuzkoa,22.706793258329398,23.0,rear_lateral_crashes_per_100k_population,minmax
+21,Huelva,16.163772746517,34.0,rear_lateral_crashes_per_100k_population,minmax
+22,Huesca,15.72630608917833,36.0,rear_lateral_crashes_per_100k_population,minmax
+23,Jaén,18.291467107554478,33.0,rear_lateral_crashes_per_100k_population,minmax
+24,León,0.0,52.0,rear_lateral_crashes_per_100k_population,minmax
+25,Lleida,37.10595892990219,9.0,rear_lateral_crashes_per_100k_population,minmax
+26,"Rioja, La",23.022749954589532,22.0,rear_lateral_crashes_per_100k_population,minmax
+27,Lugo,6.980012586748846,48.0,rear_lateral_crashes_per_100k_population,minmax
+28,Madrid,30.8439780506227,15.0,rear_lateral_crashes_per_100k_population,minmax
+29,Málaga,56.80666883372268,3.0,rear_lateral_crashes_per_100k_population,minmax
+30,Murcia,43.19906750142605,5.0,rear_lateral_crashes_per_100k_population,minmax
+31,Navarra,11.278651739986882,40.0,rear_lateral_crashes_per_100k_population,minmax
+32,Ourense,7.876696795751627,45.0,rear_lateral_crashes_per_100k_population,minmax
+33,Asturias,21.0794815686861,25.0,rear_lateral_crashes_per_100k_population,minmax
+34,Palencia,2.0585467565414706,51.0,rear_lateral_crashes_per_100k_population,minmax
+35,"Palmas, Las",23.056501067427483,21.0,rear_lateral_crashes_per_100k_population,minmax
+36,Pontevedra,22.050759228144447,24.0,rear_lateral_crashes_per_100k_population,minmax
+37,Salamanca,25.283182933467334,19.0,rear_lateral_crashes_per_100k_population,minmax
+38,Santa Cruz de Tenerife,24.153728857020422,20.0,rear_lateral_crashes_per_100k_population,minmax
+39,Cantabria,25.472179084042885,18.0,rear_lateral_crashes_per_100k_population,minmax
+40,Segovia,16.13789045351729,35.0,rear_lateral_crashes_per_100k_population,minmax
+41,Sevilla,41.1357511492137,7.0,rear_lateral_crashes_per_100k_population,minmax
+42,Soria,5.073131652720889,50.0,rear_lateral_crashes_per_100k_population,minmax
+43,Tarragona,41.16734003509765,6.0,rear_lateral_crashes_per_100k_population,minmax
+44,Teruel,7.467621496895719,47.0,rear_lateral_crashes_per_100k_population,minmax
+45,Toledo,10.100619602856826,42.0,rear_lateral_crashes_per_100k_population,minmax
+46,Valencia/València,32.744570797099485,13.0,rear_lateral_crashes_per_100k_population,minmax
+47,Valladolid,20.460771450603545,29.0,rear_lateral_crashes_per_100k_population,minmax
+48,Bizkaia,12.961239265715502,37.0,rear_lateral_crashes_per_100k_population,minmax
+49,Zamora,7.565156442476299,46.0,rear_lateral_crashes_per_100k_population,minmax
+50,Zaragoza,21.064332596259508,26.0,rear_lateral_crashes_per_100k_population,minmax
+51,Ceuta,78.70118185463096,2.0,rear_lateral_crashes_per_100k_population,minmax
+52,Melilla,100.0,1.0,rear_lateral_crashes_per_100k_population,minmax
+01,Araba/Álava,13.725490196078432,45.0,fatalities_per_100k_population,percentile
+02,Albacete,23.52941176470588,40.0,fatalities_per_100k_population,percentile
+03,Alicante/Alacant,25.49019607843137,39.0,fatalities_per_100k_population,percentile
+04,Almería,64.70588235294117,19.0,fatalities_per_100k_population,percentile
+05,Ávila,98.0392156862745,2.0,fatalities_per_100k_population,percentile
+06,Badajoz,35.294117647058826,34.0,fatalities_per_100k_population,percentile
+07,"Balears, Illes",60.78431372549019,21.0,fatalities_per_100k_population,percentile
+08,Barcelona,7.8431372549019605,48.0,fatalities_per_100k_population,percentile
+09,Burgos,88.23529411764706,7.0,fatalities_per_100k_population,percentile
+10,Cáceres,54.90196078431373,24.0,fatalities_per_100k_population,percentile
+11,Cádiz,15.686274509803921,44.0,fatalities_per_100k_population,percentile
+12,Castellón/Castelló,58.82352941176471,22.0,fatalities_per_100k_population,percentile
+13,Ciudad Real,68.62745098039215,17.0,fatalities_per_100k_population,percentile
+14,Córdoba,39.21568627450981,32.0,fatalities_per_100k_population,percentile
+15,"Coruña, A",56.86274509803921,23.0,fatalities_per_100k_population,percentile
+16,Cuenca,92.15686274509804,5.0,fatalities_per_100k_population,percentile
+17,Girona,47.05882352941176,28.0,fatalities_per_100k_population,percentile
+18,Granada,70.58823529411765,16.0,fatalities_per_100k_population,percentile
+19,Guadalajara,72.54901960784314,15.0,fatalities_per_100k_population,percentile
+20,Gipuzkoa,11.76470588235294,46.0,fatalities_per_100k_population,percentile
+21,Huelva,50.98039215686274,26.0,fatalities_per_100k_population,percentile
+22,Huesca,94.11764705882352,4.0,fatalities_per_100k_population,percentile
+23,Jaén,62.745098039215684,20.0,fatalities_per_100k_population,percentile
+24,León,86.27450980392157,8.0,fatalities_per_100k_population,percentile
+25,Lleida,84.31372549019608,9.0,fatalities_per_100k_population,percentile
+26,"Rioja, La",43.13725490196079,30.0,fatalities_per_100k_population,percentile
+27,Lugo,78.43137254901961,12.0,fatalities_per_100k_population,percentile
+28,Madrid,5.88235294117647,49.0,fatalities_per_100k_population,percentile
+29,Málaga,31.372549019607842,36.0,fatalities_per_100k_population,percentile
+30,Murcia,66.66666666666666,18.0,fatalities_per_100k_population,percentile
+31,Navarra,37.254901960784316,33.0,fatalities_per_100k_population,percentile
+32,Ourense,74.50980392156863,14.0,fatalities_per_100k_population,percentile
+33,Asturias,45.09803921568628,29.0,fatalities_per_100k_population,percentile
+34,Palencia,76.47058823529412,13.0,fatalities_per_100k_population,percentile
+35,"Palmas, Las",19.607843137254903,42.0,fatalities_per_100k_population,percentile
+36,Pontevedra,33.33333333333333,35.0,fatalities_per_100k_population,percentile
+37,Salamanca,52.94117647058824,25.0,fatalities_per_100k_population,percentile
+38,Santa Cruz de Tenerife,17.647058823529413,43.0,fatalities_per_100k_population,percentile
+39,Cantabria,21.568627450980394,41.0,fatalities_per_100k_population,percentile
+40,Segovia,90.19607843137256,6.0,fatalities_per_100k_population,percentile
+41,Sevilla,29.411764705882355,37.0,fatalities_per_100k_population,percentile
+42,Soria,96.07843137254902,3.0,fatalities_per_100k_population,percentile
+43,Tarragona,82.35294117647058,10.0,fatalities_per_100k_population,percentile
+44,Teruel,80.3921568627451,11.0,fatalities_per_100k_population,percentile
+45,Toledo,41.17647058823529,31.0,fatalities_per_100k_population,percentile
+46,Valencia/València,9.803921568627452,47.0,fatalities_per_100k_population,percentile
+47,Valladolid,27.450980392156865,38.0,fatalities_per_100k_population,percentile
+48,Bizkaia,3.9215686274509802,50.0,fatalities_per_100k_population,percentile
+49,Zamora,100.0,1.0,fatalities_per_100k_population,percentile
+50,Zaragoza,49.01960784313725,27.0,fatalities_per_100k_population,percentile
+51,Ceuta,1.9607843137254901,51.0,fatalities_per_100k_population,percentile
+52,Melilla,0.0,52.0,fatalities_per_100k_population,percentile
+01,Araba/Álava,-0.8221297108840818,45.0,fatalities_per_100k_population,zscore
+02,Albacete,-0.6634176801871154,40.0,fatalities_per_100k_population,zscore
+03,Alicante/Alacant,-0.6552438959542203,39.0,fatalities_per_100k_population,zscore
+04,Almería,0.12017249755739827,19.0,fatalities_per_100k_population,zscore
+05,Ávila,2.559105839256902,2.0,fatalities_per_100k_population,zscore
+06,Badajoz,-0.43330108038647225,34.0,fatalities_per_100k_population,zscore
+07,"Balears, Illes",0.028902447564526403,21.0,fatalities_per_100k_population,zscore
+08,Barcelona,-1.125563747462768,48.0,fatalities_per_100k_population,zscore
+09,Burgos,0.9265774966434306,7.0,fatalities_per_100k_population,zscore
+10,Cáceres,-0.1355831629727561,24.0,fatalities_per_100k_population,zscore
+11,Cádiz,-0.795319958170929,44.0,fatalities_per_100k_population,zscore
+12,Castellón/Castelló,-0.03527494276456516,22.0,fatalities_per_100k_population,zscore
+13,Ciudad Real,0.29349526266701137,17.0,fatalities_per_100k_population,zscore
+14,Córdoba,-0.3396225151958366,32.0,fatalities_per_100k_population,zscore
+15,"Coruña, A",-0.03634346918912227,23.0,fatalities_per_100k_population,zscore
+16,Cuenca,1.2587005518199874,5.0,fatalities_per_100k_population,zscore
+17,Girona,-0.23667179954479203,28.0,fatalities_per_100k_population,zscore
+18,Granada,0.40763707307786823,16.0,fatalities_per_100k_population,zscore
+19,Guadalajara,0.45160581433461094,15.0,fatalities_per_100k_population,zscore
+20,Gipuzkoa,-0.853053440299557,46.0,fatalities_per_100k_population,zscore
+21,Huelva,-0.1975921433272928,26.0,fatalities_per_100k_population,zscore
+22,Huesca,1.5503458361690454,4.0,fatalities_per_100k_population,zscore
+23,Jaén,0.08444541775143824,20.0,fatalities_per_100k_population,zscore
+24,León,0.8932622037958242,8.0,fatalities_per_100k_population,zscore
+25,Lleida,0.8679863740779631,9.0,fatalities_per_100k_population,zscore
+26,"Rioja, La",-0.2635872282918863,30.0,fatalities_per_100k_population,zscore
+27,Lugo,0.6128214748085858,12.0,fatalities_per_100k_population,zscore
+28,Madrid,-1.3008442925506274,49.0,fatalities_per_100k_population,zscore
+29,Málaga,-0.5319644038187356,36.0,fatalities_per_100k_population,zscore
+30,Murcia,0.16066639401285449,18.0,fatalities_per_100k_population,zscore
+31,Navarra,-0.4019556571730049,33.0,fatalities_per_100k_population,zscore
+32,Ourense,0.5227397293801029,14.0,fatalities_per_100k_population,zscore
+33,Asturias,-0.24737247948722038,29.0,fatalities_per_100k_population,zscore
+34,Palencia,0.5579989133805235,13.0,fatalities_per_100k_population,zscore
+35,"Palmas, Las",-0.7606135355418285,42.0,fatalities_per_100k_population,zscore
+36,Pontevedra,-0.5197290961823329,35.0,fatalities_per_100k_population,zscore
+37,Salamanca,-0.1568452225197009,25.0,fatalities_per_100k_population,zscore
+38,Santa Cruz de Tenerife,-0.7790126492744192,43.0,fatalities_per_100k_population,zscore
+39,Cantabria,-0.7148064187804002,41.0,fatalities_per_100k_population,zscore
+40,Segovia,1.1043160940198866,6.0,fatalities_per_100k_population,zscore
+41,Sevilla,-0.5548801119917368,37.0,fatalities_per_100k_population,zscore
+42,Soria,1.6034026819346394,3.0,fatalities_per_100k_population,zscore
+43,Tarragona,0.7232713393391972,10.0,fatalities_per_100k_population,zscore
+44,Teruel,0.6909100605908763,11.0,fatalities_per_100k_population,zscore
+45,Toledo,-0.26875363024048304,31.0,fatalities_per_100k_population,zscore
+46,Valencia/València,-1.0343496118622788,47.0,fatalities_per_100k_population,zscore
+47,Valladolid,-0.628021320915327,38.0,fatalities_per_100k_population,zscore
+48,Bizkaia,-1.501139092381905,50.0,fatalities_per_100k_population,zscore
+49,Zamora,3.8758533168630867,1.0,fatalities_per_100k_population,zscore
+50,Zaragoza,-0.2079538654597572,27.0,fatalities_per_100k_population,zscore
+51,Ceuta,-1.5386093395897178,51.0,fatalities_per_100k_population,zscore
+52,Melilla,-1.5546613166448568,52.0,fatalities_per_100k_population,zscore
+01,Araba/Álava,-0.7367210611341874,45.0,fatalities_per_100k_population,robust_zscore
+02,Albacete,-0.5479340593232794,40.0,fatalities_per_100k_population,robust_zscore
+03,Alicante/Alacant,-0.5382113923521545,39.0,fatalities_per_100k_population,robust_zscore
+04,Almería,0.38414172381198636,19.0,fatalities_per_100k_population,robust_zscore
+05,Ávila,3.285238201338873,2.0,fatalities_per_100k_population,robust_zscore
+06,Badajoz,-0.2742117538842475,34.0,fatalities_per_100k_population,robust_zscore
+07,"Balears, Illes",0.2755765506639919,21.0,fatalities_per_100k_population,robust_zscore
+08,Barcelona,-1.097654014745287,48.0,fatalities_per_100k_population,robust_zscore
+09,Burgos,1.3433555991196129,7.0,fatalities_per_100k_population,robust_zscore
+10,Cáceres,0.07992191050845004,24.0,fatalities_per_100k_population,robust_zscore
+11,Cádiz,-0.7048310222267291,44.0,fatalities_per_100k_population,robust_zscore
+12,Castellón/Castelló,0.19923793253232217,22.0,fatalities_per_100k_population,robust_zscore
+13,Ciudad Real,0.59030810595031,17.0,fatalities_per_100k_population,robust_zscore
+14,Córdoba,-0.1627816664571963,32.0,fatalities_per_100k_population,robust_zscore
+15,"Coruña, A",0.1979669268047663,23.0,fatalities_per_100k_population,robust_zscore
+16,Cuenca,1.7384139670563004,5.0,fatalities_per_100k_population,robust_zscore
+17,Girona,-0.04032241206609533,28.0,fatalities_per_100k_population,robust_zscore
+18,Granada,0.7260790999581804,16.0,fatalities_per_100k_population,robust_zscore
+19,Guadalajara,0.7783796520890321,15.0,fatalities_per_100k_population,robust_zscore
+20,Gipuzkoa,-0.7735046504785013,46.0,fatalities_per_100k_population,robust_zscore
+21,Huelva,0.006162602943190342,26.0,fatalities_per_100k_population,robust_zscore
+22,Huesca,2.085324271100446,4.0,fatalities_per_100k_population,robust_zscore
+23,Jaén,0.34164457819292304,20.0,fatalities_per_100k_population,robust_zscore
+24,León,1.3037272595190648,8.0,fatalities_per_100k_population,robust_zscore
+25,Lleida,1.273661812748814,9.0,fatalities_per_100k_population,robust_zscore
+26,"Rioja, La",-0.07233815197758885,30.0,fatalities_per_100k_population,robust_zscore
+27,Lugo,0.970144706396467,12.0,fatalities_per_100k_population,robust_zscore
+28,Madrid,-1.3061491643417262,49.0,fatalities_per_100k_population,robust_zscore
+29,Málaga,-0.391571181129185,36.0,fatalities_per_100k_population,robust_zscore
+30,Murcia,0.432308969041576,18.0,fatalities_per_100k_population,robust_zscore
+31,Navarra,-0.23692656231447165,33.0,fatalities_per_100k_population,robust_zscore
+32,Ourense,0.8629930143498362,14.0,fatalities_per_100k_population,robust_zscore
+33,Asturias,-0.05305080621994685,29.0,fatalities_per_100k_population,robust_zscore
+34,Palencia,0.9049336007345442,13.0,fatalities_per_100k_population,robust_zscore
+35,"Palmas, Las",-0.6635479421542406,42.0,fatalities_per_100k_population,robust_zscore
+36,Pontevedra,-0.3770173566032996,35.0,fatalities_per_100k_population,robust_zscore
+37,Salamanca,0.0546308191112468,25.0,fatalities_per_100k_population,robust_zscore
+38,Santa Cruz de Tenerife,-0.6854335767989498,43.0,fatalities_per_100k_population,robust_zscore
+39,Cantabria,-0.6090606534653085,41.0,fatalities_per_100k_population,robust_zscore
+40,Segovia,1.5547745870654248,6.0,fatalities_per_100k_population,robust_zscore
+41,Sevilla,-0.41882927757818544,37.0,fatalities_per_100k_population,robust_zscore
+42,Soria,2.1484350686477027,3.0,fatalities_per_100k_population,robust_zscore
+43,Tarragona,1.101524153081057,10.0,fatalities_per_100k_population,robust_zscore
+44,Teruel,1.063030607488868,11.0,fatalities_per_100k_population,robust_zscore
+45,Toledo,-0.07848355588769242,31.0,fatalities_per_100k_population,robust_zscore
+46,Valencia/València,-0.9891553514292797,47.0,fatalities_per_100k_population,robust_zscore
+47,Valladolid,-0.5058303037818893,38.0,fatalities_per_100k_population,robust_zscore
+48,Bizkaia,-1.5443986188563652,50.0,fatalities_per_100k_population,robust_zscore
+49,Zamora,4.851501372112473,1.0,fatalities_per_100k_population,robust_zscore
+50,Zaragoza,-0.006162602943190342,27.0,fatalities_per_100k_population,robust_zscore
+51,Ceuta,-1.5889692515702956,51.0,fatalities_per_100k_population,robust_zscore
+52,Melilla,-1.6080629813151013,52.0,fatalities_per_100k_population,robust_zscore
+01,Araba/Álava,13.489174695172162,45.0,fatalities_per_100k_population,minmax
+02,Albacete,16.411771196757194,40.0,fatalities_per_100k_population,minmax
+03,Alicante/Alacant,16.562287027843638,39.0,fatalities_per_100k_population,minmax
+04,Almería,30.84116197511035,19.0,fatalities_per_100k_population,minmax
+05,Ávila,75.7528049094749,2.0,fatalities_per_100k_population,minmax
+06,Badajoz,20.649244352261704,34.0,fatalities_per_100k_population,minmax
+07,"Balears, Illes",29.16047319784958,21.0,fatalities_per_100k_population,minmax
+08,Barcelona,7.901600458535272,48.0,fatalities_per_100k_population,minmax
+09,Burgos,45.69067539157857,7.0,fatalities_per_100k_population,minmax
+10,Cáceres,26.131559335388815,24.0,fatalities_per_100k_population,minmax
+11,Cádiz,13.98286184128035,44.0,fatalities_per_100k_population,minmax
+12,Castellón/Castelló,27.978681145709672,22.0,fatalities_per_100k_population,minmax
+13,Ciudad Real,34.03280727591036,17.0,fatalities_per_100k_population,minmax
+14,Córdoba,22.374284638731247,32.0,fatalities_per_100k_population,minmax
+15,"Coruña, A",27.959004807523158,23.0,fatalities_per_100k_population,minmax
+16,Cuenca,51.806542442691104,5.0,fatalities_per_100k_population,minmax
+17,Girona,24.27006657836192,28.0,fatalities_per_100k_population,minmax
+18,Granada,36.13466719368992,16.0,fatalities_per_100k_population,minmax
+19,Guadalajara,36.94432786535889,15.0,fatalities_per_100k_population,minmax
+20,Gipuzkoa,12.91973088547011,46.0,fatalities_per_100k_population,minmax
+21,Huelva,24.989697384185845,26.0,fatalities_per_100k_population,minmax
+22,Huesca,57.17703316100198,4.0,fatalities_per_100k_population,minmax
+23,Jaén,30.183267056910278,20.0,fatalities_per_100k_population,minmax
+24,León,45.0771922302951,8.0,fatalities_per_100k_population,minmax
+25,Lleida,44.61175144938086,9.0,fatalities_per_100k_population,minmax
+26,"Rioja, La",23.774433465046695,30.0,fatalities_per_100k_population,minmax
+27,Lugo,39.91302735986398,12.0,fatalities_per_100k_population,minmax
+28,Madrid,4.673903694653548,49.0,fatalities_per_100k_population,minmax
+29,Málaga,18.832412429491804,36.0,fatalities_per_100k_population,minmax
+30,Murcia,31.58683525265934,18.0,fatalities_per_100k_population,minmax
+31,Navarra,21.226453425966366,33.0,fatalities_per_100k_population,minmax
+32,Ourense,38.25422057067588,14.0,fatalities_per_100k_population,minmax
+33,Asturias,24.07301932474802,29.0,fatalities_per_100k_population,minmax
+34,Palencia,38.90349943980664,13.0,fatalities_per_100k_population,minmax
+35,"Palmas, Las",14.621961907689363,42.0,fatalities_per_100k_population,minmax
+36,Pontevedra,19.05771902494607,35.0,fatalities_per_100k_population,minmax
+37,Salamanca,25.74002996880261,25.0,fatalities_per_100k_population,minmax
+38,Santa Cruz de Tenerife,14.283152145184308,43.0,fatalities_per_100k_population,minmax
+39,Cantabria,15.465475273416882,41.0,fatalities_per_100k_population,minmax
+40,Segovia,48.96363586349691,6.0,fatalities_per_100k_population,minmax
+41,Sevilla,18.410432014751656,37.0,fatalities_per_100k_population,minmax
+42,Soria,58.15404637883251,3.0,fatalities_per_100k_population,minmax
+43,Tarragona,41.946902084169146,10.0,fatalities_per_100k_population,minmax
+44,Teruel,41.350986578322946,11.0,fatalities_per_100k_population,minmax
+45,Toledo,23.679296957786068,31.0,fatalities_per_100k_population,minmax
+46,Valencia/València,9.581259602397438,47.0,fatalities_per_100k_population,minmax
+47,Valladolid,17.06357607457452,38.0,fatalities_per_100k_population,minmax
+48,Bizkaia,0.9855829120264777,50.0,fatalities_per_100k_population,minmax
+49,Zamora,100.0,1.0,fatalities_per_100k_population,minmax
+50,Zaragoza,24.79889185594862,27.0,fatalities_per_100k_population,minmax
+51,Ceuta,0.2955885056656203,51.0,fatalities_per_100k_population,minmax
+52,Melilla,0.0,52.0,fatalities_per_100k_population,minmax
